@@ -1,0 +1,16 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body { font-size: 10px; margin: 0; padding: 0; }
+@media (max-width: 768px) { html, body { font-size: 8px; } }
+
+a { text-decoration: none; }
+
+@font-face { font-family: Muli; src: url(../assets/fonts/Muli.ttf); }
+@font-face { font-family: Muli-Light; src: url(../assets/fonts/Muli-Light.ttf); }
+@font-face { font-family: Muli-ExtraLight; src: url(../assets/fonts/Muli-ExtraLight.ttf); }
+@font-face { font-family: Raleway-Light; src: url(../assets/fonts/Raleway-Light.ttf); }
+@font-face { font-family: Raleway-Regular; src: url(../assets/fonts/Raleway-Regular.ttf); }
+@font-face { font-family: Raleway-SemiBold; src: url(../assets/fonts/Raleway-SemiBold.ttf); }
+.home-first-section { width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
