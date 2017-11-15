@@ -2,13 +2,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50vh;	
+  max-height: 364px;
+  height: 50%;	
   text-align: center;
   background-image: url("../assets/images/us-firt.jpeg");
   width: 100%;
   border: none;
   margin: 0;
-  padding: 100px 15px;
+  padding: 60px 15px;
   
   
   .us-first-title{
@@ -20,19 +21,23 @@
     line-height: 70px;
     letter-spacing: 1px;
     min-width: 21.09%;
-    transform: translateY(-80%);
+    transform: translateY(-0%);
   }
 }
 
 .us-centered-text{
-  height: 50vh;
+  height: 50%;
   text-align: center;
   background-color: $blueText;
   padding: 60px 15px;
   width: 100%;
   border: none;
   margin: 0;
-  
+
+  @include small{
+    width: 100%;
+  }
+
   .hero-text{
     width: 34.77%;
     text-align: center;
@@ -43,5 +48,118 @@
     line-height: 24px;
     transform: translateY(-10%);
     margin: 0 32.73%;
+
+    @include small{
+      height: 40vw;
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
   }
+}
+
+.divided-left, .divided-right {
+  height: 100vh;
+
+  @include small{
+    width: 100%;
+    height: 100vw;
+  }
+}
+
+.divided-side {
+  float: left;
+  font-family: Raleway-Regular;
+  height: 100vh;
+  padding: 5%;
+  border-bottom: 1px solid $blueText;
+  position: relative;
+  width: 50%;
+
+  @include small{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .divided-image {
+    @include center(false,true);
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 100vh;
+    padding-top: 75%;
+    width: 80%;
+
+    @include small{
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0;
+    }
+  }
+
+  .divided-wrapper {
+    @include center(false,true);
+    color: $grayTitles;
+    width: 70%;
+
+    @include small{
+      height:100%;
+      font-size: 1.0em;
+      width: 100%
+    }
+
+    .divided-title {
+      color: $blueText;
+      font-size: 3.6em;
+      max-width: 300px;
+
+      @include small{
+        padding: 0 20px;
+      }
+    }
+
+    .divided-text {
+      font-size: 1.8em;
+      margin-top: 1.5em;
+
+      .divided-dot{
+        color: $blueText;
+        list-style-type: disc;
+
+        .divided-span{
+          color: $grayTitles;
+        }  
+      }
+    }
+
+    .button-centered{
+      text-align: center;
+
+      .divided-button {
+        background-color: $white;
+        border: 2px solid;
+        border-color: $blueText;
+        border-radius: 100px;
+        color: $blueText;
+        font-size: 1.3em;
+        margin-top: 2em;
+        padding: 0.7em 3.6em;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: $blueText;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.image-section{
+  height: 50%
 }
