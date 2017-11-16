@@ -72,7 +72,6 @@
   font-family: Raleway-Regular;
   height: 100vh;
   padding: 5%;
-  border-bottom: 1px solid $blueText;
   position: relative;
   width: 50%;
 
@@ -161,5 +160,62 @@
 }
 
 .image-section{
-  height: 50%
+  height: 50vh;
+  background-color: $blueText;
+  width: 100%;
+  border: none;
+  margin: 0;
+
+  .text-section{
+    text-align:left;
+    color: $white;
+    font-family: Raleway-Regular;
+    margin-left: 20px;
+    margin-top: 150px;
+    position: absolute;
+    display: block;
+    width: 20%;    
+
+    .image-h1{
+      font-size: 3.6em;
+      line-height: 35px;
+      width: 25%;
+      margin-bottom: auto;
+    }
+
+    .image-p{
+      font-size: 1.5em;
+      font-style: italic;
+      line-height: 18px;
+      margin-top: auto;
+    }
+  }
+  .first-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    display: block;
+    padding: 60px 15px;
+    border: none;
+    margin: 0;
+    height: 50vh;
+    float: left;
+    }
+
+  .second-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 16.666666666666666666666666666667%;
+    display: block;
+    padding: 60px 15px;
+    border: none;
+    margin: 0;
+    height: 50vh;
+    float: left
+  }
 }
+  
