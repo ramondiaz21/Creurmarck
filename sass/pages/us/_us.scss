@@ -9,7 +9,7 @@
   width: 100%;
   border: none;
   margin: 0;
-  padding: 60px 15px;
+  padding: 100px 15px;
   
   
   .us-first-title{
@@ -29,7 +29,7 @@
   height: 50%;
   text-align: center;
   background-color: $blueText;
-  padding: 60px 15px;
+  padding: 100px 15px;
   width: 100%;
   border: none;
   margin: 0;
@@ -50,7 +50,6 @@
     margin: 0 32.73%;
 
     @include small{
-      height: 40vw;
       width: 100%;
       padding: 0;
       margin: auto;
@@ -63,7 +62,6 @@
 
   @include small{
     width: 100%;
-    height: 100vw;
   }
 }
 
@@ -76,10 +74,10 @@
   width: 50%;
 
   @include small{
-    height: 100%;
-    width: 100%;
     margin: auto;
     padding: 0;
+    font-size: smaller;
+    background-color: $white;    
   }
 
   .divided-image {
@@ -93,7 +91,6 @@
     width: 80%;
 
     @include small{
-      height: 100%;
       width: 100%;
       margin: auto;
       padding: 0;
@@ -106,9 +103,9 @@
     width: 70%;
 
     @include small{
-      height:100%;
+      padding: 10px;
       font-size: 1.0em;
-      width: 100%
+      width: 100%;
     }
 
     .divided-title {
@@ -166,21 +163,42 @@
   border: none;
   margin: 0;
 
+  @include small{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: $white;
+  }
+
   .text-section{
     text-align:left;
     color: $white;
     font-family: Raleway-Regular;
     margin-left: 20px;
-    margin-top: 150px;
+    margin-top: 200px;
     position: absolute;
     display: block;
-    width: 20%;    
+    width: 20%;     
+
+    @include small{
+      width: 100%;
+      margin: auto;
+      padding: auto;
+      color: $blueText;
+      position: static;
+      text-align: center;
+    }
 
     .image-h1{
       font-size: 3.6em;
       line-height: 35px;
       width: 25%;
       margin-bottom: auto;
+
+      @include small{
+        width: 100%;
+        margin: auto;
+      }
     }
 
     .image-p{
@@ -188,6 +206,10 @@
       font-style: italic;
       line-height: 18px;
       margin-top: auto;
+
+      @include small{
+        width: 100%;
+      }
     }
   }
   .first-image-wrapper{
@@ -202,6 +224,10 @@
     margin: 0;
     height: 50vh;
     float: left;
+
+    @include small{
+      width: 50%;
+    }
     }
 
   .second-image-wrapper{
@@ -215,7 +241,11 @@
     border: none;
     margin: 0;
     height: 50vh;
-    float: left
+    float: left;
+
+    @include small{
+      width: 16.666666666666666666666666666667%;
+    }
   }
 }
   
