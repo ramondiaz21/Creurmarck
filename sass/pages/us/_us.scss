@@ -94,6 +94,7 @@
       width: 100%;
       margin: auto;
       padding: 0;
+      height: 100%
     }
   }
 
@@ -152,6 +153,14 @@
           cursor: pointer;
         }
       }
+    }
+
+    .divided-paragraph{
+      color: $whitePearl;
+      font-size: 1.5em;
+      font-family: Raleway-Light;
+      line-height: 28px;
+      font-weight: 500;
     }
   }
 }
@@ -227,6 +236,7 @@
 
     @include small{
       width: 50%;
+      padding: 0;
     }
     }
 
@@ -245,7 +255,99 @@
 
     @include small{
       width: 16.666666666666666666666666666667%;
+      padding: 0;
     }
   }
 }
-  
+
+.divided-two-right {
+
+  .side-right {
+    float: right;
+    font-family: Raleway-Light;
+    padding: 40px 40px;     
+    height: 30vw;
+  }
+
+  .side-left {
+    float: left;
+    font-family: Raleway;
+    height: 30vh;
+  }
+}
+
+.divided-two-left, .divided-two-right {
+  height: 50vh;
+  background-color: $blueText;
+
+  @include small {
+    width: 100%     
+  }
+
+  .side-left, .side-right {
+    position: relative;   
+    width: 50%;
+      
+    @include small {
+      width: 100%; 
+      background-color: $blueText;
+      padding: 0;
+      height: 100%;
+    }    
+
+    .side-right-wrapper {
+      height: 100%;
+      width: 70%;
+      margin: auto;
+
+      @include small{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .side-right-text{
+        color: $whitePearl;
+        font-size: 1.5em;
+        line-height: 28px;
+        font-family: Raleway-Light;
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          font-size: large;
+        }
+      }
+    }
+
+    .side-left-wrapper {
+      @include center(false,true);
+      color: $white;
+      width: 60%;
+      position: relative;
+      margin: 0 auto;  
+      height: 50%;
+
+      @include small{
+        width: 100%
+      }
+
+      .side-left-title {
+        font-size: 3.6em;
+        text-align: left;
+        font-family: 'Raleway-Semibold';
+        color: $white;    
+        line-height: 42px;    
+
+        @include small{
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+  .side-right{
+    @include small {
+      width: 100%;      
+    } 
+  }
+}    
