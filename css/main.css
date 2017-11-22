@@ -274,4 +274,75 @@ a {
         background-color: black;
         cursor: pointer; }
 
+.home-first-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%; }
+  .home-first-section .carousel {
+    height: 100vh; }
+    .home-first-section .carousel .carousel-indicators {
+      bottom: 0 !important; }
+    .home-first-section .carousel .item {
+      height: 100vh !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%; }
+      .home-first-section .carousel .item .img1 {
+        background-image: url(../assets/homeImages/constructoraExample2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%; }
+      .home-first-section .carousel .item .img2 {
+        background-image: url(../assets/homeImages/constructoraExample1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%; }
+      .home-first-section .carousel .item .img3 {
+        background-image: url(../assets/homeImages/constructoraExample3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%; }
+  .home-first-section .wrapper-bottom-right {
+    bottom: 15%;
+    position: absolute;
+    right: 10%; }
+    .home-first-section .wrapper-bottom-right .logo-bottom-right {
+      background-image: url(../assets/homeImages/Logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      min-height: 187px;
+      min-width: 183px;
+      width: 100%; }
+    .home-first-section .wrapper-bottom-right .paragraph-bottom-right {
+      color: #7C7B7D;
+      font-family: Raleway-Light;
+      font-size: 2em;
+      font-weight: 600;
+      line-height: 1.2em;
+      max-width: 250px;
+      padding-top: 1.5em; }
+
+us-first-section {
+  width: 100%;
+  height: 7.74%;
+  text-align: center; }
+  us-first-section us-first-title {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Raleway-Semibold;
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 70px;
+    min-width: 21.09%; }
+  us-first-section us-background-image {
+    background-image: url("../assets/images/us-first.jpeg") bottom/cover no-repeat;
+    width: 100%;
+    height: 7.74%; }
+
 /*# sourceMappingURL=main.css.map */
