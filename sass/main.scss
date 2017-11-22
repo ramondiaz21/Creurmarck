@@ -10,4 +10,8 @@
   'base/fonts';
 
 @import
-  'pages/home/home';
+  'layout/navbar';
+
+@import
+  'pages/home/home',
+  'pages/home/divided';
