@@ -1,3 +1,4 @@
+//---------------------AQUI COMIENZA LA SECCION DEL HERO
 .us-first-section{
   background-repeat: no-repeat;
   background-position: center;
@@ -25,6 +26,7 @@
   }
 }
 
+//--------------------------AQUI COMIENZA LA SECCION DEL TITULO CENTRADO EN FONDO AZUL
 .us-centered-text{
   height: 50%;
   text-align: center;
@@ -56,8 +58,8 @@
     }
   }
 }
-
-.divided-left, .divided-right {
+//------------------------AQUI COMIENZA SECCION DE IMAGEN A LA IZQUIERDA Y UNORDERED LIST A LA DERECHA
+.divided-left2, .divided-right2 {
   height: 100vh;
 
   @include small{
@@ -65,7 +67,7 @@
   }
 }
 
-.divided-side {
+.divided-side2 {
   float: left;
   font-family: Raleway-Regular;
   height: 100vh;
@@ -80,7 +82,7 @@
     background-color: $white;    
   }
 
-  .divided-image {
+  .divided-image2 {
     @include center(false,true);
     background-image: url("../assets/images/us-firt.jpeg");
     background-repeat: no-repeat;
@@ -98,7 +100,7 @@
     }
   }
 
-  .divided-wrapper {
+  .divided-wrapper2 {
     @include center(false,true);
     color: $grayTitles;
     width: 70%;
@@ -109,7 +111,7 @@
       width: 100%;
     }
 
-    .divided-title {
+    .divided-title2 {
       color: $blueText;
       font-size: 3.6em;
       max-width: 300px;
@@ -119,24 +121,24 @@
       }
     }
 
-    .divided-text {
+    .divided-text2 {
       font-size: 1.8em;
       margin-top: 1.5em;
 
-      .divided-dot{
+      .divided-dot2{
         color: $blueText;
         list-style-type: disc;
 
-        .divided-span{
+        .divided-span2{
           color: $grayTitles;
         }  
       }
     }
 
-    .button-centered{
+    .button-centered2{
       text-align: center;
 
-      .divided-button {
+      .divided-button2 {
         background-color: $white;
         border: 2px solid;
         border-color: $blueText;
@@ -154,17 +156,10 @@
         }
       }
     }
-
-    .divided-paragraph{
-      color: $whitePearl;
-      font-size: 1.5em;
-      font-family: Raleway-Light;
-      line-height: 28px;
-      font-weight: 500;
-    }
   }
 }
 
+//-------------------AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
 .image-section{
   height: 50vh;
   background-color: $blueText;
@@ -260,23 +255,25 @@
   }
 }
 
-.divided-two-right {
 
-  .side-right {
+//---------------------AQUI COMIENZA LA SECCION DEL TITULO A LA IZQUIERDA Y TEXTO A LA DERECHA
+.divided-two-right2 {
+
+  .side-right2 {
     float: right;
-    font-family: Raleway-Light;
-    padding: 40px 40px;     
-    height: 30vw;
+    font-family: Raleway-Regular;
+    padding: 70px 40px;     
+    height: 50vh;
   }
 
-  .side-left {
+  .side-left2 {
     float: left;
-    font-family: Raleway;
-    height: 30vh;
+    font-family: Raleway-Regular;
+    height: 50vh;
   }
 }
 
-.divided-two-left, .divided-two-right {
+.divided-two-left2, .divided-two-right2 {
   height: 50vh;
   background-color: $blueText;
 
@@ -284,7 +281,7 @@
     width: 100%     
   }
 
-  .side-left, .side-right {
+  .side-left2, .side-right2 {
     position: relative;   
     width: 50%;
       
@@ -295,7 +292,7 @@
       height: 100%;
     }    
 
-    .side-right-wrapper {
+    .side-right-wrapper2 {
       height: 100%;
       width: 70%;
       margin: auto;
@@ -306,11 +303,11 @@
         padding: 10px;
       }
 
-      .side-right-text{
+      .side-right-text2{
         color: $whitePearl;
         font-size: 1.5em;
         line-height: 28px;
-        font-family: Raleway-Light;
+        font-family: Raleway-Regular;
 
         @include small{
           width: 100%;
@@ -320,7 +317,7 @@
       }
     }
 
-    .side-left-wrapper {
+    .side-left-wrapper2 {
       @include center(false,true);
       color: $white;
       width: 60%;
@@ -332,7 +329,7 @@
         width: 100%
       }
 
-      .side-left-title {
+      .side-left-title2 {
         font-size: 3.6em;
         text-align: left;
         font-family: 'Raleway-Semibold';
@@ -345,9 +342,11 @@
       }
     }
   }
-  .side-right{
+  .side-right2{
     @include small {
       width: 100%;      
     } 
   }
 }    
+
+//-----------------AQUI COMIENZA LA SECCION DE LA IMAGEN A LA IZQUIERDA Y TEXTO A LA DERECHA

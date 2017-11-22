@@ -1,0 +1,118 @@
+/*.divided-left, .divided-right {
+  height: 30vw;
+  background-color: $white;
+
+  @include small{
+    width: 100%;
+  }
+}
+
+.divided-side {
+  float: left;
+  font-family: Raleway-Regular;
+  height: 100%;
+  position: relative;
+  width: 50%;
+  bottom: 15%;
+  padding: 100px;
+
+  @include small{
+    margin: auto;
+    padding: 0;
+    font-size: smaller;
+    background-color: $white;    
+  }
+
+  .divided-image {
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 100%;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+
+    @include small{
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      height: 100%
+    }
+  }
+
+  .divided-wrapper {
+    @include center(false,true);
+    color: $grayTitles;
+    width: 60%;
+    height: 30vw;
+
+    @include small{
+      padding: 10px;
+      font-size: 1.0em;
+      width: 100%;
+    }
+
+    .divided-title {
+      color: $blueText;
+      font-size: 3.6em;
+      max-width: 368px;
+      line-height: 35px;
+
+      @include small{
+        padding: 0 20px;
+      }
+    }
+    
+    .divided-paragraph{
+      color: $grayTitles;
+      font-size: 1.5em;
+      font-family: Raleway-Regular;
+      line-height: 18px;
+      font-weight: 500;
+      margin: auto;
+    }
+
+    .divided-text {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      line-height: 18px;      
+      margin: auto;
+      padding: 0 0 0 1em;
+
+      .divided-dot{
+        color: $blueText;
+        list-style-type: disc;
+
+        .divided-span{
+          color: $grayTitles;
+        }  
+      }
+    }       
+  }
+}
+*/ 
+
+
+<section class="divided-left" id="tour">
+    <div class="divided-side left-image divided-side-big ">
+      <div class="divided-image first-image "></div>
+    </div>
+    <div class="divided-side divided-side-right divided-side-small">
+      <div class="divided-wrapper right-text">
+        <h2 class="divided-title">Nuestra gente; nuestro motor</h2>
+        <p class="divided-paragraph">El Equipo de Colaboradores CREURMACK hace posible que podamos ofrecerte productos de alta calidad y la atención y servicio que nos distinguen.<br><br>
+        Nuestra pasión en el trabajo se sustenta en:</p>
+        <ul class="divided-text">
+          <li class="divided-dot"><span class="divided-span">La seguridad, el orden, la higiene y la salud ocupacional</span></li>
+          <li class="divided-dot"><span class="divided-span">La preservación ambiental</span></li>
+          <li class="divided-dot"><span class="divided-span">La calidad</span></li>
+          <li class="divided-dot"><span class="divided-span">La eficiencia</span></li>
+          <li class="divided-dot2"><span class="divided-span">El compromiso</span></li>
+          <li class="divided-dot"><span class="divided-span">La mejora continua y la innovación</span></li>
+          <li class="divided-dot"><span class="divided-span">El bienestar y el desarrollo de las personas</span></li>
+          <li class="divided-dot"><span class="divided-span">La honradez</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>

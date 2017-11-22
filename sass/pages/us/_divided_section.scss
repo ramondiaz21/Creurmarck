@@ -1,0 +1,121 @@
+.divided-two-left {
+
+  .side-right {
+    float: left;
+  }
+  .side-left {
+    float: right;
+  }
+}
+
+.divided-two-right {
+
+  .side-right {
+    float: right;
+  }
+
+  .side-left {
+    float: left;
+  }
+}
+
+.divided-two-left, .divided-two-right {
+  height: 30vw;
+  background-color: $white;
+
+  @include small {
+    height: 90vw;      
+  }
+
+  .side-left, .side-right {
+    font-family: Raleway-Regular;
+    position: relative;
+    width: 50%; 
+    height: 30vw;   
+      
+    @include small {
+      width: 100%;
+      height: 40vw;  
+    }    
+
+    .side-right-wrapper {
+      height: 100%;
+      width: 100%;  
+    
+      .one-image{
+        width: 100%; 
+        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        height: 100%; 
+        float: left;
+        display: block;
+      }  
+      
+      .two-image {
+        width: 50%;
+        float: left;
+        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        height: 100%; 
+      } 
+      
+      .three-image {
+        width: 33.3%;
+        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        display: block;
+        height: 100%;    
+        float: left;
+      }  
+    }
+
+    .side-left-wrapper {
+      @include center(false,true);
+      top: 40% !important;
+      color: $blueText;
+      width: 68%;
+      position: relative;
+      margin: 0 auto;  
+
+      .side-left-title {
+        font-size: 3.6em;
+        text-align: left;
+        font-family: Raleway-Semibold;
+        color: $blueText;    
+        line-height: 35px;
+        width: 50%;
+        font-weight: bold;    
+      }
+
+      .divided-paragraph{
+      color: $grayTitles;
+      font-size: 1.5em;
+      font-family: Raleway-Semibold;
+      line-height: 18px;
+      font-weight: 500;
+      margin: 0;
+      width: 80%
+      }
+      .divided-text {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      line-height: 18px;      
+      margin: auto;
+      font-family: Raleway-Semibold;
+      padding: 0 0 0 1em;
+
+      .divided-dot{
+        color: $blueText;
+        list-style-type: disc;
+
+        .divided-span{
+          color: $grayTitles;
+        }  
+      }
+    } 
+  }
+}
+  
+  .side-right{
+    @include small {
+      height: 50vw;      
+    } 
+  }
+}    
