@@ -394,6 +394,40 @@ a {
     margin: 1.5em 4vw;
     width: 86px; }
 
+.carousel {
+  height: 100vh;
+  background-image: url(../assets/homeImages/constructoraExample2.png); }
+  .carousel .carousel-indicators {
+    bottom: 0 !important; }
+  .carousel .contentComment {
+    height: 100vh;
+    position: relative;
+    width: 100%; }
+    .carousel .contentComment .testimonial {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      color: #7C7C7C;
+      font-family: Raleway-SemiBold;
+      font-weight: bold;
+      max-width: 776px;
+      text-align: center;
+      padding: 0 3em;
+      width: 90%; }
+      .carousel .contentComment .testimonial .opinion {
+        font-size: 2.5em;
+        line-height: 42px; }
+      .carousel .contentComment .testimonial .author {
+        font-size: 1.2em;
+        font-weight: bold;
+        line-height: 21px;
+        margin-top: 5%; }
+
 us-first-section {
   width: 100%;
   height: 7.74%;

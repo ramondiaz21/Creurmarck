@@ -1,0 +1,40 @@
+.carousel{
+    height: 100vh;
+    background-image: url(../assets/homeImages/constructoraExample2.png);
+    
+      .carousel-indicators {
+        bottom: 0 !important;
+      }
+      
+      .contentComment {
+        height: 100vh;
+        position: relative;
+        width: 100%;
+
+          .testimonial{
+            @include center(true,true);
+            
+            box-sizing: border-box;
+            color: $grayTitles;
+            font-family: Raleway-SemiBold;
+            font-weight: bold;
+            max-width: 776px;
+            text-align: center;
+            padding: 0 3em;
+            width: 90%;
+
+              .opinion {  
+                font-size: 2.5em; 
+                line-height: 42px;
+              }
+
+              .author{
+                font-size: 1.2em;
+                font-weight: bold;
+                line-height: 21px;
+                margin-top: 5%;
+              }
+        }
+    }
+}
+  
