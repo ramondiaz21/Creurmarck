@@ -349,4 +349,113 @@
   }
 }    
 
-//-----------------AQUI COMIENZA LA SECCION DE LA IMAGEN A LA IZQUIERDA Y TEXTO A LA DERECHA
+//-----------------AQUI COMIENZA LA SECCION DE CONTACTO.
+.divided-contact{
+  height: 30vw;
+  background-color: $white;
+
+  @include small {
+    height: 90vw;      
+  }
+
+  .side-right2 {
+    float: left;
+    font-family: Raleway-Regular;
+    position: relative;
+    width: 50%; 
+    height: 30vw;
+
+    @include small {
+      width: 100%;
+      height: 40vw;  
+    }
+  }
+
+  .side-right-wrapper2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+
+    .contact-form{
+
+      .contact-field{
+        background-color: $white;
+        font-family: Raleway-Semibold;
+        border-radius: 20px;
+        width: 79.92%;
+        border: none;
+        margin: auto;
+
+        .contact-h4{
+          color: $blueText;
+          width: 100%;
+          text-align: center;
+          font-family: Raleway-Semibold;
+          line-height: 24px;
+          font-size: 3.0em;
+          font-weight: bold;
+          margin: auto;
+          display: block;
+          padding: 12px;
+          margin-top: 10px;
+        }
+
+        .contact-input{
+          width: 98%;
+          border: 1px solid $grayTitles;
+          border-radius: 100px;
+          background-color: $white;
+          color: $grayTitles;
+          font-family: Raleway-Regular;
+          font-size: 1.5em;
+          line-height: 32px;
+          padding: 5px;
+          margin: 5px;
+        }
+
+        .button-division{
+          width: 100%;
+          display: inline-block;
+
+          .contact-phone{
+            border: 1px solid $grayTitles;
+            border-radius: 100px;
+            background-color: $white;
+            color: $grayTitles;
+            font-family: Raleway-Regular;
+            font-size: 1.5em;
+            line-height: 32px;
+            padding: 5px;
+            margin: 5px;
+            width: 50%;
+            margin-bottom: 38px;
+          }
+
+          .contact-button{
+            background-color: $white;
+            color: $blueText;
+            border-radius: 100px;
+            border: 2px solid $blueText;
+            font-family: Raleway-Regular;
+            font-size: 1.3em;
+            text-align: center;
+            line-height: 15px;
+            width: 42%;
+            padding: 10px;
+            margin: auto auto auto 26px;
+
+            &:hover{
+              background-color: $blueText;
+              color: $white;
+              cursor: pointer;
+            }
+          }
+        }        
+      }
+    }
+  }
+}
