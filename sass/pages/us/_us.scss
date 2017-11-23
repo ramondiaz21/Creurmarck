@@ -1,0 +1,21 @@
+us-first-section{
+  width: 100%;
+  height: 7.74%;	
+  text-align: center;
+  
+  us-first-title{
+    color: $white;  
+    text-align: center;
+    font-family: Raleway-Semibold;
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 70px;
+    min-width: 21.09%;
+  }
+
+  us-background-image{
+  	background-image: url("../assets/images/us-first.jpeg") bottom/cover no-repeat;
+  	width: 100%;
+  	height: 7.74%;
+  }
+}

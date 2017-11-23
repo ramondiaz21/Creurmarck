@@ -1,0 +1,119 @@
+.divided-left, .divided-right {
+  border-bottom: solid 2px blue;
+  height: 100vh;
+  background-color: $blueText;
+  
+  &.divided-alt{
+    background-color: $white;
+  }
+  
+}
+
+.divided-side {
+  float: left;
+  font-family: Muli-Light;
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+  width: 50%;
+
+  .divided-image {
+  	@include center(false,true);
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+  	max-height: 100vh;
+  	padding-top: 65%;
+  	width: 100%;
+    
+      &.img1-alt{
+        background-image: url("../assets/homeImages/empresaExample.jpg");
+        left: 0;
+        
+      }
+      &.img2-alt{
+        background-image: url("../assets/homeImages/empresaExample2.jpg");
+        right: 0;
+      }
+      &.img3-alt{
+        background-image: url("../assets/homeImages/empresaExample3.jpg");
+        left: 0;
+          
+      }
+  }
+
+  .divided-wrapper {
+    @include center(false,true);
+    
+    width: 70%;
+
+    .divided-title {
+      color: $white;
+      font-family: Raleway-SemiBold;
+      font-size: 3.3em;
+      font-weight: bold;
+      line-height: 42px;
+      
+      &.divided-title-alt{
+        color: $blueText;
+      }
+    }
+
+    .divided-text {
+      max-width: 416px;
+      color: $whitePearl;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      font-weight: 500;
+      line-height: 28px;
+      
+      &.divided-text-alt{
+        color: $grayText;
+        margin: 5% 0;
+      }
+    }
+    .divided-list{
+      color: $grayText;
+      font-family: Raleway-light;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      list-style: none;
+      padding: 0;
+      
+        li::before {
+          content: "•";
+          font-family: FontAwesome;
+          color: $blueText; /* or whatever color you prefer */
+          margin-right: .5em;
+        }
+      
+      &.divided-list-alt{
+        color: $white;
+        
+          li::before {
+            content: "•";
+            font-family: FontAwesome;
+            color: $white; /* or whatever color you prefer */
+            margin-right: .5em;
+          }
+      }
+    }
+
+    .divided-button {
+      background-color: black;
+      border: none;
+      border-radius: 100px;
+      color: $white;
+      font-size: 1.3em;
+      margin-top: 2em;
+      padding: 0.7em 3.6em;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
