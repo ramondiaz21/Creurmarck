@@ -58,3 +58,19 @@
     }
   }
 }
+
+//AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO
+.solutions-centered-title{
+  width: 100%;
+  height: 26vh;
+  background-color: $blueText;
+  color: $white;
+
+  .solution-wrapper-title{
+    font-family: Raleway-Regular;
+    font-size: 3.6em;
+    line-height: 42px;
+    text-align: center;
+    padding: 17px 0;
+  }
+}
