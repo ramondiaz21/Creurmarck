@@ -109,6 +109,19 @@
           color: $grayTitles;
         }  
       }
+
+      .contact-new-button{
+        width: 20%;
+        background-color: $white;
+        color: $blueText;
+        border-radius: 100px;
+        border: 2px solid $blueText;
+        font-family: Raleway-Regular;
+        font-size: 1.3em;
+        text-align: center;
+        line-height: 15px;
+        padding: 10px;
+      }
     } 
   }
 }
