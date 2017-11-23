@@ -1,0 +1,60 @@
+//AQUI COMIENZA LA SECCION DE LA IMAGEN DE FONDO DEL HERO
+.image-hero-solutions{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 364px;
+  height: 50%;	
+  text-align: center;
+  background-image: url("../assets/images/us-firt.jpeg");
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 100px 15px;
+  
+  
+  .solutions-image-hero{
+    color: $white;
+    text-align: center;
+    font-family: Raleway-Regular;
+    font-size: 6.0em;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 1px;
+    min-width: 21.09%;
+    transform: translateY(-0%);
+  }
+}
+
+//AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO DEL HERO
+.solutions-centered-text{
+  height: 50%;
+  text-align: center;
+  background-color: $blueText;
+  padding: 100px 15px;
+  width: 100%;
+  border: none;
+  margin: 0;
+
+  @include small{
+    width: 100%;
+  }
+
+  .solutions-hero-text{
+    width: 34.77%;
+    text-align: center;
+    color: $white;
+    font-size: 2.0em;
+    font-family: Raleway-Regular;
+    font-weight: 500px;
+    line-height: 24px;
+    transform: translateY(-10%);
+    margin: 0 32.73%;
+
+    @include small{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
+  }
+}
