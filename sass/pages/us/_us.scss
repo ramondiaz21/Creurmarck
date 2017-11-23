@@ -124,14 +124,15 @@
     .divided-text2 {
       font-size: 1.8em;
       margin-top: 1.5em;
-      font-weight: 500;
+      font-family: Raleway-Semibold;
 
       .divided-dot2{
         color: $blueText;
         list-style-type: disc;
 
-        .divided-span2{
+        .divided-span2{  
           color: $grayTitles;
+          font-family: Raleway-Semibold;
         }  
       }
     }

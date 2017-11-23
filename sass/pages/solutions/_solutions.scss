@@ -62,7 +62,7 @@
 //AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO
 .solutions-centered-title{
   width: 100%;
-  height: 26vh;
+  height: 33.33vh;
   background-color: $blueText;
   color: $white;
 
@@ -73,4 +73,25 @@
     text-align: center;
     padding: 17px 0;
   }
+}
+
+//AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO CON FONDO BLANCO
+.solution-concrete-centered{
+  width: 100%;
+  height: 33.33%;
+  background-color: $white;
+  color: $blueText;
+
+  .solution-wrapper-concrete{
+    font-family: Raleway-Regular;
+    font-size: 3.6em;
+    line-height: 42px;
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+
+//AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
+.image-section-solutions{
+  
 }
