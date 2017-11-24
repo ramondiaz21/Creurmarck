@@ -224,7 +224,7 @@
       transform: translateY(-0%);
       margin: auto;
       top: 58%;
-      left: 12.33%;
+      left: 18.33%;
 
       @include small{
         top: 32%;
@@ -258,6 +258,46 @@
       margin: auto;
       top: 50%;
       left: 48%;
+    }
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DEL BOTON CENTRADO
+.solution-button-centered{
+  height: 33.33vh;
+  width: 100%;
+  background-color: $white;
+
+  .solution-button-wrapper{
+    transform: translateY(0%);
+    width: 30%;
+    padding: 100px 0;
+    text-align: center;
+    margin: auto;
+
+    .solution-button{
+      width: 40%;
+      background-color: $white;
+      color: $blueText;
+      border-radius: 100px;
+      border: 2px solid $blueText;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      text-align: center;
+      line-height: 15px;
+      padding: 5px;
+      margin-top: 12px;
+
+      @include small{
+        width: 100%;
+      }
+
+      &:hover{
+        background-color: $blueText;
+        color: $white;
+        font-family: Raleway-Semibold;
+        cursor: pointer;
+      }
     }
   }
 }
