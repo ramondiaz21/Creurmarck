@@ -584,3 +584,83 @@
     }  
   }
 }
+
+    //AQUI COMIENZA LA SECCION DE TRASLADO DE MAQUINARÍA
+.translate-services{
+  height: 50vh;
+  width: 100%;
+  background-color: $blueText;
+
+  .translate-p-wrapper{
+    width: 100%;
+    height: 10vh;
+
+    .translate-p{
+      color: $white;
+      text-align: center;
+      line-height: 18px;
+      font-size: 1.5em;
+      font-family: Raleway-Regular;
+      margin: auto;
+      padding: 24px 0;
+    }
+  }
+
+  .translate-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: auto;
+    width: 20%;
+    height: 20vh;
+    padding: 47px 0; 
+
+    .translate-title{
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 33%;
+      left: 38.33%;
+    }  
+  }
+
+  .translate-button-wrapper{
+    transform: translateY(0%);
+    width: 30%;
+    padding: 45px 0;
+    text-align: center;
+    margin: auto;
+
+    .translate-button{
+      width: 40%;
+      background-color: $blueText;
+      color: $white;
+      border-radius: 100px;
+      border: 2px solid $white;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      text-align: center;
+      line-height: 15px;
+      padding: 5px;
+      margin-top: 12px;
+
+      @include small{
+        width: 100%;
+      }
+
+      &:hover{
+        background-color: $white;
+        color: $blueText;
+        font-family: Raleway-Semibold;
+        cursor: pointer;
+      }
+    }
+  }
+}  
