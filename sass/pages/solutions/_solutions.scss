@@ -93,5 +93,171 @@
 
 //AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
 .image-section-solutions{
-  
+  height: 33.33vh;
+  width: 100%;
+
+  .first-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .first-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+    }
+  }
+
+  .second-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .second-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 40.33%;
+    }
+  }
+
+  .third-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .third-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 42.33%;
+    }
+  }
+
+  .fourth-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fourth-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 25%;
+      left: 38.33%;
+
+      @include small{
+        top: 50%;
+        left: 25%;
+      }
+    }
+
+    .fourth-solution-p{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.0em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 58%;
+      left: 12.33%;
+
+      @include small{
+        top: 32%;
+        left: 19%;
+      }
+    }
+  }
+
+  .fifth-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fifth-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 48%;
+    }
+  }
 }
