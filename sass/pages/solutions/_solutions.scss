@@ -271,7 +271,7 @@
   .solution-button-wrapper{
     transform: translateY(0%);
     width: 30%;
-    padding: 100px 0;
+    padding: 90px 0;
     text-align: center;
     margin: auto;
 
@@ -299,5 +299,170 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+//AQUI COMIENZA LA SECCION DE SERVICIOS
+    //AQUI COMIENZA LA SECCION DEL TITULO PRINCIPAL CENTRADO
+.solution-services-centered{
+  width: 100%;
+  height: 33.33vh;
+  background-color: $blueText;
+  color: $white;
+
+  .solution-wrapper-services{
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .services-h4{
+    font-family: Raleway-Regular;
+    font-size: 3.6em;
+    line-height: 42px;
+    margin: auto;
+  }
+
+  .services-paragraph{
+    text-align: center;
+    line-height: 18px;
+    font-size: 1.5em;
+    font-family: Raleway-Regular;
+    margin: 23px 0; 
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DE LAS PRIMERAS 4 IMAGENES
+.image-section-services{
+  height: 33.33vh;
+  width: 100%;
+
+  .first-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .first-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+
+      @include small{
+        left: 10%;
+      }
+    }  
+  }
+
+  .second-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .second-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 30.33%;
+
+      @include small{
+        font-size: 1.3em;
+        left: 4%;
+      }
+    }  
+  }
+
+  .third-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .third-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 40.33%;
+
+      @include small{
+        left: 17%;
+      }
+    }  
+  }
+
+  .fourth-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fourth-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 30.33%;
+
+      @include small{
+        left: 6%;
+        font-size: 1.1em;
+      }
+    }  
   }
 }
