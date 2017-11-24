@@ -312,7 +312,7 @@
 
   .solution-wrapper-services{
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0 0 0;
   }
 
   .services-h4{
@@ -463,6 +463,124 @@
         left: 6%;
         font-size: 1.1em;
       }
+    }  
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DE LAS SEGUNDAS 4 IMAGENES
+.image-section-services2{
+  height: 33.33vh;
+  width: 100%;
+
+  .first-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .first-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 40%;      
+    }  
+  }
+
+  .second-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .second-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+    }  
+  }
+
+  .third-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .third-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+    }  
+  }
+
+  .fourth-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fourth-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
     }  
   }
 }
