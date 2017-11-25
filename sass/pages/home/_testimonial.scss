@@ -1,6 +1,8 @@
 .carousel{
     height: 100vh;
     background-image: url(../assets/homeImages/constructoraExample2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     
       .carousel-indicators {
         bottom: 0 !important;
