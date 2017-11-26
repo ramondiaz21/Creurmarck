@@ -165,6 +165,70 @@ a {
     .gray-navbar-wrapper {
       display: none; } }
 
+.footer-margin {
+  margin-top: 100px; }
+
+.footer {
+  border-top: solid 1px #EBEBEB;
+  background-color: #7C7B7D;
+  position: absolute;
+  font-family: Raleway-Light;
+  width: 100%; }
+  .footer .footer-info {
+    float: left;
+    padding: 40px 40px;
+    width: 250px; }
+    .footer .footer-info .footer-item {
+      margin: 40px 0 0; }
+    .footer .footer-info .footer-logo {
+      height: 100%;
+      max-width: 64px;
+      max-height: 66px;
+      width: 100%; }
+    .footer .footer-info .footer-social {
+      margin: 1em 0 0;
+      text-align: left; }
+    .footer .footer-info .padding-footer {
+      padding-left: 7px; }
+    .footer .footer-info .footer-network {
+      display: inline-block;
+      height: 22px;
+      margin: 0 0.5em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 22px; }
+    .footer .footer-info .footer-facebook {
+      background-image: url("../assets/HomeImages/Facebook.svg"); }
+    .footer .footer-info .footer-youtube {
+      background-image: url("../assets/HomeImages/Youtube.svg");
+      width: 2.4em; }
+    .footer .footer-info .footer-vimeo {
+      background-image: url("../assets/HomeImages/Vimeo.svg"); }
+    .footer .footer-info .footer-twitter {
+      background-image: url("../assets/HomeImages/Twitter.svg"); }
+  .footer .footer-navigation {
+    float: left;
+    padding: 40px 20px;
+    text-align: right;
+    width: calc(100% - 280px);
+    text-align: left; }
+  .footer .footer-item {
+    display: inline-block;
+    font-size: .9em;
+    margin: 0 3vw 20px;
+    text-align: left;
+    vertical-align: top; }
+    .footer .footer-item .footer-header {
+      color: #EBEBEB;
+      font-weight: 800;
+      font-family: Raleway-SemiBold;
+      max-width: 111px;
+      text-transform: uppercase; }
+    .footer .footer-item .footer-link {
+      color: #EBEBEB;
+      display: block;
+      margin: 0.6em 0; }
+
 .home-first-section {
   background-size: cover;
   background-repeat: no-repeat;
