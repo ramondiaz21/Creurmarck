@@ -84,22 +84,43 @@
         font-weight: bold;    
       }
 
-      .divided-paragraph{
-      color: $grayTitles;
-      font-size: 1.5em;
-      font-family: Raleway-Semibold;
-      line-height: 18px;
-      font-weight: 500;
-      margin: 0;
-      width: 80%
+      .side-left-title-solution{
+        font-size: 2.2em;
+        text-align: left;
+        font-family: Raleway-Semibold;
+        color: $blueText;    
+        font-weight: bold;
+        line-height: 26px;
+        width: 80%;
       }
+
+      .divided-paragraph{
+        color: $grayTitles;
+        font-size: 1.5em;
+        font-family: Raleway-Semibold;
+        line-height: 18px;
+        font-weight: 500;
+        margin: 0;
+        width: 80%;
+      }
+
+      .divided-paragraph-solution{
+        color: $grayTitles;
+        font-size: 1.5em;
+        font-family: Raleway-Regular;
+        line-height: 18px;
+        font-weight: 500;
+        margin: 0;
+        width: 85%;
+      }
+
       .divided-text {
-      font-size: 1.5em;
-      margin-top: 1.5em;
-      line-height: 18px;      
-      margin: auto;
-      font-family: Raleway-Semibold;
-      padding: 0 0 0 1em;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+        line-height: 18px;      
+        margin: auto;
+        font-family: Raleway-Semibold;
+        padding: 0 0 0 1em;
 
       .divided-dot{
         color: $blueText;
