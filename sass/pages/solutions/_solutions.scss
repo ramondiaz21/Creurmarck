@@ -663,4 +663,56 @@
       }
     }
   }
-}  
+} 
+
+//AQUI COMIENZA LA SECCION DE ATENCION DE CALIDAD
+.atenttion-section{
+  height: 50vh;
+  width: 100%;
+  background-color: $white;
+
+  .attention-title-wrapper{
+    height: 100%;
+    width: 100%;
+
+    .attention-title{
+      color: $blueText;
+      text-align: center;
+      font-size: 3.6em;
+      font-family: Raleway-Regular;
+      margin: auto;
+      width: 50%;
+      padding: 30px 0;
+    }
+
+    .attention-paragraph{
+      color: $grayTitles;
+      width: 26%;
+      font-size: 1.5em;
+      font-family: Raleway-Semibold;
+      line-height: 18px;
+      text-align: left;
+      margin: auto;
+      font-weight: 500;
+    }
+    
+    .attention-list{
+      display: table;
+      margin: 0 auto;
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      font-family: Raleway-Semibold;
+      padding: 0 0 0 100px;
+
+      .attention-dot{
+        color: $blueText;        
+        list-style-type: disc;
+      }
+
+      .attention-text{
+        color: $grayTitles;
+        font-family: Raleway-Semibold;
+      }
+    }
+  }
+} 
