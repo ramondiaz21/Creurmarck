@@ -1,0 +1,45 @@
+.ourPlantTop{
+  height: 110vh;
+  width: 100%;
+
+    .title-top{
+      background-color: rgba(0,101,220,0.5);
+      height: 60%;
+      width: 100%;
+        
+        .title-text{
+          @include center(true,true);
+
+          color: $white;
+          display: table;
+          font-family: Raleway-SemiBold;
+          font-size: 60px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          line-height: 70px;
+          text-align: center;
+          top: 30% !important; 
+        }
+    }
+  
+    .slogan-top{
+      background-color: $blueText;
+      height: 50%;
+      width: 100%;
+      
+        .text-top{
+          @include center(true,false);
+
+          color: $whitePearl;
+          font-family: Raleway-Light;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: center;
+          width: 445px;
+          top: 80% !important; 
+
+        }
+    }
+  
+}
