@@ -44,6 +44,10 @@
       color: $whitePearl;
       cursor: pointer;
       }    
+
+      @include small{
+        width: 50%;
+      }
     }
   }
 }
