@@ -525,6 +525,10 @@
       margin: auto;
       top: 50%;
       left: 33.33%;
+
+      @include small{
+        left: 4%;
+      }
     }  
   }
 
@@ -553,6 +557,11 @@
       margin: auto;
       top: 50%;
       left: 33.33%;
+
+      @include small{
+        left: 2px;
+        font-size: 1.5em;
+      }
     }  
   }
 
@@ -581,6 +590,10 @@
       margin: auto;
       top: 50%;
       left: 33.33%;
+
+      @include small{
+        left: 20px;
+      }
     }  
   }
 }
@@ -617,6 +630,12 @@
     height: 20vh;
     padding: 47px 0; 
 
+    @include small{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
+
     .translate-title{
       position: relative;
       color: $white;
@@ -628,6 +647,10 @@
       margin: auto;
       top: 33%;
       left: 38.33%;
+
+      @include small{
+        font-size: 2.5em;
+      }
     }  
   }
 
@@ -675,6 +698,11 @@
     height: 100%;
     width: 100%;
 
+    @include small{
+      width: 100%;
+      padding: 50px 0;
+    }
+
     .attention-title{
       color: $blueText;
       text-align: center;
@@ -683,6 +711,12 @@
       margin: auto;
       width: 50%;
       padding: 30px 0;
+
+      @include small{
+        font-size: 2.0em;
+        width: 80%;
+        padding: 10px;
+      }
     }
 
     .attention-paragraph{
@@ -693,7 +727,12 @@
       line-height: 18px;
       text-align: left;
       margin: auto;
-      font-weight: 500;
+      font-weight: 500px;
+
+      @include small{
+        width: 100%;
+        text-align: center;
+      }
     }
     
     .attention-list{
@@ -704,6 +743,10 @@
       font-family: Raleway-Semibold;
       padding: 0 0 0 100px;
 
+      @include small{
+        width: 100%;
+        padding: 0 0 0 50px;
+      }
       .attention-dot{
         color: $blueText;        
         list-style-type: disc;

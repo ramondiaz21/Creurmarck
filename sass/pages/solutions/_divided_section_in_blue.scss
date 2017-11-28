@@ -24,7 +24,7 @@
   background-color: $blueText;
 
   @include small {
-    height: 90vw;      
+    height: 100vw;      
   }
 
   .side-left6, .side-right6 {
@@ -35,7 +35,7 @@
       
     @include small {
       width: 100%;
-      height: 40vw;  
+      height: 50vw;  
     }    
 
     .side-right-wrapper6 {
@@ -75,6 +75,13 @@
       margin: 0 auto;  
       margin-top: 40px;
 
+      @include small{
+        width: 100%;
+        margin: auto;        
+        height: 40vw;
+        padding: 10px;
+      }
+
       .side-left-title6 {
         font-size: 2.0em;
         text-align: left;
@@ -84,17 +91,29 @@
         width: 50%;
         font-weight: bold;    
         margin-bottom: 15px;
+
+        @include small{
+          margin: auto;
+          width: 100%;
+          text-align: center;
+        }
       }
 
       .divided-paragraph6{
-      color: $white;
-      font-size: 1.5em;
-      font-family: Raleway-Light;
-      line-height: 18px;
-      font-weight: 500;
-      margin: 0;
-      width: 80%;
-      margin-bottom: 15px;
+        color: $white;
+        font-size: 1.5em;
+        font-family: Raleway-Light;
+        line-height: 18px;
+        font-weight: 500px;
+        margin: 0;
+        width: 80%;
+        margin-bottom: 15px;
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+        }
       }
       
       .divided-text6 {
@@ -132,6 +151,10 @@
         color: $blueText;
         cursor: pointer;
         font-family: Raleway-Semibold;
+      }
+
+      @include small{
+        margin: 0 0 0 100px;
       }
     } 
   }

@@ -16,6 +16,11 @@
 
   .side-left {
     float: left;
+
+    @include small{
+      height: 50vw;
+      width: 100%;
+    }
   }
 }
 
@@ -24,7 +29,7 @@
   background-color: $white;
 
   @include small {
-    height: 90vw;      
+    height: 100vw;      
   }
 
   .side-left, .side-right {
@@ -35,7 +40,7 @@
       
     @include small {
       width: 100%;
-      height: 40vw;  
+      height: 50vw;  
     }    
 
     .side-right-wrapper {
@@ -74,6 +79,11 @@
       position: relative;
       margin: 0 auto;  
 
+      @include small{
+        margin: auto;
+        width: 100%;
+      }
+
       .side-left-title {
         font-size: 3.6em;
         text-align: left;
@@ -92,6 +102,12 @@
         font-weight: bold;
         line-height: 26px;
         width: 80%;
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+        }
       }
 
       .divided-paragraph{
@@ -99,7 +115,7 @@
         font-size: 1.5em;
         font-family: Raleway-Semibold;
         line-height: 18px;
-        font-weight: 500;
+        font-weight: 500px;
         margin: 0;
         width: 80%;
       }
@@ -107,11 +123,17 @@
       .divided-paragraph-solution{
         color: $grayTitles;
         font-size: 1.5em;
-        font-family: Raleway-Regular;
+        font-family: Raleway-Semibold;
         line-height: 18px;
-        font-weight: 500;
+        font-weight: 500px;
         margin: 0;
         width: 85%;
+
+        @include small{
+          width: 90%;
+          margin: auto;
+          text-align: center;
+        }
       }
 
       .divided-text {
