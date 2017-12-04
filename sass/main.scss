@@ -10,6 +10,10 @@
   'base/fonts';
 
 @import
+  'layouts/footer',
+  'layouts/navbar';
+
+@import
   'pages/home/home',  
   'pages/solutions/solutions',
   'pages/solutions/divided_section_in_blue',

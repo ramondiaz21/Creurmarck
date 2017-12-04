@@ -32,6 +32,13 @@
     height: 100vw;      
   }
 
+  &.divided-two-right-us{
+
+    @include small{
+      height: 90vw;
+    }
+  }
+
   .side-left, .side-right {
     font-family: Raleway-Regular;
     position: relative;
@@ -82,6 +89,15 @@
       @include small{
         margin: auto;
         width: 100%;
+        height: 50vw;
+      }
+
+      &.side-left-wrapper-us{
+      
+        @include small{
+          height: 44vw;
+          padding:10px;
+        }
       }
 
       .side-left-title {
@@ -92,6 +108,13 @@
         line-height: 35px;
         width: 50%;
         font-weight: bold;    
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          font-size: 1.0em;
+        }
       }
 
       .side-left-title-solution{
@@ -118,6 +141,19 @@
         font-weight: 500px;
         margin: 0;
         width: 80%;
+
+        @include small{
+          font-size: 1.0em;
+          margin: auto;
+          width: 100%;
+        }
+
+        &.divided-paragraph-us{
+
+          @include small{
+            line-height: 2;
+          }
+        }
       }
 
       .divided-paragraph-solution{
@@ -143,6 +179,20 @@
         margin: auto;
         font-family: Raleway-Semibold;
         padding: 0 0 0 1em;
+
+        @include small{
+          font-size: 1.0em;
+          margin: auto;
+          width: 100%;
+        }
+
+        &.divided-text-us{
+
+          @include small{
+            font-size:8px;
+            line-height: 1;
+          }
+        }
 
       .divided-dot{
         color: $blueText;
