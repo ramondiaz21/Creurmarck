@@ -5,42 +5,20 @@
   
   
   .solutions-image-hero{
-    color: $white;
-    text-align: center;
-    font-family: Raleway-Regular;
-    font-size: 6.0em;
-    font-weight: bold;
-    line-height: 70px;
-    letter-spacing: 1px;
-    min-width: 21.09%;
-    transform: translateY(-0%);
+    @extend .us-first-title;
   }
 }
 
 //AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO DEL HERO
 .solutions-centered-text{
-  height: 50%;
-  text-align: center;
-  background-color: $blueText;
-  padding: 100px 15px;
-  width: 100%;
-  border: none;
-  margin: 0;
+  @extend .us-centered-text;
 
   @include small{
     width: 100%;
   }
 
   .solutions-hero-text{
-    width: 34.77%;
-    text-align: center;
-    color: $white;
-    font-size: 2.0em;
-    font-family: Raleway-Regular;
-    font-weight: 500px;
-    line-height: 24px;
-    transform: translateY(-10%);
-    margin: 0 32.73%;
+    @extend .hero-text;
 
     @include small{
       width: 100%;
@@ -340,7 +318,7 @@
     padding: 47px 0;
 
     .first-services-title{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -372,7 +350,7 @@
     padding: 47px 0;
 
     .second-services-title{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -405,7 +383,7 @@
     padding: 47px 0;
 
     .third-services-title{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -437,7 +415,7 @@
     padding: 47px 0;
 
     .fourth-services-title{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -476,7 +454,7 @@
     padding: 47px 0;
 
     .first-services-title2{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -504,7 +482,7 @@
     padding: 47px 0;
 
     .second-services-title2{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -536,7 +514,7 @@
     padding: 47px 0;
 
     .third-services-title2{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -569,7 +547,7 @@
     padding: 47px 0;
 
     .fourth-services-title2{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -641,6 +619,7 @@
 
       @include small{
         font-size: 2.5em;
+        padding: 40px 0;
       }
     }  
   }
