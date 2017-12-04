@@ -1,0 +1,110 @@
+//AQUI COMIENZA LA SECCION DE LA IMAGEN DE FONDO DEL HERO
+.blog {
+  font-family: Raleway-Regular;
+  min-height: 100vh;
+  text-align: center;
+  background-color: $whitePearl;
+
+  .blog-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/images/us-firt.jpeg");
+    padding: 8em 6em;
+
+    .blog-title {
+      color: $white;
+      font-family: Raleway-Regular;
+      font-size: 6.0em;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  .show-more-button{
+  height: 38px;
+  width: 100%;
+  background-color: $whitePearl;
+  @include center(true,false);
+  
+    .more-button{
+      border-radius: 100px;
+      border: 2px solid $blueText;
+      background-color: $whitePearl;
+      color: $blueText;
+      text-align: center;
+      padding: 10px;
+      font-family: Raleway-Semibold;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 20px;
+      width: 12%;
+      
+      &:hover {
+      background-color: $blueText;
+      color: $whitePearl;
+      cursor: pointer;
+      }    
+
+      @include small{
+        width: 50%;
+      }
+    }
+  }
+}
+
+.blog-posts {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 6em 0;
+  max-width: 1200px;
+  padding: 0 2em;
+  width: 100%;
+
+  .post-item {
+    box-sizing: border-box;
+    color: $blueText;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1.0em;
+    min-width: 280px;
+    padding: 2.5em 1.5em;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: top;
+    width: 25%;
+    background-color: $white;
+
+    &:hover {
+      background-color: $hoverBlog;
+    }
+
+    .post-image {
+      padding-top: 55.1020408%;
+      width: 100%;
+    }
+
+    .post-title {
+      font-size: 2em;
+      color: $blueText;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .post-excerpt {
+      font-family: Raleway-Semibold;
+      color: $grayTitles;
+      font-size: 1.4em;
+      margin: 0;
+      max-height: 4.5em;
+      overflow: hidden;
+    }
+
+    .post-date {
+      color: $blueText;
+      font-size: 1.1em;
+      font-family: Raleway-Semibold;
+      margin: 10px 0;
+    }
+  }
+}
+

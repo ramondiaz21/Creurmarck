@@ -1,21 +1,526 @@
-us-first-section{
-  width: 100%;
-  height: 7.74%;	
+//---------------------AQUI COMIENZA LA SECCION DEL HERO
+.us-first-section{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 364px;
+  height: 50%;	
   text-align: center;
+  background-image: url("../assets/images/us-firt.jpeg");
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 100px 15px;
   
-  us-first-title{
-    color: $white;  
+  
+  .us-first-title{
+    color: $white;
     text-align: center;
-    font-family: Raleway-Semibold;
-    font-size: 6em;
+    font-family: Raleway-Regular;
+    font-size: 6.0em;
     font-weight: bold;
     line-height: 70px;
+    letter-spacing: 1px;
     min-width: 21.09%;
+    transform: translateY(-0%);
+  }
+}
+
+//--------------------------AQUI COMIENZA LA SECCION DEL TITULO CENTRADO EN FONDO AZUL
+.us-centered-text{
+  height: 50%;
+  text-align: center;
+  background-color: $blueText;
+  padding: 100px 15px;
+  width: 100%;
+  border: none;
+  margin: 0;
+
+  @include small{
+    width: 100%;
   }
 
-  us-background-image{
-  	background-image: url("../assets/images/us-first.jpeg") bottom/cover no-repeat;
-  	width: 100%;
-  	height: 7.74%;
+  .hero-text{
+    width: 34.77%;
+    text-align: center;
+    color: $white;
+    font-size: 2.0em;
+    font-family: Raleway-Light;
+    font-weight: 500px;
+    line-height: 24px;
+    transform: translateY(-10%);
+    margin: 0 32.73%;
+
+    @include small{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
+  }
+}
+//------------------------AQUI COMIENZA SECCION DE IMAGEN A LA IZQUIERDA Y UNORDERED LIST A LA DERECHA
+.divided-left2, .divided-right2{
+  height: 100vh;
+
+  @include small{
+    width: 100%;
+  }
+}
+
+.divided-side2{
+  float: left;
+  font-family: Raleway-Regular;
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+  width: 50%;
+
+  @include small{
+    margin: auto;
+    padding: 0;
+    font-size: smaller;
+    background-color: $white;    
+  }
+
+  .divided-image2{
+    @include center(false,true);
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 100vh;
+    padding-top: 75%;
+    width: 80%;
+
+    @include small{
+      width: 100%;
+      margin: auto;
+      padding: 0;
+      height: 100%
+    }
+  }
+
+  .divided-wrapper2{
+    @include center(false,true);
+    color: $grayTitles;
+    width: 70%;
+
+    @include small{
+      padding: 10px;
+      font-size: 1.0em;
+      width: 100%;
+    }
+
+    .divided-title2{
+      color: $blueText;
+      font-size: 3.6em;
+      max-width: 300px;
+
+      @include small{
+        padding: 0 20px;
+      }
+    }
+
+    .divided-text2{
+      font-size: 1.8em;
+      margin-top: 1.5em;
+      font-family: Raleway-Semibold;
+
+      .divided-dot2{
+        color: $blueText;
+        list-style-type: disc;
+
+        .divided-span2{  
+          color: $grayTitles;
+          font-family: Raleway-Semibold;
+        }  
+      }
+    }
+
+    .button-centered2{
+      text-align: center;
+
+      .divided-button2{
+        background-color: $white;
+        border: 2px solid;
+        border-color: $blueText;
+        border-radius: 100px;
+        color: $blueText;
+        font-size: 1.3em;
+        margin-top: 2em;
+        padding: 0.7em 3.6em;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: $blueText;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//-------------------AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
+.image-section{
+  height: 50vh;
+  background-color: $blueText;
+  width: 100%;
+  border: none;
+  margin: 0;
+
+  @include small{
+    height: 106vw;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: $white;
+  }
+
+  .text-section{
+    text-align:left;
+    color: $white;
+    font-family: Raleway-Regular;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: absolute;
+    display: block;
+    width: 20%;     
+
+    @include small{
+      width: 100%;
+      margin: auto;
+      padding: auto;
+      color: $blueText;
+      position: static;
+      text-align: center;
+    }
+
+    .image-h1{
+      font-size: 3.6em;
+      line-height: 35px;
+      width: 25%;
+      margin-bottom: auto;
+
+      @include small{
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    .image-p{
+      font-size: 1.5em;
+      font-style: italic;
+      line-height: 18px;
+      margin-top: auto;
+
+      @include small{
+        width: 100%;
+      }
+    }
+  }
+  .first-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    display: block;
+    padding: 60px 15px;
+    border: none;
+    margin: 0;
+    height: 50vh;
+    float: left;
+
+    @include small{
+      width: 50%;
+      padding: 0;
+    }
+    }
+
+  .second-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 16.666666666666666666666666666667%;
+    display: block;
+    padding: 60px 15px;
+    border: none;
+    margin: 0;
+    height: 50vh;
+    float: left;
+
+    @include small{
+      width: 16.666666666666666666666666666667%;
+      padding: 0;
+    }
+  }
+}
+
+
+//---------------------AQUI COMIENZA LA SECCION DEL TITULO A LA IZQUIERDA Y TEXTO A LA DERECHA
+.divided-two-right2 {
+
+  .side-right2 {
+    float: right;
+    font-family: Raleway-Regular;
+    padding: 70px 40px;     
+    height: 50vh;
+  }
+
+  .side-left2 {
+    float: left;
+    font-family: Raleway-Regular;
+    height: 50vh;
+  }
+}
+
+.divided-two-left2, .divided-two-right2 {
+  height: 50vh;
+  background-color: $blueText;
+
+  @include small {
+    width: 100%     
+  }
+
+  .side-left2, .side-right2 {
+    position: relative;   
+    width: 50%;
+      
+    @include small {
+      width: 100%; 
+      background-color: $blueText;
+      padding: 0;
+      height: 100%;
+    }    
+
+    .side-right-wrapper2 {
+      height: 100%;
+      width: 70%;
+      margin: auto;
+
+      @include small{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .side-right-text2{
+        color: $whitePearl;
+        font-size: 1.5em;
+        line-height: 28px;
+        font-family: Raleway-Regular;
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          font-size: large;
+        }
+      }
+    }
+
+    .side-left-wrapper2 {
+      @include center(false,true);
+      color: $white;
+      width: 60%;
+      position: relative;
+      margin: 0 auto;  
+      height: 50%;
+
+      @include small{
+        width: 100%
+      }
+
+      .side-left-title2 {
+        font-size: 3.6em;
+        text-align: left;
+        font-family: 'Raleway-Semibold';
+        color: $white;    
+        line-height: 42px;    
+
+        @include small{
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+  .side-right2{
+    @include small {
+      width: 100%;      
+    } 
+  }
+}    
+
+//-----------------AQUI COMIENZA LA SECCION DE CONTACTO.
+.divided-contact{
+  height: 30vw;
+  background-color: $blueText;
+
+  @include small {
+    height: 90vw;      
+  }
+
+  .side-left4{
+    float: right;
+    font-family: Raleway-Regular;
+    position: relative;
+    width: 50%; 
+    height: 30vw; 
+  }
+
+  .side-left-wrapper4{
+      @include center(false,true);
+      top: 40% !important;
+      color: $blueText;
+      width: 68%;
+      position: relative;
+      margin: 0 auto;  
+
+      .side-left-title4{
+        font-size: 3.6em;
+        text-align: left;
+        font-family: Raleway-Regular;
+        color: $white;    
+        line-height: 35px;
+        width: 60%;
+        font-weight: bold;    
+      }
+
+      .divided-paragraph4{
+      color: $white;
+      font-size: 1.5em;
+      font-family: Raleway-Regular;
+      line-height: 18px;
+      font-weight: 500;
+      margin: 0;
+      width: 75%
+      }
+
+      .contact-new-button{
+        border: 2px solid $white;
+        padding: 13px;
+        width: 30%;
+        background-color: $blueText;
+        color: $white;
+        border-radius: 100px;
+        font-size: 1.3em;
+        line-height: 15px;
+        text-align: center;
+        font-family: Raleway-Regular;
+        font-weight: 500;
+        margin-top: 23px;
+
+        &:hover{
+          background-color: $white;
+          color: $blueText;
+          cursor: pointer;
+          font-family: Raleway-Semibold;
+          font-weight: bold;
+        }
+      }
+    }
+
+  .side-right2 {
+    float: left;
+    font-family: Raleway-Regular;
+    position: relative;
+    width: 50%; 
+    height: 30vw;
+
+    @include small {
+      width: 100%;
+      height: 40vw;  
+    }
+  }
+
+  .side-right-wrapper2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0;
+
+    .contact-form{
+
+      .contact-field{
+        background-color: $white;
+        font-family: Raleway-Semibold;
+        border-radius: 20px;
+        width: 79.92%;
+        border: none;
+        margin: auto;
+
+        .contact-h4{
+          color: $blueText;
+          width: 100%;
+          text-align: center;
+          font-family: Raleway-Semibold;
+          line-height: 24px;
+          font-size: 3.0em;
+          font-weight: bold;
+          margin: auto;
+          display: block;
+          padding: 12px;
+          margin-top: 10px;
+        }
+
+        .contact-input{
+          width: 98%;
+          border: 1px solid $grayTitles;
+          border-radius: 100px;
+          background-color: $white;
+          color: $grayTitles;
+          font-family: Raleway-Regular;
+          font-size: 1.5em;
+          line-height: 32px;
+          padding: 5px;
+          margin: 5px;
+        }
+
+        .button-division{
+          width: 100%;
+          display: inline-block;
+
+          .contact-phone{
+            border: 1px solid $grayTitles;
+            border-radius: 100px;
+            background-color: $white;
+            color: $grayTitles;
+            font-family: Raleway-Regular;
+            font-size: 1.5em;
+            line-height: 32px;
+            padding: 5px;
+            margin: 5px;
+            width: 50%;
+            margin-bottom: 38px;
+          }
+
+          .contact-button{
+            background-color: $white;
+            color: $blueText;
+            border-radius: 100px;
+            border: 2px solid $blueText;
+            font-family: Raleway-Regular;
+            font-size: 1.3em;
+            text-align: center;
+            line-height: 15px;
+            width: 42%;
+            padding: 10px;
+            margin: auto auto auto 26px;
+
+            &:hover{
+              background-color: $blueText;
+              color: $white;
+              cursor: pointer;
+              font-family: Raleway-Semibold;
+              font-weight: bold;
+            }
+          }
+        }        
+      }
+    }
   }
 }

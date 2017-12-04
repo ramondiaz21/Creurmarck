@@ -1,0 +1,168 @@
+.divided-two-left6 {
+
+  .side-right6 {
+    float: left;
+  }
+  .side-left6 {
+    float: right;
+  }
+}
+
+.divided-two-right6 {
+
+  .side-right6 {
+    float: right;
+  }
+
+  .side-left6 {
+    float: left;
+  }
+}
+
+.divided-two-left6, .divided-two-right6 {
+  height: 30vw;
+  background-color: $blueText;
+
+  @include small {
+    height: 100vw;      
+  }
+
+  .side-left6, .side-right6 {
+    font-family: Raleway-Regular;
+    position: relative;
+    width: 50%; 
+    height: 30vw;   
+      
+    @include small {
+      width: 100%;
+      height: 50vw;  
+    }    
+
+    .side-right-wrapper6 {
+      height: 100%;
+      width: 100%;  
+    
+      .one-image6{
+        width: 100%; 
+        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        height: 100%; 
+        float: left;
+        display: block;
+      }  
+      
+      .two-image6 {
+        width: 50%;
+        float: left;
+        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        height: 100%; 
+      } 
+      
+      .three-image6 {
+        width: 33.3%;
+        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        display: block;
+        height: 100%;    
+        float: left;
+      }  
+    }
+
+    .side-left-wrapper6 {
+      @include center(false,true);
+      top: 40% !important;
+      color: $white;
+      width: 68%;
+      position: relative;
+      margin: 0 auto;  
+      margin-top: 40px;
+
+      @include small{
+        width: 100%;
+        margin: auto;        
+        height: 40vw;
+        padding: 10px;
+      }
+
+      .side-left-title6 {
+        font-size: 2.0em;
+        text-align: left;
+        font-family: Raleway-Semibold;
+        color: $white;    
+        line-height: 24px;
+        width: 50%;
+        font-weight: bold;    
+        margin-bottom: 15px;
+
+        @include small{
+          margin: auto;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .divided-paragraph6{
+        color: $white;
+        font-size: 1.5em;
+        font-family: Raleway-Light;
+        line-height: 18px;
+        font-weight: 500px;
+        margin: 0;
+        width: 80%;
+        margin-bottom: 15px;
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+        }
+      }
+      
+      .divided-text6 {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      line-height: 18px;      
+      margin: auto;
+      font-family: Raleway-Light;
+      padding: 0 0 0 1em;
+
+      .divided-dot6{
+        color: $white;
+        list-style-type: disc;
+
+        .divided-span6{
+          color: $white;
+        }  
+      }
+    }
+      
+    .solutions-button-aplicattions{          
+      background-color: $blueText;
+      color: $white;
+      border-radius: 100px;
+      border: 2px solid $white;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      text-align: center;
+      line-height: 15px;
+      padding: 5px;
+      margin-top: 12px;
+
+      &:hover{
+        background-color: $white;
+        color: $blueText;
+        cursor: pointer;
+        font-family: Raleway-Semibold;
+      }
+
+      @include small{
+        margin: 0 0 0 100px;
+      }
+    } 
+  }
+}
+  
+  .side-right6{
+    @include small {
+      height: 50vw;      
+    } 
+  }
+}    

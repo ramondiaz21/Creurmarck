@@ -1,0 +1,752 @@
+//AQUI COMIENZA LA SECCION DE LA IMAGEN DE FONDO DEL HERO
+.image-hero-solutions{
+  @extend .us-first-section;
+  background-image: url("../assets/images/us-firt.jpeg");
+  
+  
+  .solutions-image-hero{
+    color: $white;
+    text-align: center;
+    font-family: Raleway-Regular;
+    font-size: 6.0em;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 1px;
+    min-width: 21.09%;
+    transform: translateY(-0%);
+  }
+}
+
+//AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO DEL HERO
+.solutions-centered-text{
+  height: 50%;
+  text-align: center;
+  background-color: $blueText;
+  padding: 100px 15px;
+  width: 100%;
+  border: none;
+  margin: 0;
+
+  @include small{
+    width: 100%;
+  }
+
+  .solutions-hero-text{
+    width: 34.77%;
+    text-align: center;
+    color: $white;
+    font-size: 2.0em;
+    font-family: Raleway-Regular;
+    font-weight: 500px;
+    line-height: 24px;
+    transform: translateY(-10%);
+    margin: 0 32.73%;
+
+    @include small{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
+  }
+}
+
+//AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO
+.solutions-centered-title{
+  width: 100%;
+  height: 33.33vh;
+  background-color: $blueText;
+  color: $white;
+
+  .solution-wrapper-title{
+    font-family: Raleway-Regular;
+    font-size: 3.6em;
+    line-height: 42px;
+    text-align: center;
+    padding: 17px 0;
+  }
+}
+
+//AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO CON FONDO BLANCO
+.solution-concrete-centered{
+  width: 100%;
+  height: 33.33%;
+  background-color: $white;
+  color: $blueText;
+
+  .solution-wrapper-concrete{
+    font-family: Raleway-Regular;
+    font-size: 3.6em;
+    line-height: 42px;
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+
+//AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
+.image-section-solutions{
+  height: 33.33vh;
+  width: 100%;
+
+  .first-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .first-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+    }
+  }
+
+  .second-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .second-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 40.33%;
+    }
+  }
+
+  .third-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .third-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 42.33%;
+    }
+  }
+
+  .fourth-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fourth-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 25%;
+      left: 38.33%;
+
+      @include small{
+        top: 50%;
+        left: 25%;
+      }
+    }
+
+    .fourth-solution-p{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.0em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 58%;
+      left: 18.33%;
+
+      @include small{
+        top: 32%;
+        left: 19%;
+      }
+    }
+  }
+
+  .fifth-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fifth-solution-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 48%;
+    }
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DEL BOTON CENTRADO
+.solution-button-centered{
+  height: 33.33vh;
+  width: 100%;
+  background-color: $white;
+
+  .solution-button-wrapper{
+    transform: translateY(0%);
+    width: 30%;
+    padding: 90px 0;
+    text-align: center;
+    margin: auto;
+
+    .solution-button{
+      width: 40%;
+      background-color: $white;
+      color: $blueText;
+      border-radius: 100px;
+      border: 2px solid $blueText;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      text-align: center;
+      line-height: 15px;
+      padding: 5px;
+      margin-top: 12px;
+
+      @include small{
+        width: 100%;
+      }
+
+      &:hover{
+        background-color: $blueText;
+        color: $white;
+        font-family: Raleway-Semibold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//AQUI COMIENZA LA SECCION DE SERVICIOS
+    //AQUI COMIENZA LA SECCION DEL TITULO PRINCIPAL CENTRADO
+.solution-services-centered{
+  width: 100%;
+  height: 33.33vh;
+  background-color: $blueText;
+  color: $white;
+
+  .solution-wrapper-services{
+    text-align: center;
+    padding: 50px 0 0 0;
+  }
+
+  .services-h4{
+    font-family: Raleway-Regular;
+    font-size: 3.6em;
+    line-height: 42px;
+    margin: auto;
+  }
+
+  .services-paragraph{
+    text-align: center;
+    line-height: 18px;
+    font-size: 1.5em;
+    font-family: Raleway-Regular;
+    margin: 23px 0; 
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DE LAS PRIMERAS 4 IMAGENES
+.image-section-services{
+  height: 33.33vh;
+  width: 100%;
+
+  .first-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .first-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+
+      @include small{
+        left: 10%;
+      }
+    }  
+  }
+
+  .second-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .second-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 30.33%;
+
+      @include small{
+        font-size: 1.3em;
+        left: 4%;
+      }
+    }  
+  }
+
+  .third-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .third-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 40.33%;
+
+      @include small{
+        left: 17%;
+      }
+    }  
+  }
+
+  .fourth-image-wrapper-services{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fourth-services-title{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 30.33%;
+
+      @include small{
+        left: 6%;
+        font-size: 1.1em;
+      }
+    }  
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DE LAS SEGUNDAS 4 IMAGENES
+.image-section-services2{
+  height: 33.33vh;
+  width: 100%;
+
+  .first-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .first-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 40%;      
+    }  
+  }
+
+  .second-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .second-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+
+      @include small{
+        left: 4%;
+      }
+    }  
+  }
+
+  .third-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .third-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+
+      @include small{
+        left: 2px;
+        font-size: 1.5em;
+      }
+    }  
+  }
+
+  .fourth-image-wrapper-services2{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 47px 0;
+
+    .fourth-services-title2{
+      padding: 10px 0;
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      float: center;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 50%;
+      left: 33.33%;
+
+      @include small{
+        left: 20px;
+      }
+    }  
+  }
+}
+
+    //AQUI COMIENZA LA SECCION DE TRASLADO DE MAQUINARÍA
+.translate-services{
+  height: 50vh;
+  width: 100%;
+  background-color: $blueText;
+
+  .translate-p-wrapper{
+    width: 100%;
+    height: 10vh;
+
+    .translate-p{
+      color: $white;
+      text-align: center;
+      line-height: 18px;
+      font-size: 1.5em;
+      font-family: Raleway-Regular;
+      margin: auto;
+      padding: 24px 0;
+    }
+  }
+
+  .translate-image-wrapper{
+    background-image: url("../assets/images/us-firt.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    margin: auto;
+    width: 20%;
+    height: 20vh;
+    padding: 47px 0; 
+
+    @include small{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
+
+    .translate-title{
+      position: relative;
+      color: $white;
+      font-family: Raleway-Regular;
+      line-height: 19px;
+      font-size: 1.6em;
+      display: inline-block;
+      transform: translateY(-0%);
+      margin: auto;
+      top: 33%;
+      left: 38.33%;
+
+      @include small{
+        font-size: 2.5em;
+      }
+    }  
+  }
+
+  .translate-button-wrapper{
+    transform: translateY(0%);
+    width: 30%;
+    padding: 45px 0;
+    text-align: center;
+    margin: auto;
+
+    .translate-button{
+      width: 40%;
+      background-color: $blueText;
+      color: $white;
+      border-radius: 100px;
+      border: 2px solid $white;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      text-align: center;
+      line-height: 15px;
+      padding: 5px;
+      margin-top: 12px;
+
+      @include small{
+        width: 100%;
+      }
+
+      &:hover{
+        background-color: $white;
+        color: $blueText;
+        font-family: Raleway-Semibold;
+        cursor: pointer;
+      }
+    }
+  }
+} 
+
+//AQUI COMIENZA LA SECCION DE ATENCION DE CALIDAD
+.atenttion-section{
+  height: 50vh;
+  width: 100%;
+  background-color: $white;
+
+  .attention-title-wrapper{
+    height: 100%;
+    width: 100%;
+
+    @include small{
+      width: 100%;
+      padding: 50px 0;
+    }
+
+    .attention-title{
+      color: $blueText;
+      text-align: center;
+      font-size: 3.6em;
+      font-family: Raleway-Regular;
+      margin: auto;
+      width: 50%;
+      padding: 30px 0;
+
+      @include small{
+        font-size: 2.0em;
+        width: 80%;
+        padding: 10px;
+      }
+    }
+
+    .attention-paragraph{
+      color: $grayTitles;
+      width: 26%;
+      font-size: 1.5em;
+      font-family: Raleway-Semibold;
+      line-height: 18px;
+      text-align: left;
+      margin: auto;
+      font-weight: 500px;
+
+      @include small{
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    .attention-list{
+      display: table;
+      margin: 0 auto;
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      font-family: Raleway-Semibold;
+      padding: 0 0 0 100px;
+
+      @include small{
+        width: 100%;
+        padding: 0 0 0 50px;
+      }
+      .attention-dot{
+        color: $blueText;        
+        list-style-type: disc;
+      }
+
+      .attention-text{
+        color: $grayTitles;
+        font-family: Raleway-Semibold;
+      }
+    }
+  }
+} 
