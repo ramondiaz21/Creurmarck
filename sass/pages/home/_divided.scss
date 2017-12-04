@@ -1,0 +1,61 @@
+.divided-left, .divided-right {
+  border-bottom: solid 2px blue;
+  height: 100vh;
+  background-color: #0065DC;
+}
+
+.divided-side {
+  float: left;
+  font-family: Muli-Light;
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+  width: 50%;
+
+  .divided-image {
+  	@include center(false,true);
+
+  	max-height: 100vh;
+  	padding-top: 75%;
+  	width: 80%;
+  }
+
+  .divided-wrapper {
+    @include center(false,true);
+    
+    width: 70%;
+
+    .divided-title {
+      color: #FFFFFF;
+      font-family: Raleway-SemiBold;
+      font-size: 3.3em;
+      font-weight: bold;
+      line-height: 42px;
+    }
+
+    .divided-text {
+      max-width: 416px;
+      color: #EBEBEB;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    .divided-button {
+      background-color: black;
+      border: none;
+      border-radius: 100px;
+      color: $white;
+      font-size: 1.3em;
+      margin-top: 2em;
+      padding: 0.7em 3.6em;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
