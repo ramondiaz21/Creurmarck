@@ -1,16 +1,7 @@
 //AQUI COMIENZA LA SECCION DE LA IMAGEN DE FONDO DEL HERO
 .image-hero-solutions{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-height: 364px;
-  height: 50%;	
-  text-align: center;
+  @extend .us-first-section;
   background-image: url("../assets/images/us-firt.jpeg");
-  width: 100%;
-  border: none;
-  margin: 0;
-  padding: 100px 15px;
   
   
   .solutions-image-hero{

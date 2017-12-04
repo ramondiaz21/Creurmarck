@@ -59,7 +59,7 @@
   }
 }
 //------------------------AQUI COMIENZA SECCION DE IMAGEN A LA IZQUIERDA Y UNORDERED LIST A LA DERECHA
-.divided-left2, .divided-right2 {
+.divided-left2, .divided-right2{
   height: 100vh;
 
   @include small{
@@ -67,7 +67,7 @@
   }
 }
 
-.divided-side2 {
+.divided-side2{
   float: left;
   font-family: Raleway-Regular;
   height: 100vh;
@@ -82,7 +82,7 @@
     background-color: $white;    
   }
 
-  .divided-image2 {
+  .divided-image2{
     @include center(false,true);
     background-image: url("../assets/images/us-firt.jpeg");
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@
     }
   }
 
-  .divided-wrapper2 {
+  .divided-wrapper2{
     @include center(false,true);
     color: $grayTitles;
     width: 70%;
@@ -111,7 +111,7 @@
       width: 100%;
     }
 
-    .divided-title2 {
+    .divided-title2{
       color: $blueText;
       font-size: 3.6em;
       max-width: 300px;
@@ -121,7 +121,7 @@
       }
     }
 
-    .divided-text2 {
+    .divided-text2{
       font-size: 1.8em;
       margin-top: 1.5em;
       font-family: Raleway-Semibold;
@@ -140,7 +140,7 @@
     .button-centered2{
       text-align: center;
 
-      .divided-button2 {
+      .divided-button2{
         background-color: $white;
         border: 2px solid;
         border-color: $blueText;
