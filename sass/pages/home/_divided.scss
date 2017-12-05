@@ -1,6 +1,7 @@
 .divided-left, .divided-right {
   border-bottom: solid 2px blue;
-  height: 100vh;
+  display: flex;
+  padding: 100px 0px;
   background-color: $blueText;
   
   &.divided-alt{
@@ -11,7 +12,7 @@
 
 .divided-side {
   float: left;
-  font-family: Muli-Light;
+  font-family: Raleway-Light;
   height: 100vh;
   padding: 5%;
   position: relative;
@@ -52,10 +53,15 @@
       font-family: Raleway-SemiBold;
       font-size: 3.3em;
       font-weight: bold;
-      line-height: 42px;
+      line-height: 45px;
       
       &.divided-title-alt{
         color: $blueText;
+      }
+      
+      @include small{
+        font-size:  2em;
+        
       }
     }
 
@@ -75,7 +81,7 @@
     .divided-list{
       color: $grayText;
       font-family: Raleway-light;
-      font-size: 18px;
+      font-size: 1.2em;
       font-weight: 500;
       line-height: 28px;
       list-style: none;

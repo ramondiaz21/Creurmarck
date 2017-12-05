@@ -13,6 +13,11 @@
     float: left;
     padding: 40px 40px;
     width: 250px;
+    
+    @include small{
+      width: 200px;
+      padding: 40px 15px;
+    }
 
     .footer-item {
       margin: 40px 0 0;

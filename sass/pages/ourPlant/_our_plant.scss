@@ -23,25 +23,22 @@
           top: 30% !important;      
         }
     }
-  
-    .slogan-top{
-      background-color: $blueText;
-      height: 50%;
-      width: 100%;
+}
+.slogan-top{
+  background-color: $blueText;
+  height: 50vh;
+  width: 100%;
       
-        .text-top{
-          @include center(true,false);
+    .text-top{
+      @include center(true,false);
 
-          color: $whitePearl;
-          font-family: Raleway-Light;
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 24px;
-          text-align: center;
-          width: 445px;
-          top: 80% !important; 
-
-        }
+      color: $whitePearl;
+      font-family: Raleway-Light;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      width: 445px;
+      top: 80% !important; 
     }
-  
 }
