@@ -66,14 +66,13 @@
       }  
     }
 
-    .side-left-wrapper6 {
-      @include center(false,true);
-      top: 40% !important;
+    .side-left-wrapper6 {      
       color: $white;
       width: 68%;
-      position: relative;
-      margin: 0 auto;  
-      margin-top: 40px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
 
       @include small{
         width: 100%;
@@ -90,6 +89,7 @@
         line-height: 24px;
         width: 50%;
         font-weight: bold;    
+        margin: 0;
         margin-bottom: 15px;
 
         @include small{

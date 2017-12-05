@@ -79,12 +79,12 @@
     }
 
     .side-left-wrapper {
-      @include center(false,true);
-      top: 40% !important;
       color: $blueText;
       width: 68%;
-      position: relative;
-      margin: 0 auto;  
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%); 
 
       @include small{
         margin: auto;
@@ -101,13 +101,15 @@
       }
 
       .side-left-title {
+        margin: 0;
         font-size: 3.6em;
         text-align: left;
         font-family: Raleway-Semibold;
         color: $blueText;    
         line-height: 35px;
-        width: 50%;
+        width: 60%;
         font-weight: bold;    
+        margin-bottom: 10px;
 
         @include small{
           width: 100%;
@@ -140,7 +142,8 @@
         line-height: 18px;
         font-weight: 500px;
         margin: 0;
-        width: 80%;
+        margin-bottom: 10px;
+        width: 100%;
 
         @include small{
           font-size: 1.0em;
