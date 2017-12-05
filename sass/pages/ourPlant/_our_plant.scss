@@ -42,3 +42,57 @@
       top: 80% !important; 
     }
 }
+
+.padding-left-none{
+  padding-left: 0px;
+}
+
+.padding-right-none{
+  padding-right: 0px;
+}
+
+.carousel-plant{
+  
+  .carousel{
+    height: 100%;
+   
+      .carousel-inner-small{
+        height: 100%;
+      }
+     
+     .item{
+       height: 100vh !important;
+       background-size: cover;
+       background-repeat: no-repeat;
+       height: 100vh;
+       width: 100%;
+           
+       
+       
+          .imgPlant{
+            background-image: url(../assets/homeImages/constructoraExample2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+
+          }
+       
+          .imgPlant1{
+            background-image: url(../assets/homeImages/constructoraExample1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+          }
+       
+          .imgPlant2{
+            background-image: url(../assets/homeImages/constructoraExample3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+          }
+      } 
+  }
+}

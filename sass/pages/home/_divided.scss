@@ -1,16 +1,16 @@
-.divided-left, .divided-right {
+.divided-left-home, .divided-right-home {
   border-bottom: solid 2px blue;
   display: flex;
   padding: 100px 0px;
   background-color: $blueText;
   
-  &.divided-alt{
+  &.divided-alt-home{
     background-color: $white;
   }
   
 }
 
-.divided-side {
+.divided-side-home {
   float: left;
   font-family: Raleway-Light;
   height: 100vh;
@@ -18,7 +18,7 @@
   position: relative;
   width: 50%;
 
-  .divided-image {
+  .divided-image-home {
   	@include center(false,true);
     
     background-size: contain;
@@ -43,20 +43,28 @@
       }
   }
 
-  .divided-wrapper {
+  .divided-wrapper-home {
     @include center(false,true);
     
     width: 70%;
+    
+    &.divided-wrapper-alt-home{
+      width: 75%;
+    }
 
-    .divided-title {
+    .divided-title-home {
       color: $white;
       font-family: Raleway-SemiBold;
       font-size: 3.3em;
       font-weight: bold;
       line-height: 45px;
       
-      &.divided-title-alt{
+      &.divided-title-alt-home{
         color: $blueText;
+      }
+      
+      &.divided-small-home{
+        font-size: 2.5em;
       }
       
       @include small{
@@ -65,7 +73,7 @@
       }
     }
 
-    .divided-text {
+    .divided-text-home{
       max-width: 416px;
       color: $whitePearl;
       font-family: Raleway-Light;
@@ -73,12 +81,12 @@
       font-weight: 500;
       line-height: 28px;
       
-      &.divided-text-alt{
+      &.divided-text-alt-home{
         color: $grayText;
         margin: 5% 0;
       }
     }
-    .divided-list{
+    .divided-list-home{
       color: $grayText;
       font-family: Raleway-light;
       font-size: 1.2em;
@@ -94,7 +102,7 @@
           margin-right: .5em;
         }
       
-      &.divided-list-alt{
+      &.divided-list-alt-home{
         color: $white;
         
           li::before {
@@ -106,7 +114,7 @@
       }
     }
 
-    .divided-button {
+    .divided-button-home {
       background-color: black;
       border: none;
       border-radius: 100px;
