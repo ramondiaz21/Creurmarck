@@ -78,7 +78,7 @@
     padding: 47px 0;
 
     .first-solution-title{
-      padding: 10px 0;
+      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -94,95 +94,41 @@
   }
 
   .second-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 20%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper;
 
     .second-solution-title{
-      padding: 10px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
+      @extend .first-solution-title;
       left: 40.33%;
     }
   }
 
   .third-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 20%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper;
 
     .third-solution-title{
-      padding: 10px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
+      @extend .first-solution-title;
       left: 42.33%;
     }
   }
 
   .fourth-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 20%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper;
+    padding: 50px 0;
 
     .fourth-solution-title{
-      padding: 10px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
+      @extend .first-solution-title;
+      padding: 0 0;
       top: 25%;
       left: 38.33%;
 
       @include small{
-        top: 50%;
+        top: 40%;
         left: 25%;
       }
     }
 
     .fourth-solution-p{
-      padding: 10px 0;
+      padding: 0 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -196,36 +142,18 @@
       left: 18.33%;
 
       @include small{
-        top: 32%;
-        left: 19%;
+        top: 40%;
+        line-height: 9px;
+        left: 22%;
       }
     }
   }
 
   .fifth-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 20%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper;
 
     .fifth-solution-title{
-      padding: 10px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
+      @extend .first-solution-title;
       left: 48%;
     }
   }
@@ -582,7 +510,7 @@
       text-align: center;
       line-height: 18px;
       font-size: 1.5em;
-      font-family: Raleway-Regular;
+      font-family: Raleway-Semibold;
       margin: auto;
       padding: 24px 0;
     }
