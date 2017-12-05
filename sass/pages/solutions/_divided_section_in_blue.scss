@@ -75,10 +75,8 @@
       transform: translate(-50%, -50%);
 
       @include small{
-        width: 100%;
-        margin: auto;        
-        height: 40vw;
-        padding: 10px;
+        width: 85%;
+        margin: auto; 
       }
 
       .side-left-title6 {
@@ -89,7 +87,6 @@
         line-height: 24px;
         width: 50%;
         font-weight: bold;    
-        margin: 0;
         margin-bottom: 15px;
 
         @include small{
@@ -123,6 +120,9 @@
       margin: auto;
       font-family: Raleway-Light;
       padding: 0 0 0 1em;
+
+      @include small{
+      }
 
       .divided-dot6{
         color: $white;
