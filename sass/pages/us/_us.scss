@@ -100,6 +100,11 @@
     }
   }
 
+  .divided-image-trust{
+    @extend .divided-image2;
+    background-image: url("../assets/images/Confianza.jpg");
+  }
+
   .divided-wrapper2{
     @include center(false,true);
     color: $grayTitles;

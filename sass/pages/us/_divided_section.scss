@@ -62,6 +62,11 @@
         display: block;
       } 
 
+      .one-image-solution{
+        @extend .one-image;
+        background: url("../assets/images/satisfaccion.jpg") bottom/cover no-repeat;
+      }
+
       .one-image-us{
         @extend .one-image;
         background: url("../assets/images/Nuestra-gente.jpg") bottom/cover no-repeat;
