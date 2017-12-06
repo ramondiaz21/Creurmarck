@@ -6,7 +6,7 @@
   max-height: 364px;
   height: 50%;	
   text-align: center;
-  background-image: url("../assets/images/us-firt.jpeg");
+  background-image: url("../assets/images/Nosotros.jpg");
   width: 100%;
   border: none;
   margin: 0;
@@ -84,7 +84,7 @@
 
   .divided-image2{
     @include center(false,true);
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Nuestra-oferta.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -180,7 +180,7 @@
   .text-section{
     text-align:left;
     color: $white;
-    font-family: Raleway-Regular;
+    font-family: Raleway-Semibold;
     margin-left: 20px;
     margin-top: 180px;
     position: absolute;
@@ -220,7 +220,7 @@
     }
   }
   .first-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Orgullosamente-mexicana1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -239,7 +239,7 @@
     }
 
   .second-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Orgullosamente-mexicana2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -255,6 +255,16 @@
       width: 16.666666666666666666666666666667%;
       padding: 0;
     }
+  }
+
+  .third-image-wrapper-us{
+    @extend .second-image-wrapper;
+    background-image: url("../assets/images/Orgullosamente-mexicana3.jpg");
+  }
+
+  .fourth-image-wrapper-us{
+    @extend .second-image-wrapper;
+    background-image: url("../assets/images/Orgullosamente-mexicana4.jpg");
   }
 }
 
@@ -436,10 +446,10 @@
     }
   }
 
-  .side-right-wrapper2 {
+  .side-right-wrapper-contact {
     height: 100%;
     width: 100%;
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Contacto.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
