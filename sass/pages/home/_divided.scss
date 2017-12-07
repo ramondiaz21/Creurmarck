@@ -26,21 +26,21 @@
   	max-height: 100vh;
   	padding-top: 65%;
   	width: 100%;
-    
+    //desarrollos inmobiliarios
       &.img1-alt{
-        background-image: url("../assets/homeImages/empresaExample.jpg");
+        background-image: url("../assets/homeImages/Plano.jpg");
         left: 0;
         
       }
       &.img2-alt{
-        background-image: url("../assets/homeImages/empresaExample2.jpg");
+        background-image: url("../assets/homeImages/Valores.jpg");
         right: 0;
       }
       &.img3-alt{
-        background-image: url("../assets/homeImages/empresaExample3.jpg");
+        background-image: url("../assets/homeImages/Aliado.jpg");
         left: 0;
           
-      }
+      }   
   }
 
   .divided-wrapper-home {
