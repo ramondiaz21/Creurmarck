@@ -9,6 +9,10 @@
       background-repeat: no-repeat;
       height: 100%;
       width: 100%;
+      
+      &.title-top-alt{
+        background-image: url(../assets/images/Contactanos.jpg);
+      }
         
         .title-text{
           @include center(true,true);
