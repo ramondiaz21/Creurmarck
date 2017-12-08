@@ -1,7 +1,7 @@
 //AQUI COMIENZA LA SECCION DE LA IMAGEN DE FONDO DEL HERO
 .image-hero-solutions{
   @extend .us-first-section;
-  background-image: url("../assets/images/us-firt.jpeg");
+  background-image: url("../assets/images/Soluciones-constructivas.jpg");
   
   
   .solutions-image-hero{
@@ -41,6 +41,10 @@
     line-height: 42px;
     text-align: center;
     padding: 17px 0;
+
+    @include small{
+      width: 100%;
+    }
   }
 }
 
@@ -66,7 +70,7 @@
   width: 100%;
 
   .first-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Arena.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -95,6 +99,7 @@
 
   .second-image-wrapper{
     @extend .first-image-wrapper;
+    background-image: url("../assets/images/Grava.jpg");
 
     .second-solution-title{
       @extend .first-solution-title;
@@ -104,6 +109,7 @@
 
   .third-image-wrapper{
     @extend .first-image-wrapper;
+    background-image: url("../assets/images/Sello.jpg");
 
     .third-solution-title{
       @extend .first-solution-title;
@@ -113,6 +119,7 @@
 
   .fourth-image-wrapper{
     @extend .first-image-wrapper;
+    background-image: url("../assets/images/Piedra.jpg");
     padding: 50px 0;
 
     .fourth-solution-title{
@@ -151,6 +158,7 @@
 
   .fifth-image-wrapper{
     @extend .first-image-wrapper;
+    background-image: url("../assets/images/Jal.jpg");
 
     .fifth-solution-title{
       @extend .first-solution-title;
@@ -209,7 +217,7 @@
 
   .solution-wrapper-services{
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 57px 0;
   }
 
   .services-h4{
@@ -234,7 +242,7 @@
   width: 100%;
 
   .first-image-wrapper-services{
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Excavadora.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -266,16 +274,8 @@
   }
 
   .second-image-wrapper-services{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 25%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper-services;
+    background-image: url("../assets/images/Retroexcavadoras.jpg");
 
     .second-services-title{
       padding: 50px 0;
@@ -299,16 +299,8 @@
   }
 
   .third-image-wrapper-services{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 25%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper-services;
+    background-image: url("../assets/images/Bulldozers.jpg");
 
     .third-services-title{
       padding: 50px 0;
@@ -331,16 +323,8 @@
   }
 
   .fourth-image-wrapper-services{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 25%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper-services;
+    background-image: url("../assets/images/Motoconformadoras.jpg");
 
     .fourth-services-title{
       padding: 50px 0;
@@ -370,7 +354,7 @@
   width: 100%;
 
   .first-image-wrapper-services2{
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Trailer.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -397,17 +381,9 @@
     }  
   }
 
-  .second-image-wrapper-services2{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 25%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+  .second-image-wrapper-services2{    
+    @extend .first-image-wrapper-services2;
+    background-image: url("../assets/images/Camion-volteo.jpg");
 
     .second-services-title2{
       padding: 50px 0;
@@ -430,16 +406,8 @@
   }
 
   .third-image-wrapper-services2{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 25%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper-services2;
+    background-image: url("../assets/images/Compactadoras.jpg");
 
     .third-services-title2{
       padding: 50px 0;
@@ -463,16 +431,8 @@
   }
 
   .fourth-image-wrapper-services2{
-    background-image: url("../assets/images/us-firt.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    margin: 0;
-    width: 25%;
-    height: 100%;
-    float: left;
-    padding: 47px 0;
+    @extend .first-image-wrapper-services2;
+    background-image: url("../assets/images/Cargador-frontal.jpg");
 
     .fourth-services-title2{
       padding: 50px 0;
@@ -497,7 +457,7 @@
 
     //AQUI COMIENZA LA SECCION DE TRASLADO DE MAQUINARÍA
 .translate-services{
-  height: 50vh;
+  height: 65vh;
   width: 100%;
   background-color: $blueText;
 
@@ -517,14 +477,14 @@
   }
 
   .translate-image-wrapper{
-    background-image: url("../assets/images/us-firt.jpeg");
+    background-image: url("../assets/images/Cama-baja.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border: none;
     margin: auto;
-    width: 20%;
-    height: 20vh;
+    width: 25%;
+    height: 34vh;
     padding: 47px 0; 
 
     @include small{
@@ -555,7 +515,7 @@
   .translate-button-wrapper{
     transform: translateY(0%);
     width: 30%;
-    padding: 45px 0;
+    padding: 25px 0;
     text-align: center;
     margin: auto;
 
@@ -640,6 +600,7 @@
       margin-top: 1.5em;
       font-family: Raleway-Semibold;
       padding: 0 0 0 100px;
+      width: 38%;
 
       @include small{
         width: 100%;

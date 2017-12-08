@@ -9,8 +9,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../assets/images/us-firt.jpeg");
-    padding: 8em 6em;
+    background-image: url("../assets/images/Blog.jpg");
+    padding: 120px 0;
+    height: 50vh;
+    
+    @include small{
+      background: url("../assets/images/Blog.jpg") bottom/cover no-repeat;
+      padding: 150px 0;
+    }
 
     .blog-title {
       color: $white;
@@ -18,8 +24,13 @@
       font-size: 6.0em;
       font-weight: bold;
       margin: 0;
+
+      @include small{
+        width: 100%;
+      }
     }
   }
+
   .show-more-button{
   height: 38px;
   width: 100%;

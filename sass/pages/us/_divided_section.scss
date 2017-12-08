@@ -56,26 +56,46 @@
     
       .one-image{
         width: 100%; 
-        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        background: url("../assets/images/Nuestra-gente.jpg") bottom/cover no-repeat;
         height: 100%; 
         float: left;
         display: block;
-      }  
+      } 
+
+      .one-image-solution{
+        @extend .one-image;
+        background: url("../assets/images/satisfaccion.jpg") bottom/cover no-repeat;
+      }
+
+      .one-image-us{
+        @extend .one-image;
+        background: url("../assets/images/Nuestra-gente.jpg") bottom/cover no-repeat;
+      } 
       
       .two-image {
         width: 50%;
         float: left;
-        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        background: url("../assets/images/Entorno.jpg") bottom/cover no-repeat;
         height: 100%; 
       } 
+
+      .two-image-us{
+        @extend .one-image;
+        background: url("../assets/images/Entorno.jpg") bottom/cover no-repeat;
+      }
       
       .three-image {
         width: 33.3%;
-        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        background: url("../assets/images/Seguridad.jpg") bottom/cover no-repeat;
         display: block;
         height: 100%;    
         float: left;
       }  
+
+      .three-image-us{
+        @extend .one-image;
+        background: url("../assets/images/Seguridad.jpg") bottom/cover no-repeat;
+      }
     }
 
     .side-left-wrapper {

@@ -44,22 +44,22 @@
     
       .one-image6{
         width: 100%; 
-        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        background: url("../assets/images/Concreto-bombeado.jpg") bottom/cover no-repeat;
         height: 100%; 
         float: left;
         display: block;
       }  
       
       .two-image6 {
-        width: 50%;
+        width: 100%;
         float: left;
-        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        background: url("../assets/images/Concreto-directo.jpg") bottom/cover no-repeat;
         height: 100%; 
       } 
       
       .three-image6 {
-        width: 33.3%;
-        background: url("../assets/images/us-firt.jpeg") bottom/cover no-repeat;
+        width: 100%;
+        background: url("../assets/images/Planta-movil.jpg") bottom/cover no-repeat;
         display: block;
         height: 100%;    
         float: left;
@@ -75,10 +75,8 @@
       transform: translate(-50%, -50%);
 
       @include small{
-        width: 100%;
-        margin: auto;        
-        height: 40vw;
-        padding: 10px;
+        width: 85%;
+        margin: auto; 
       }
 
       .side-left-title6 {
@@ -89,7 +87,6 @@
         line-height: 24px;
         width: 50%;
         font-weight: bold;    
-        margin: 0;
         margin-bottom: 15px;
 
         @include small{
@@ -123,6 +120,9 @@
       margin: auto;
       font-family: Raleway-Light;
       padding: 0 0 0 1em;
+
+      @include small{
+      }
 
       .divided-dot6{
         color: $white;
