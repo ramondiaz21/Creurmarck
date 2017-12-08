@@ -42,6 +42,12 @@
           }
       }  
   }
+  
+  .home-video{
+    height: 100%;
+    padding-top: 50px;
+    width: 100vw;
+  }
       
   .wrapper-bottom-right{
     bottom: 15%;
@@ -67,5 +73,21 @@
         max-width: 295px;
         padding-top: 1.5em;
       }
+  }
+  
+  .button-video{
+    border: 2px solid $blueText;
+    bottom: 50px;
+    background-color: transparent;
+    border-radius: 100px;
+    color: $blueText;
+    height: 38px;
+    font-family: Raleway-SemiBold;
+    position: absolute;
+    left: 50%;		
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 15px;
+    width: 130px;
   }
 }
