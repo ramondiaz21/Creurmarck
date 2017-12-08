@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-54.000000, -233.000000)" fill="#FFFFFF">
+            <g id="Youtube" transform="translate(54.000000, 233.000000)">
+                <path d="M19.615,0.184125191 C16.011,-0.0618748091 7.984,-0.0608748091 4.385,0.184125191 C0.488,0.450125191 0.029,2.80412519 0,9.00012519 C0.029,15.1851252 0.484,17.5491252 4.385,17.8161252 C7.985,18.0611252 16.011,18.0621252 19.615,17.8161252 C23.512,17.5501252 23.971,15.1961252 24,9.00012519 C23.971,2.81512519 23.516,0.451125191 19.615,0.184125191 L19.615,0.184125191 Z M9,13.0001252 L9,5.00012519 L17,8.99312519 L9,13.0001252 L9,13.0001252 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
