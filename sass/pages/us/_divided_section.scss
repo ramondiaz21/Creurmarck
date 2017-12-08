@@ -3,7 +3,7 @@
   .side-right {
     float: left;
   }
-  .side-left {
+  .side-left-us {
     float: right;
   }
 }
@@ -14,7 +14,7 @@
     float: right;
   }
 
-  .side-left {
+  .side-left-us {
     float: left;
 
     @include small{
@@ -39,7 +39,7 @@
     }
   }
 
-  .side-left, .side-right {
+  .side-left-us, .side-right {
     font-family: Raleway-Regular;
     position: relative;
     width: 50%; 
