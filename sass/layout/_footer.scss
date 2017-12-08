@@ -1,0 +1,94 @@
+.footer-margin{
+  margin-top: 100px;
+}
+
+.footer {
+  border-top: solid 1px $whitePearl;
+  background-color: $grayH2;
+  position: absolute;
+  font-family: Raleway-Light;
+  width: 100%;
+
+  .footer-info {
+    float: left;
+    padding: 40px 40px;
+    width: 250px;
+    
+    @include small{
+      width: 200px;
+      padding: 40px 15px;
+    }
+
+    .footer-item {
+      margin: 40px 0 0;
+    }
+
+    .footer-logo {
+      height: 100%;
+      max-width: 64px;
+      max-height: 66px;
+      width: 100%;
+    }
+
+    .footer-social {
+      margin: 1em 0 0;
+      text-align: left;
+    }
+    
+    .padding-footer{
+      padding-left: 7px;
+    }
+
+    .footer-network {
+      display: inline-block;
+      height: 22px;
+      margin: 0 0.5em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 22px;
+    }
+    .footer-facebook{
+      background-image: url("../assets/HomeImages/Facebook.svg");
+    }
+    .footer-youtube{
+      background-image: url("../assets/HomeImages/Youtube.svg");
+      width: 2.4em;
+    }
+    .footer-vimeo{
+      background-image: url("../assets/HomeImages/Vimeo.svg");
+    }
+    .footer-twitter{
+      background-image: url("../assets/HomeImages/Twitter.svg");
+    }
+  }
+
+  .footer-navigation {
+    float: left;
+    padding: 40px 20px;
+    text-align: right;
+    width: calc(100% - 280px);
+    text-align: left;
+  }
+
+  .footer-item {
+    display: inline-block;
+    font-size: .9em;
+    margin: 0 3vw 20px;
+    text-align: left;
+    vertical-align: top;
+
+    .footer-header {
+      color: $whitePearl;
+      font-weight: 800;
+      font-family: Raleway-SemiBold;
+      max-width: 111px;
+      text-transform: uppercase;
+    }
+
+    .footer-link {
+      color: $whitePearl;
+      display: block;
+      margin: 0.6em 0;
+    }
+  }
+}

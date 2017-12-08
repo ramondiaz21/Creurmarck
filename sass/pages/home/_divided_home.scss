@@ -1,0 +1,133 @@
+.divided-left-home, .divided-right-home {
+  border-bottom: solid 2px blue;
+  display: flex;
+  padding: 100px 0px;
+  background-color: $blueText;
+  
+  &.divided-alt-home{
+    background-color: $white;
+  }
+  
+}
+
+.divided-side-home {
+  float: left;
+  font-family: Raleway-Light;
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+  width: 50%;
+
+  .divided-image-home {
+  	@include center(false,true);
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+  	max-height: 100vh;
+  	padding-top: 65%;
+  	width: 100%;
+    //desarrollos inmobiliarios
+      &.img1-alt{
+        background-image: url("../assets/homeImages/Plano.jpg");
+        left: 0;
+        
+      }
+      &.img2-alt{
+        background-image: url("../assets/homeImages/Valores.jpg");
+        right: 0;
+      }
+      &.img3-alt{
+        background-image: url("../assets/homeImages/Aliado.jpg");
+        left: 0;
+          
+      }   
+  }
+
+  .divided-wrapper-home {
+    @include center(false,true);
+    
+    width: 70%;
+    
+    &.divided-wrapper-alt-home{
+      width: 75%;
+    }
+
+    .divided-title-home {
+      color: $white;
+      font-family: Raleway-SemiBold;
+      font-size: 3.3em;
+      font-weight: bold;
+      line-height: 45px;
+      
+      &.divided-title-alt-home{
+        color: $blueText;
+      }
+      
+      &.divided-small-home{
+        font-size: 2.5em;
+      }
+      
+      @include small{
+        font-size:  2em;
+        
+      }
+    }
+
+    .divided-text-home{
+      max-width: 416px;
+      color: $whitePearl;
+      font-family: Raleway-Light;
+      font-size: 1.3em;
+      font-weight: 500;
+      line-height: 28px;
+      
+      &.divided-text-alt-home{
+        color: $grayText;
+        margin: 5% 0;
+      }
+    }
+    .divided-list-home{
+      color: $grayText;
+      font-family: Raleway-light;
+      font-size: 1.2em;
+      font-weight: 500;
+      line-height: 28px;
+      list-style: none;
+      padding: 0;
+      
+        li::before {
+          content: "•";
+          font-family: FontAwesome;
+          color: $blueText; /* or whatever color you prefer */
+          margin-right: .5em;
+        }
+      
+      &.divided-list-alt-home{
+        color: $white;
+        
+          li::before {
+            content: "•";
+            font-family: FontAwesome;
+            color: $white; /* or whatever color you prefer */
+            margin-right: .5em;
+          }
+      }
+    }
+
+    .divided-button-home {
+      background-color: black;
+      border: none;
+      border-radius: 100px;
+      color: $white;
+      font-size: 1.3em;
+      margin-top: 2em;
+      padding: 0.7em 3.6em;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
