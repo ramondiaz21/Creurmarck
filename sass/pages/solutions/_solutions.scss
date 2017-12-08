@@ -41,6 +41,10 @@
     line-height: 42px;
     text-align: center;
     padding: 17px 0;
+
+    @include small{
+      width: 100%;
+    }
   }
 }
 
