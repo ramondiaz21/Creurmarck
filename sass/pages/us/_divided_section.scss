@@ -27,7 +27,7 @@
 .divided-two-left, .divided-two-right {
   height: 30vw;
   background-color: $white;
-
+ 
   @include small {
     height: 100vw;      
   }
