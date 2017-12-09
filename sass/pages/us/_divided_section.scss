@@ -18,7 +18,7 @@
     float: left;
 
     @include small{
-      height: 50vw;
+      height: 50vh;
       width: 100%;
     }
   }
@@ -29,7 +29,7 @@
   background-color: $white;
  
   @include small {
-    height: 100vw;      
+    height: 100vh;      
   }
 
   &.divided-two-right-us{
@@ -47,7 +47,7 @@
       
     @include small {
       width: 100%;
-      height: 50vw;  
+      height: 50vh;  
     }    
 
     .side-right-wrapper {
@@ -109,7 +109,9 @@
       @include small{
         margin: auto;
         width: 100%;
-        height: 50vw;
+        font-size: 2.0em;
+        height: 100%;
+        padding: 10px;
       }
 
       &.side-left-wrapper-us{
@@ -264,7 +266,7 @@
   
   .side-right{
     @include small {
-      height: 50vw;      
+      height: 50vh;      
     } 
   }
 }    
