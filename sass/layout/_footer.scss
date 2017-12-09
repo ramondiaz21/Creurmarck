@@ -48,31 +48,37 @@
       width: 22px;
     }
     .footer-facebook{
-      background-image: url("../assets/HomeImages/Facebook.svg");
+      background-image: url("../assets/homeImages/Facebook.svg");
     }
     .footer-youtube{
-      background-image: url("../assets/HomeImages/Youtube.svg");
+      background-image: url("../assets/homeImages/Youtube.svg");
       width: 2.4em;
     }
     .footer-vimeo{
-      background-image: url("../assets/HomeImages/Vimeo.svg");
+      background-image: url("../assets/homeImages/Vimeo.svg");
     }
     .footer-twitter{
-      background-image: url("../assets/HomeImages/Twitter.svg");
+      background-image: url("../assets/homeImages/Twitter.svg");
     }
   }
 
   .footer-navigation {
-    float: left;
+    float: right;
     padding: 40px 20px;
     text-align: right;
     width: calc(100% - 280px);
-    text-align: left;
+    text-align: right;
+    font-size: 1.5em;
+
+    @include small{
+      width: 38%;
+      text-align: left;
+    }
   }
 
   .footer-item {
     display: inline-block;
-    font-size: .9em;
+    font-size: 1.3em;
     margin: 0 3vw 20px;
     text-align: left;
     vertical-align: top;

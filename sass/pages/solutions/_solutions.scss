@@ -54,6 +54,13 @@
       padding: 0;
       margin: auto;
     }
+
+    @include medium{
+      font-size: 3.0em;
+      text-align: center;
+      width: 60%;
+      margin: auto
+    }
   }
 }
 
@@ -112,6 +119,10 @@
       font-family: Raleway-Regular;
       line-height: 19px;
       font-size: 2.0em;
+
+      @include medium{
+        font-size: 2.5em;
+      }
     }
   }
 
@@ -135,21 +146,25 @@
 
   .fourth-image-wrapper{
     
-    @include small{
+    /*@include small{
       padding: 120px 0;
-    }
+    }*/
+
+    /*@include medium{
+      font-size: 2.5em;
+      }*/
 
     @extend .first-image-wrapper;
     background-image: url("../assets/images/Piedra.jpg");
 
     .fourth-solution-title{
       @extend .first-solution-title;
-      margin: 0;
-      line-height: 40px;
+      /*margin: 0;
+      line-height: 40px;*/
 
-      @include small{
-        line-height: 0;
-      }
+      /*@include small{
+        line-height: 1px;
+      }*/
     }
 
     .fourth-solution-p{
@@ -166,7 +181,7 @@
       margin-top: 7px;
 
     @include small{
-      line-height: 13px;
+      line-height: 23px;
       }
     }    
   }
@@ -186,12 +201,21 @@
   width: 100%;
   background-color: $white;
 
+  @include small{
+    text-align: center;
+    width: 100%;
+  }
+
   .solution-button-wrapper{
     transform: translateY(0%);
     width: 30%;
     padding: 90px 0;
     text-align: center;
     margin: auto;
+
+    @include medium{
+      font-size: 1.2em;
+    }
 
     .solution-button{
       width: 40%;
@@ -208,6 +232,13 @@
 
       @include small{
         width: 100%;
+        min-width: 150%;
+      }
+
+      @include medium{
+        font-size: 2.0em;
+        width: 100%;
+        font-family: Raleway-Semibold;
       }
 
       &:hover{
@@ -267,6 +298,7 @@
     @include small{
       width: 50%;
     }
+
 
     .first-services-title{
       padding: 50px 0;
@@ -449,6 +481,13 @@
         width: 100%;
       }
 
+      @include medium{
+        font-size: 2.0em;
+        width: 100%;
+        min-width: 120%;
+        font-family: Raleway-Semibold;
+      }
+
       &:hover{
         background-color: $white;
         color: $blueText;
@@ -503,6 +542,12 @@
         width: 100%;
         text-align: center;
       }
+
+      @include medium{
+        font-size: 2.0em;
+        width: 50%;
+        text-align: center;
+      }
     }
     
     .attention-list{
@@ -518,6 +563,13 @@
         width: 100%;
         padding: 0 0 0 50px;
       }
+
+      @include medium{
+        padding: 0 0 0 50px;
+        font-size: 2.0em;
+        width: 50%;
+      }
+
       .attention-dot{
         color: $blueText;        
         list-style-type: disc;

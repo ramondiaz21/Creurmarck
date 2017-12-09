@@ -153,6 +153,12 @@
           margin: auto;
           text-align: center;
         }
+
+        @include medium{
+          width: 100%;
+          text-align: left;
+          font-size: 3.0em;
+        }
       }
 
       .divided-paragraph{
@@ -192,6 +198,12 @@
           width: 90%;
           margin: auto;
           text-align: center;
+        }
+
+        @include medium{
+          font-size: 2.0em;
+          text-align: left;
+          width: 100%;
         }
       }
 
