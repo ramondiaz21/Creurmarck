@@ -1,11 +1,28 @@
 //AQUI COMIENZA LA SECCION DE LA IMAGEN DE FONDO DEL HERO
 .image-hero-solutions{
-  @extend .us-first-section;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 364px;
+  height: 50%;  
+  text-align: center;
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 100px 15px;
   background-image: url("../assets/images/Soluciones-constructivas.jpg");
   
   
   .solutions-image-hero{
-    @extend .us-first-title;
+    color: $white;
+    text-align: center;
+    font-family: Raleway-Regular;
+    font-size: 6.0em;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 1px;
+    min-width: 21.09%;
+    transform: translateY(-0%);
   }
 }
 
@@ -251,10 +268,9 @@
     width: 25%;
     height: 100%;
     float: left;
-    padding: 47px 0;
+    padding: 100px 0;
 
     .first-services-title{
-      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -278,7 +294,6 @@
     background-image: url("../assets/images/Retroexcavadoras.jpg");
 
     .second-services-title{
-      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -303,7 +318,6 @@
     background-image: url("../assets/images/Bulldozers.jpg");
 
     .third-services-title{
-      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
@@ -327,7 +341,6 @@
     background-image: url("../assets/images/Motoconformadoras.jpg");
 
     .fourth-services-title{
-      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
