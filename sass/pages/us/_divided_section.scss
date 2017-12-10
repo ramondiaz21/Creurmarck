@@ -18,7 +18,7 @@
     float: left;
 
     @include small{
-      height: 50vh;
+      height: 50%;
       width: 100%;
     }
   }
@@ -29,13 +29,13 @@
   background-color: $white;
  
   @include small {
-    height: 100vh;      
+    height: 200vw;      
   }
 
   &.divided-two-right-us{
 
     @include small{
-      height: 90vw;
+      height: 100vw;
     }
   }
 
@@ -47,13 +47,17 @@
       
     @include small {
       width: 100%;
-      height: 50vh;  
+      height: 50%;  
     }    
 
     .side-right-wrapper {
       height: 100%;
       width: 100%;  
     
+      @include small{
+        height: 100%;
+      }
+
       .one-image{
         width: 100%; 
         background: url("../assets/images/Nuestra-gente.jpg") bottom/cover no-repeat;
@@ -111,13 +115,13 @@
         width: 100%;
         font-size: 2.0em;
         height: 100%;
-        padding: 10px;
+        padding: 30px 10px;
       }
 
       &.side-left-wrapper-us{
       
         @include small{
-          height: 44vw;
+          height: 50vw;
           padding:10px;
         }
       }
@@ -266,7 +270,7 @@
   
   .side-right{
     @include small {
-      height: 50vh;      
+      height: 50%;      
     } 
   }
 }    
