@@ -38,6 +38,10 @@
     width: 100%;
   }
 
+  @include medium{
+    width: 100%;
+  }
+
   .hero-text{
     width: 34.77%;
     text-align: center;
@@ -53,6 +57,12 @@
       width: 100%;
       padding: 0;
       margin: auto;
+    }
+
+    @include medium{
+      font-size: 1.5em;
+      margin: auto;
+      width: 100%;
     }
   }
 }
@@ -400,16 +410,27 @@
     position: relative;
     width: 50%; 
     height: 30vw; 
+
+    @include small{
+      width: 100%;
+      height: 50%;
+    }
   }
 
-  .side-left-wrapper4{
-       
+  .side-left-wrapper4{       
       color: $blueText;
       width: 68%;
       left: 50%;
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      @include small{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+      }
 
       .side-left-title4{
         font-size: 3.6em;
@@ -420,6 +441,12 @@
         width: 60%;
         font-weight: bold;  
         margin-bottom: 10px;  
+
+        @include small{
+          margin: auto;
+          text-align: center;
+          width: 70%;
+        }
       }
 
       .divided-paragraph4{
@@ -429,7 +456,12 @@
       line-height: 18px;
       font-weight: 500;
       margin: 0;
-      width: 75%
+      width: 75%;
+
+      @include small{
+      margin: auto;
+      font-size: 2.0em;
+        }
       }
 
       .contact-new-button{
@@ -445,6 +477,11 @@
         font-family: Raleway-Regular;
         font-weight: 500;
         margin-top: 20px;
+
+        @include small{
+          min-width: 50%;
+          font-size: 2.0em;
+        }
 
         &:hover{
           background-color: $white;
@@ -479,6 +516,7 @@
 
     @include small{
       height: 100%;
+      padding: 50px 0;
     }
 
     .contact-form{
@@ -488,6 +526,7 @@
       @include small{
         width: 100%;
         height: 100%;
+        padding: 0;
       }
 
       .contact-field{
@@ -533,6 +572,12 @@
           width: 100%;
           display: inline-block;
 
+          @include small{
+            width: 100%;
+            height: 0;
+            float: left;
+          }
+
           .contact-phone{
             border: 1px solid $grayTitles;
             border-radius: 100px;
@@ -545,6 +590,11 @@
             margin: 5px;
             width: 50%;
             margin-bottom: 38px;
+
+            @include small{
+              width: 56%;
+              margin: 5px 0 0 5px;
+            }
           }
 
           .contact-button{
@@ -559,6 +609,11 @@
             width: 42%;
             padding: 10px;
             margin: auto auto auto 26px;
+
+            @include small{
+              width: 40%;
+              margin: auto;
+            }
 
             &:hover{
               background-color: $blueText;
