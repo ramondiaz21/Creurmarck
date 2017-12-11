@@ -49,18 +49,18 @@
     transform: translateY(-10%);
     margin: 0 32.73%;
 
-    @include small{
-      width: 100%;
-      padding: 0;
-      margin: auto;
-    }
-
     @include medium{
       font-size: 3.0em;
       text-align: center;
       width: 60%;
       margin: auto
     }
+
+    @include small{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }    
   }
 }
 
@@ -230,16 +230,16 @@
       padding: 5px;
       margin-top: 12px;
 
-      @include small{
-        width: 100%;
-        min-width: 150%;
-      }
-
       @include medium{
         font-size: 2.0em;
         width: 100%;
         font-family: Raleway-Semibold;
       }
+
+      @include small{
+        width: 100%;
+        min-width: 150%;
+      }      
 
       &:hover{
         background-color: $blueText;
@@ -477,16 +477,16 @@
       padding: 5px;
       margin-top: 12px;
 
-      @include small{
-        width: 100%;
-      }
-
       @include medium{
         font-size: 2.0em;
         width: 100%;
         min-width: 120%;
         font-family: Raleway-Semibold;
       }
+
+      @include small{
+        width: 100%;
+      }      
 
       &:hover{
         background-color: $white;
@@ -538,16 +538,16 @@
       margin: auto;
       font-weight: 500px;
 
-      @include small{
-        width: 100%;
-        text-align: center;
-      }
-
       @include medium{
         font-size: 2.0em;
         width: 50%;
         text-align: center;
       }
+
+      @include small{
+        width: 100%;
+        text-align: center;
+      }      
     }
     
     .attention-list{
@@ -559,16 +559,16 @@
       padding: 0 0 0 100px;
       width: 38%;
 
-      @include small{
-        width: 100%;
-        padding: 0 0 0 50px;
-      }
-
       @include medium{
         padding: 0 0 0 50px;
         font-size: 2.0em;
         width: 50%;
       }
+
+      @include small{
+        width: 100%;
+        padding: 0 0 0 50px;
+      }      
 
       .attention-dot{
         color: $blueText;        

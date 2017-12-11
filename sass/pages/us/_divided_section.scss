@@ -154,17 +154,17 @@
         line-height: 26px;
         width: 80%;
 
-        @include small{
-          width: 100%;
-          margin: auto;
-          text-align: center;
-        }
-
         @include medium{
           width: 100%;
           text-align: left;
           font-size: 3.0em;
         }
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+        }        
       }
 
       .divided-paragraph{
@@ -200,17 +200,17 @@
         margin: 0;
         width: 85%;
 
-        @include small{
-          width: 90%;
-          margin: auto;
-          text-align: center;
-        }
-
         @include medium{
           font-size: 2.0em;
           text-align: left;
           width: 100%;
         }
+
+        @include small{
+          width: 90%;
+          margin: auto;
+          text-align: center;
+        }        
       }
 
       .divided-text {

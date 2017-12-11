@@ -95,10 +95,6 @@
     width: 25%;
     background-color: $white;
 
-    @include small{
-      height: 30vh;
-    }
-
     &:hover {
       background-color: $hoverBlog;
     }
@@ -113,6 +109,9 @@
       color: $blueText;
       font-weight: bold;
       margin: 10px 0;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
     }
 
     .post-excerpt {
@@ -122,6 +121,10 @@
       margin: 0;
       max-height: 4.5em;
       overflow: hidden;
+
+      @include small{
+        max-height: 10.5em;
+      }
     }
 
     .post-date {
