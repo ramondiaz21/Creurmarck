@@ -102,6 +102,7 @@
 //AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
 .image-section-solutions{
   width: 100%;
+  height: 286px;
 
   .first-image-wrapper{
     background-image: url("../assets/images/Arena.jpg");
@@ -229,7 +230,6 @@
       text-align: center;
       line-height: 15px;
       padding: 5px;
-      margin-top: 12px;
 
       @include medium{
         font-size: 2.0em;
@@ -238,8 +238,7 @@
       }
 
       @include small{
-        width: 100%;
-        min-width: 150%;
+        width: 125%;
       }      
 
       &:hover{
