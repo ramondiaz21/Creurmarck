@@ -1,10 +1,20 @@
 .section-contact{
   height: 100vh;
   
+  @include small{
+    height: 150vh;
+    padding: 10%;
+  }
+  
   .map{
     display: inline-block;
     height: 100%;
     width: 50%;
+    
+    @include small{
+      height: 36%;
+      width: 100%;
+    }
     
     .frame-map{
       @include center(false,true);
@@ -21,7 +31,12 @@
      width: 50%;
      display: inline-block;
      float: right;
-      
+     
+      @include small{
+        height: 63%;
+        width: 100%;
+      }
+    
     .form-wrapper{
         @include center(false,true);
 
