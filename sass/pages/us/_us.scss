@@ -313,21 +313,17 @@
 .divided-two-right2 {
 
   .side-right2 {
-    float: right;
     font-family: Raleway-Regular;
-    padding: 40px 0px;     
-    height: 50vh;
+    padding: 40px 0px; 
   }
 
   .side-left2 {
-    float: left;
     font-family: Raleway-Regular;
     height: 50%;
   }
 }
 
 .divided-two-left2, .divided-two-right2 {
-  height: 50vh;
   background-color: $blueText;
 
   @include small {
@@ -337,7 +333,10 @@
 
   .side-left2, .side-right2 {   
     width: 50%;
+    height: 100%;
     padding: 50px 0;
+    display: inline-block;
+    vertical-align: middle;
       
     @include small {
       width: 100%; 
@@ -399,6 +398,8 @@
     }
   }
   .side-right2{
+    margin-left: -5px;
+    
     @include small {
       width: 100%;
       height: 50%;      
@@ -545,6 +546,7 @@
         font-family: Raleway-Semibold;
         border-radius: 20px;
         border: none;
+        width: 80%;
         margin: auto;
 
         @include small{
