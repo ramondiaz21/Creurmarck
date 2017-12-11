@@ -1,101 +1,101 @@
+
+.blocker{
+  z-index: 4 !important;
+  
+    .modal{
+      height: 80%;
+      top: 50px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+        
+         a.close-modal{
+          top: 7.5px !important;
+          right: 6.5px !important;  
+         }
+      
+        .home-video-modal{
+          height: 80%;
+          position: absolute;
+          top: 10%;
+          left: 0;
+          width: 100%;
+          
+          @include medium{
+            left: auto;
+            width: 80%;
+          }
+        }
+    }
+}
 .home-first-section{
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
     position: relative;
     overflow: hidden;
-
   
-  .carousel{
-    height: 100vh;
-    
-      .carousel-indicators {
-        bottom: 0 !important;
-      }
-      
-      .item{
-        height: 100vh !important;
-        background-size: cover;
-        background-repeat: no-repeat;
+      .transparent-background{
+        background-color: rgba(255,255,255,0.7);
         height: 100vh;
-	    width: 100%;
-                
-          .img1{
-            background-image: url(../assets/homeImages/plano.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100%;
-
-          }
-          .img2{
-            background-image: url(../assets/homeImages/Aliado.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100%;
-          }
-          .img3{
-            background-image: url(../assets/homeImages/Valores.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100%;
-          }
-      }  
-  }
-  
-  .home-video{;
-    height: auto;
-    min-height: 100vh;
-    position: absolute;
-    width: auto;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    min-width: 100vw;
-  }
-      
-  .wrapper-bottom-right{
-    bottom: 15%;
-    position: absolute;
-    right: 10%;
-    
-      .logo-bottom-right{
-        background-image:url(../assets/homeImages/Logo.png);
-        background-size: contain;
-        background-repeat: no-repeat; 
-        height: 100%;
-        min-height:187px;
-        min-width:183px;  
+        position: relative;
         width: 100%;
+        z-index: 1;
       }
-      
-      .paragraph-bottom-right{
-        color: $grayH2;
+      .home-video{
+        height: auto;
+        min-height: 100vh;
+        position: absolute;
+        width: auto;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        min-width: 100vw;
+      }
+
+      .wrapper-bottom-right{
+        bottom: 15%;
+        position: absolute;
+        right: 10%;
+        z-index: 2;
+
+          .logo-bottom-right{
+            background-image:url(../assets/homeImages/Logo.png);
+            background-size: contain;
+            background-repeat: no-repeat; 
+            height: 100%;
+            min-height:187px;
+            min-width:183px;  
+            width: 100%;
+          }
+
+          .paragraph-bottom-right{
+            color: $grayH2;
+            font-family: Raleway-SemiBold;
+            font-size: 1.5em;
+            font-weight: 600;
+            line-height: 1.2em;
+            max-width: 295px;
+            padding-top: 1.5em;
+          }
+      }
+
+      .button-video{
+        border: 2px solid $blueText;
+        bottom: 50px;
+        background-color: transparent;
+        border-radius: 100px;
+        color: $blueText;
+        height: 38px;
         font-family: Raleway-SemiBold;
-        font-size: 1.5em;
-        font-weight: 600;
-        line-height: 1.2em;
-        max-width: 295px;
-        padding-top: 1.5em;
+        position: absolute;
+        left: 40%;		
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 15px;
+        width: 130px;
+        z-index: 2;
+
+        &:hover {
+          background-color: $blueText;
+          color: $whitePearl;
+          cursor: pointer;
+          }  
       }
-  }
-  
-  .button-video{
-    border: 2px solid $blueText;
-    bottom: 50px;
-    background-color: transparent;
-    border-radius: 100px;
-    color: $blueText;
-    height: 38px;
-    font-family: Raleway-SemiBold;
-    position: absolute;
-    left: 50%;		
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 15px;
-    width: 130px;
-  }
 }
