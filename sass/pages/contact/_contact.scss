@@ -1,19 +1,19 @@
 .section-contact{
   height: 100vh;
-  
+
   .map{
     display: inline-block;
     height: 100%;
     width: 50%;
-    
+
     .frame-map{
       @include center(false,true);
-      
+
       display: block;
       height: 80%;
       margin: auto;
       position: relative;
-      width: 80%; 
+      width: 80%;
     }
   }
   .right-contact{
@@ -21,15 +21,15 @@
      width: 50%;
      display: inline-block;
      float: right;
-      
+
     .form-wrapper{
         @include center(false,true);
 
-        display: block;        
+        display: block;
         position: relative;
         margin: auto;
         max-width: 435px;
-        
+
           .address-title{
             color: #0065DC;
             font-family: Raleway-SemiBold;
@@ -37,7 +37,7 @@
             font-weight: bold;
             line-height: 42px;
           }
-      
+
           .address-paragraph{
             text-align: left;
             max-width: 224px;
@@ -46,12 +46,12 @@
             font-size: 1.4em;
             font-weight: 500;
             line-height: 20px;
-            
+
               .address-subtitle{
                 font-family: Raleway-SemiBold;
               }
           }
-        
+
           .contact{
             border-radius: 20px;
             background-color: $whitePearl;
@@ -61,51 +61,56 @@
             margin-top: 40px;
             padding: 20px;
             width:100%;
-          
-              
+
+
               .title-form{
                 color: $grayNavbar;
                 font-family: Raleway-SemiBold;
                 font-size: 1.4em;
-                font-weight: bold;	
+                font-weight: bold;
                 line-height: 24px;
                 text-align: center;
                 max-width: 364px;
               }
-            
+
               .input-full{
-                border-radius: 100px;
                 background-color: $white;
+                border-radius: 100px;
+                border: none;
                 height: 34px;
-                max-width: 385px;
+                line-height: 1em;
                 margin: 5px;
+                max-width: 385px;
+                padding: 0 15px;
                 width: 100%;
                 -webkit-appearance: caret;
-                
-                
               }
-            
+
               ::placeholder{
                 color: $grayCard;
                 font-family: Raleway-Light;
                 font-size: 1em;
                 font-weight: 500;
-                line-height: 18px;
-                padding-left: 10px;
+                line-height: 34px;
+                padding: 0 15px;
               }
-            
-              .input-half{    
-                border-radius: 100px;
+
+              .input-half{
                 background-color: $white;
+                border-radius: 100px;
+                border: none;
                 height: 34px;
+                line-height: 1em;
                 margin: 5px;
-                -webkit-appearance: caret;
+                padding: 0 15px;
                 width: 50%;
-               
+                -webkit-appearance: caret;
+
               }
-             
+
               .button-gray{
                 background-color: $grayNavbar;
+                border: none;
                 border-radius: 100px;
                 color: $white;
                 height: 34px;
@@ -114,9 +119,9 @@
                 width: 40%;
               }
           }
-        
+
     }
 
-    
+
   }
 }
