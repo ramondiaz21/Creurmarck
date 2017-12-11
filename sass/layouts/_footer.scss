@@ -26,10 +26,10 @@
     }
 
     .footer-social {
-      margin: 1em 0 0;
+      margin: 2em 0 0;
       text-align: left;
     }
-    
+
     .padding-footer{
       padding-left: 7px;
     }
@@ -37,7 +37,7 @@
     .footer-network {
       display: inline-block;
       height: 22px;
-      margin: 0 0.5em;
+      margin: 0 0.3em;
       background-size: contain;
       background-repeat: no-repeat;
       width: 22px;
@@ -58,25 +58,24 @@
   }
 
   .footer-navigation {
-    float: left;
+    float: right;
     padding: 40px 20px;
     text-align: right;
-    width: calc(100% - 280px);
-    text-align: left;
   }
 
   .footer-item {
     display: inline-block;
-    font-size: .9em;
-    margin: 0 3vw 20px;
+    margin: 0 3vw;
     text-align: left;
     vertical-align: top;
 
     .footer-header {
       color: $whitePearl;
-      font-weight: 800;
       font-family: Raleway-SemiBold;
-      max-width: 111px;
+      font-size: 14px;
+      font-weight: 800;
+      max-width: 130px;
+      text-align: right;
       text-transform: uppercase;
     }
 

@@ -1,25 +1,25 @@
 
 .blocker{
   z-index: 4 !important;
-  
+
     .modal{
       height: 80%;
       top: 50px !important;
       width: 80% !important;
       max-width: 100% !important;
-        
+
          a.close-modal{
           top: 7.5px !important;
-          right: 6.5px !important;  
+          right: 6.5px !important;
          }
-      
+
         .home-video-modal{
           height: 80%;
           position: absolute;
           top: 10%;
           left: 0;
           width: 100%;
-          
+
           @include medium{
             left: auto;
             width: 80%;
@@ -30,7 +30,7 @@
 .home-first-section{
     position: relative;
     overflow: hidden;
-  
+
       .transparent-background{
         background-color: rgba(255,255,255,0.7);
         height: 100vh;
@@ -58,10 +58,10 @@
           .logo-bottom-right{
             background-image:url(../assets/homeImages/Logo.png);
             background-size: contain;
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
             height: 100%;
             min-height:187px;
-            min-width:183px;  
+            min-width:183px;
             width: 100%;
           }
 
@@ -77,6 +77,8 @@
       }
 
       .button-video{
+        @include center(true,false);
+        
         border: 2px solid $blueText;
         bottom: 50px;
         background-color: transparent;
@@ -84,8 +86,6 @@
         color: $blueText;
         height: 38px;
         font-family: Raleway-SemiBold;
-        position: absolute;
-        left: 40%;		
         font-size: 1em;
         font-weight: bold;
         line-height: 15px;
@@ -96,6 +96,6 @@
           background-color: $blueText;
           color: $whitePearl;
           cursor: pointer;
-          }  
+          }
       }
 }
