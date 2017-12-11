@@ -119,11 +119,11 @@
       color: $grayTitles;
       font-size: 1.4em;
       margin: 0;
-      max-height: 4.5em;
+      max-height: 8.5em;
       overflow: hidden;
 
       @include small{
-        max-height: 10.5em;
+        max-height: 14.5em;
       }
     }
 
