@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-height: 364px;  
+  max-height: 364px;
+  height: 50%;  
   text-align: center;
   width: 100%;
   border: none;
@@ -299,9 +300,7 @@
       width: 50%;
     }
 
-
     .first-services-title{
-      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;

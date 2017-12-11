@@ -55,11 +55,11 @@
           }  
 
           &.two-image {
-            background: url("../assets/HomeImages/desarrollos/Desarrollos2.jpg");          
+            background: url("../assets/homeImages/desarrollos/Desarrollos2.jpg");          
           }
         
           &.three-image {  
-            background: url("../assets/HomeImages/desarrollos/Desarrollos3.jpg");    
+            background: url("../assets/homeImages/desarrollos/Desarrollos3.jpg");    
           } 
             //proyectos particures
           &.one-image-proyecto{        
@@ -67,11 +67,11 @@
           }  
 
           &.two-image-proyecto{  
-            background: url("../assets/HomeImages/proyectos/Proyectos2.jpg");      
+            background: url("../assets/homeImages/proyectos/Proyectos2.jpg");      
           } 
 
           &.three-image-proyecto{
-            background: url("../assets/HomeImages/proyectos/Proyectos3.jpg");   
+            background: url("../assets/homeImages/proyectos/Proyectos3.jpg");   
           }
             //desarrollo urbano
           &.one-image-urbano{
@@ -79,11 +79,11 @@
           } 
         
           &.two-image-urbano {
-            background: url("../assets/HomeImages/urbano/urbano2.jpg");         
+            background: url("../assets/homeImages/urbano/urbano2.jpg");         
           } 
         
           &.three-image-urbano{
-            background: url("../assets/HomeImages/urbano/urbano3.jpg");
+            background: url("../assets/homeImages/urbano/urbano3.jpg");
           }
             //desarrollos industrial
           &.one-image-industrial{
@@ -91,11 +91,11 @@
           }  
 
           &.two-image-industrial {
-            background: url("../assets/HomeImages/industrial/industrial2.jpg");
+            background: url("../assets/homeImages/industrial/industrial2.jpg");
           } 
 
           &.three-image-industrial {
-            background: url("../assets/HomeImages/industrial/industrial3.jpg");
+            background: url("../assets/homeImages/industrial/industrial3.jpg");
           }
       }
       
@@ -110,7 +110,7 @@
       margin: 0 auto;  
       max-width: 300px;
       &.left-wrapper{
-        text-align: right;    
+        text-align: left;    
       }
 
       .side-left-title {

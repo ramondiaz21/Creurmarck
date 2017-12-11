@@ -7,8 +7,8 @@
       margin: .5em 1em 0 1em;
       min-height: 31px;
       min-width: 31px;
-      width: 3%; 
-      
+      width: 3%;
+
       &.logo-alt {
         background-image: url(../assets/images/paci_logo_blanco.svg);
         padding-top: 4.5% !important;
@@ -16,21 +16,22 @@
         margin-left: -1em;
       }
     }
-    
-    .navbar{
-      background-color: $transparent;
+
+    .navbar {
+      background-color: $white;
+      border-radius: 0 !important;
+      min-height: 50px;
       position: fixed !important;
       width: 100%;
       z-index: 10;
-      border-radius: 0 !important;
-      
+
       &.navbar-alt {
         background-color: $white;
       }
-  
+
         .menuToggle {
           display: none;
-        }      
+        }
         @include medium {
           .menuToggle {
             display: block;
@@ -40,7 +41,7 @@
             z-index: 6;
             -webkit-user-select: none;
             user-select: none;
-            
+
             @include small{
               top: 10px;
             }
@@ -56,16 +57,16 @@
              opacity: 0;
              z-index: 2;
              -webkit-touch-callout: none;
-           }   
+           }
            :checked ~ span {
              opacity: 1;
              transform: rotate(45deg) translate(-2px, -1px);
              background: #232323;
-           } 
+           }
            :checked ~ span:nth-last-child(3) {
              opacity: 0;
              transform: rotate(0deg) scale(0.2, 0.2);
-           } 
+           }
            :checked ~ span:nth-last-child(2) {
              opacity: 1;
              transform: rotate(-45deg) translate(0, -1px);
@@ -83,15 +84,15 @@
              border-radius: 3px;
              z-index: 1;
              transform-origin: 4px 0px;
-             transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;   
-              
+             transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+
              &.burguer-alt{
                background: $white;
              }
-           }    
+           }
            :first-child {
              transform-origin: 0% 0%;
-           }    
+           }
            :nth-last-child(2) {
              transform-origin: 0% 100%;
            }
@@ -100,34 +101,34 @@
              width: 250px;
              padding-top: 60px;
              top: 0;
-             right: -250px;     
+             right: -250px;
              background: $white;
              list-style-type: none;
-             transition: right 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
+             transition: right 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
              background-color: $transparent;
              margin-top: 0;
-             
+
              .collapsed-item{
                text-align: left;
-               margin: 5% -5%; 
+               margin: 5% -5%;
                color: $white;
-               
+
                .item {
                  font-size: 2em;
                  font-family: 'Raleway-Regular';
-               } 
-               
+               }
+
                 a:link {
                   text-decoration: none;
                 }
-               
+
                 a{
                   color: $white;
                 }
-              }     
-           }    
-         }       
-       }      
+              }
+           }
+         }
+       }
   }
     .gray-navbar-wrapper{
       display: inline-block;
@@ -137,11 +138,11 @@
       z-index: 10;
       right: 0;
       color: $white;
-      
+
       &.navbar-wrapper-alt{
         margin-right: 2%;
       }
-      
+
         .gray-list{
           display: inline-block;
           color: $grayNavbar;
@@ -152,25 +153,25 @@
           text-align: right;
           margin-right: 3em;
           margin-top: 1em;
-          
+
           &:hover {
             background-color: $white;
             cursor: pointer;
           }
-          
+
           &.list-alt{
             margin-top: 1.5em;
             margin-right: 2.5em;
           }
         }
-      
+
         a:link {
           text-decoration: none;
         }
         a{
           color: $grayNavbar;
         }
-        
+
       @include medium{
         display: none;
       }

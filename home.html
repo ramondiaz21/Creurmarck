@@ -3,12 +3,18 @@
 <head>
   <meta name="viewport" content="initial-scale=1">
   <meta charset="UTF-8">
-  <title>Creumack</title>
+  <title>Creurmack</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
-  <nav class="navbar navbar-alt" id="menu">   
+  <nav class="navbar navbar-alt" id="menu">
        <div class="menuToggle">
           <input class="burger" type="checkbox" />
           <span class="burger-span"></span>
@@ -22,16 +28,16 @@
               <a href="solutions.html" class="item">SOLUCIONES CONSTRUCTIVAS</a>
             </li>
             <li class="collapsed-item">
-              <a href="our_plant.html" class="item">NUESTRAS INSTALACIONES</a>        
-            </li>  
-            <li class="collapsed-item">
-              <a href="blog.html" class="item">BLOG</a>        
-            </li> 
-            <li class="collapsed-item">
-              <a href="contact.html" class="item">CONTACTO</a>        
+              <a href="our_plant.html" class="item">NUESTRAS INSTALACIONES</a>
             </li>
-          </ul> 
-        </div> 
+            <li class="collapsed-item">
+              <a href="blog.html" class="item">BLOG</a>
+            </li>
+            <li class="collapsed-item">
+              <a href="contact.html" class="item">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       <a href="home.html" class="gray-navbar-logo" id="gray-navbar-logo"></a>
        <ul class="gray-navbar-wrapper menu" id="gray-navbar-wrapper">
          <li class="gray-list"><a href="us.html">NOSOTROS</a></li>
@@ -42,11 +48,11 @@
        </ul>
   </nav>
 
-  
-  <section class="home-first-section"> 
+
+  <section class="home-first-section">
     <video class="home-video" autoplay loop>
       <source src="assets/homeImages/videos/Intro.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
+      <source src="assets/homeImages/videos/Intro.mp4" type="video/ogg">
       Your browser does not support the video tag.
     </video>
      <div class="wrapper-bottom-right">
@@ -56,9 +62,17 @@
           Sólida contribución en la construcción o edificación
         </div>
       </div>
-     <button class="button-video">Ver video</button>
+    <a href="#ex1" rel="modal:open"><button id="buttonVideo" class="button-video">Ver video</button></a>
+     <div class="transparent-background"></div>
+     <div id="ex1" class="modal">
+       <video class="home-video-modal" controls>
+        <source src="assets/homeImages/videos/IntroAudio.mp4" type="video/mp4">
+        <source src="assets/homeImages/videos/IntroAudio.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+       </video>
+    </div>
   </section>
-  
+
   <section class="divided-left-home">
     <div class="divided-side-home">
       <div class="divided-image-home img1-alt"></div>
@@ -106,14 +120,14 @@
       </div>
     </div>
   </section>
-    
-  <section class="divided-two-left"> 
+
+  <section class="divided-two-left">
     <div id="oneCarousel" class="carousel slide" data-ride="carousel">
        <div class="carousel-inner">
         <div class="item active">
           <div class="side-right section-full">
             <div class="side-right-wrapper">
-              <div class="slider-image one-image"></div>   
+              <div class="slider-image one-image"></div>
             </div>
           </div>
         </div>
@@ -131,7 +145,7 @@
           </div>
         </div>
         </div>
-      </div> 
+      </div>
       <div class="side-left">
           <div class="side-left-wrapper">
               <h2 class="side-left-title">En desarrollos inmobiliarios</h2>
@@ -142,13 +156,13 @@
               <li data-target="#oneCarousel" data-slide-to="2"></li>
             </ol>
           </div>
-      </div>  
-         
+      </div>
+
     </div>
   </section>
-  
-    
-   <section class="divided-two-right"> 
+
+
+   <section class="divided-two-right">
     <div id="twoCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <div class="side-left">
@@ -161,58 +175,58 @@
               <li data-target="#twoCarousel" data-slide-to="2"></li>
             </ol>
           </div>
-      </div>  
+      </div>
       <div class="carousel-inner">
         <div class="item active">
           <div class="side-right section-full">
           <div class="side-right-wrapper">
-            <div class="slider-image one-image-proyecto"></div>  
+            <div class="slider-image one-image-proyecto"></div>
           </div>
         </div>
         </div>
         <div class="item">
           <div class="side-right section-full">
           <div class="side-right-wrapper">
-            <div class="slider-image two-image-proyecto"></div>  
+            <div class="slider-image two-image-proyecto"></div>
           </div>
         </div>
         </div>
         <div class="item">
           <div class="side-right section-full">
           <div class="side-right-wrapper">
-            <div class="slider-image three-image-proyecto"></div> 
+            <div class="slider-image three-image-proyecto"></div>
           </div>
         </div>
         </div>
-      </div>     
+      </div>
     </div>
   </section>
-    
-   <section class="divided-two-left"> 
+
+   <section class="divided-two-left">
     <div id="threeCarousel" class="carousel slide" data-ride="carousel">
        <div class="carousel-inner">
         <div class="item active">
           <div class="side-right section-full">
             <div class="side-right-wrapper">
-              <div class="slider-image one-image-urbano"></div>   
+              <div class="slider-image one-image-urbano"></div>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="side-right section-full">
             <div class="side-right-wrapper">
-              <div class="slider-image two-image-urbano"></div> 
+              <div class="slider-image two-image-urbano"></div>
             </div>
         </div>
         </div>
         <div class="item">
           <div class="side-right section-full">
             <div class="side-right-wrapper">
-              <div class="slider-image three-image-urbano"></div> 
+              <div class="slider-image three-image-urbano"></div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="side-left">
           <div class="side-left-wrapper">
               <h2 class="side-left-title">En el desarrollo urbano</h2>
@@ -223,12 +237,12 @@
               <li data-target="#threeCarousel" data-slide-to="2"></li>
             </ol>
           </div>
-      </div>  
-         
+      </div>
+
     </div>
   </section>
-  
-   <section class="divided-two-right"> 
+
+   <section class="divided-two-right">
     <div id="fourCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <div class="side-left">
@@ -241,89 +255,63 @@
               <li data-target="#fourCarousel" data-slide-to="2"></li>
             </ol>
           </div>
-      </div>  
+      </div>
       <div class="carousel-inner">
         <div class="item active">
           <div class="side-right section-full ">
             <div class="side-right-wrapper">
-              <div class="slider-image one-image-industrial"></div>  
+              <div class="slider-image one-image-industrial"></div>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="side-right section-full">
             <div class="side-right-wrapper">
-              <div class="slider-image two-image-industrial"></div> 
+              <div class="slider-image two-image-industrial"></div>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="side-right section-full">
             <div class="side-right-wrapper">
-             <div class="slider-image three-image-industrial"></div>  
+             <div class="slider-image three-image-industrial"></div>
             </div>
           </div>
         </div>
-      </div>     
+      </div>
     </div>
   </section>
-  
+
   <footer class="footer">
     <div class="footer-info">
       <a href="#"><img src="assets/homeImages/LogoCreurmackFooter.png" class="footer-logo"></a>
-      <div class="footer-item">
-        <h5 class="footer-header">Contacto</h5>
-        <a href="#" class="footer-link">Contacto</a>
-        <a href="#" class="footer-link">Contacto con ventas</a>
-        <div class="footer-social">
-          <a href="#" class="footer-network footer-facebook"></a>
-          <a href="#" class="footer-network footer-youtube"></a>
-          <a href="#" class="footer-network footer-vimeo"></a>
-          <a href="#" class="footer-network footer-twitter"></a>
-        </div>
+      <div class="footer-social">
+        <a href="#" class="footer-network footer-facebook"></a>
+        <a href="#" class="footer-network footer-youtube"></a>
+        <a href="#" class="footer-network footer-twitter"></a>
       </div>
     </div>
     <div class="footer-navigation">
       <div class="footer-item">
         <h5 class="footer-header">Nosotros</h5>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
       </div>
       <div class="footer-item">
         <h5 class="footer-header">Soluciones Constructivas</h5>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
       </div>
       <div class="footer-item">
         <h5 class="footer-header">Nuestras Instalaciones</h5>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
       </div>
       <div class="footer-item">
         <h5 class="footer-header">Blog</h5>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
-        <a href="#" class="footer-link">Lorem Ipsum</a>
       </div>
       <div class="footer-item">
         <h5 class="footer-header">Contacto</h5>
-        <a href="#" class="footer-link">Lorem ipsum</a>
-        <a href="#" class="footer-link">Lorem ipsum</a>
-        <a href="#" class="footer-link">Lorem ipsum</a>
-        <a href="#" class="footer-link">Lorem ipsum</a>
       </div>
     </div>
   </footer>
-  
-   
-  
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
