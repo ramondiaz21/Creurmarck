@@ -9,7 +9,6 @@
 }
 
 .divided-two-right6 {
-
   .side-right6 {
     float: right;
   }
@@ -49,6 +48,11 @@
         float: left;
         display: block;
       }  
+
+      .one-image-solution{
+        @extend .one-image6;
+        background: url("../assets/images/satisfaccion.jpg") bottom/cover no-repeat;
+      }
       
       .two-image6 {
         width: 100%;
@@ -64,6 +68,14 @@
         height: 100%;    
         float: left;
       }  
+
+      .four-image6{
+        width: 100%;
+        background: url("../assets/images/Aplicaciones1.jpg") bottom/cover no-repeat;
+        display: block;
+        height: 100%;    
+        float: left;
+      }
     }
 
     .side-left-wrapper6 {      
@@ -96,6 +108,53 @@
         }
       }
 
+      .side-left-title-solution{
+        font-size: 2.2em;
+        text-align: left;
+        font-family: Raleway-Semibold;
+        color: $white;    
+        font-weight: bold;
+        line-height: 26px;
+        width: 80%;
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+        }
+
+        @include medium{
+          width: 100%;
+          text-align: left;
+          font-size: 3.0em;
+        }
+      }
+
+      .divided-paragraph-solution{
+        color: $white;
+        font-size: 1.5em;
+        font-family: Raleway-Regular;
+        line-height: 18px;
+        font-weight: 500px;
+        margin: 0;
+        width: 85%;
+
+        @include small{
+          width: 90%;
+          margin: auto;
+          text-align: center;
+        }
+
+        @include medium{
+          font-size: 1.5em;
+          text-align: left;
+          font-family: Raleway-Regular;
+          width: 100%;
+        }
+      }
+
+
+
       .divided-paragraph6{
         color: $white;
         font-size: 1.5em;
@@ -109,7 +168,7 @@
         @include small{
           width: 100%;
           margin: auto;
-          text-align: center;
+          text-align: left;
         }
       }
       
@@ -154,7 +213,7 @@
       }
 
       @include small{
-        margin: 0 0 0 100px;
+        margin: 0 85px;
       }
     } 
   }
@@ -165,4 +224,5 @@
       height: 50vw;      
     } 
   }
-}    
+}
+    

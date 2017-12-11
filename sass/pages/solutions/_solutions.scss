@@ -28,27 +28,46 @@
 
 //AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO DEL HERO
 .solutions-centered-text{
-  @extend .us-centered-text;
+  text-align: center;
+  background-color: $blueText;
+  padding: 100px 15px;
+  width: 100%;
+  border: none;
+  margin: 0;
 
   @include small{
     width: 100%;
   }
 
   .solutions-hero-text{
-    @extend .hero-text;
+    width: 34.77%;
+    text-align: center;
+    color: $white;
+    font-size: 2.0em;
+    font-family: Raleway-Light;
+    font-weight: 500px;
+    line-height: 24px;
+    transform: translateY(-10%);
+    margin: 0 32.73%;
+
+    @include medium{
+      font-size: 3.0em;
+      text-align: center;
+      width: 60%;
+      margin: auto
+    }
 
     @include small{
       width: 100%;
       padding: 0;
       margin: auto;
-    }
+    }    
   }
 }
 
 //AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO
 .solutions-centered-title{
   width: 100%;
-  height: 33.33vh;
   background-color: $blueText;
   color: $white;
 
@@ -57,7 +76,7 @@
     font-size: 3.6em;
     line-height: 42px;
     text-align: center;
-    padding: 17px 0;
+    padding: 25px 0;
 
     @include small{
       width: 100%;
@@ -68,7 +87,6 @@
 //AQUI COMIENZA LA SECCION DEL TEXTO CENTRADO CON FONDO BLANCO
 .solution-concrete-centered{
   width: 100%;
-  height: 33.33%;
   background-color: $white;
   color: $blueText;
 
@@ -83,7 +101,6 @@
 
 //AQUI COMIENZA LA SECCION DE LAS 4 IMAGENES
 .image-section-solutions{
-  height: 33.33vh;
   width: 100%;
 
   .first-image-wrapper{
@@ -94,23 +111,19 @@
     border: none;
     margin: 0;
     width: 20%;
-    height: 100%;
     float: left;
-    padding: 47px 0;
+    text-align: center;
+    padding: 100px 0;
 
-    .first-solution-title{
-      padding: 50px 0;
-      position: relative;
+    .first-solution-title{      
       color: $white;
       font-family: Raleway-Regular;
       line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 33.33%;
+      font-size: 2.0em;
+
+      @include medium{
+        font-size: 2.5em;
+      }
     }
   }
 
@@ -120,7 +133,6 @@
 
     .second-solution-title{
       @extend .first-solution-title;
-      left: 40.33%;
     }
   }
 
@@ -130,25 +142,30 @@
 
     .third-solution-title{
       @extend .first-solution-title;
-      left: 42.33%;
     }
   }
 
   .fourth-image-wrapper{
+    
+    /*@include small{
+      padding: 120px 0;
+    }*/
+
+    /*@include medium{
+      font-size: 2.5em;
+      }*/
+
     @extend .first-image-wrapper;
     background-image: url("../assets/images/Piedra.jpg");
-    padding: 50px 0;
 
     .fourth-solution-title{
       @extend .first-solution-title;
-      padding: 0 0;
-      top: 25%;
-      left: 38.33%;
+      /*margin: 0;
+      line-height: 40px;*/
 
-      @include small{
-        top: 40%;
-        left: 25%;
-      }
+      /*@include small{
+        line-height: 1px;
+      }*/
     }
 
     .fourth-solution-p{
@@ -158,19 +175,16 @@
       font-family: Raleway-Regular;
       line-height: 19px;
       float: center;
-      font-size: 1.0em;
+      font-size: 1.5em;
       display: inline-block;
       transform: translateY(-0%);
       margin: auto;
-      top: 58%;
-      left: 18.33%;
+      margin-top: 7px;
 
-      @include small{
-        top: 40%;
-        line-height: 9px;
-        left: 22%;
+    @include small{
+      line-height: 23px;
       }
-    }
+    }    
   }
 
   .fifth-image-wrapper{
@@ -179,16 +193,19 @@
 
     .fifth-solution-title{
       @extend .first-solution-title;
-      left: 48%;
     }
   }
 }
 
     //AQUI COMIENZA LA SECCION DEL BOTON CENTRADO
 .solution-button-centered{
-  height: 33.33vh;
   width: 100%;
   background-color: $white;
+
+  @include small{
+    text-align: center;
+    width: 100%;
+  }
 
   .solution-button-wrapper{
     transform: translateY(0%);
@@ -196,6 +213,10 @@
     padding: 90px 0;
     text-align: center;
     margin: auto;
+
+    @include medium{
+      font-size: 1.2em;
+    }
 
     .solution-button{
       width: 40%;
@@ -210,9 +231,16 @@
       padding: 5px;
       margin-top: 12px;
 
+      @include medium{
+        font-size: 2.0em;
+        width: 100%;
+        font-family: Raleway-Semibold;
+      }
+
       @include small{
         width: 100%;
-      }
+        min-width: 150%;
+      }      
 
       &:hover{
         background-color: $blueText;
@@ -228,7 +256,6 @@
     //AQUI COMIENZA LA SECCION DEL TITULO PRINCIPAL CENTRADO
 .solution-services-centered{
   width: 100%;
-  height: 33.33vh;
   background-color: $blueText;
   color: $white;
 
@@ -247,7 +274,7 @@
   .services-paragraph{
     text-align: center;
     line-height: 18px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-family: Raleway-Regular;
     margin: 23px 0; 
   }
@@ -255,7 +282,6 @@
 
     //AQUI COMIENZA LA SECCION DE LAS PRIMERAS 4 IMAGENES
 .image-section-services{
-  height: 33.33vh;
   width: 100%;
 
   .first-image-wrapper-services{
@@ -266,9 +292,13 @@
     border: none;
     margin: 0;
     width: 25%;
-    height: 100%;
     float: left;
     padding: 100px 0;
+    text-align: center;
+
+    @include small{
+      width: 50%;
+    }
 
     .first-services-title{
       position: relative;
@@ -276,16 +306,10 @@
       font-family: Raleway-Regular;
       line-height: 19px;
       float: center;
-      font-size: 1.6em;
+      font-size: 2.0em;
       display: inline-block;
       transform: translateY(-0%);
       margin: auto;
-      top: 50%;
-      left: 33.33%;
-
-      @include small{
-        left: 10%;
-      }
     }  
   }
 
@@ -294,21 +318,10 @@
     background-image: url("../assets/images/Retroexcavadoras.jpg");
 
     .second-services-title{
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 30.33%;
+      @extend .first-services-title;
 
       @include small{
-        font-size: 1.3em;
-        left: 4%;
+        width: 100%;
       }
     }  
   }
@@ -318,21 +331,7 @@
     background-image: url("../assets/images/Bulldozers.jpg");
 
     .third-services-title{
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 40.33%;
-
-      @include small{
-        left: 17%;
-      }
+      @extend .first-services-title;
     }  
   }
 
@@ -341,29 +340,13 @@
     background-image: url("../assets/images/Motoconformadoras.jpg");
 
     .fourth-services-title{
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 30.33%;
-
-      @include small{
-        left: 6%;
-        font-size: 1.1em;
-      }
+      @extend .first-services-title;
     }  
   }
 }
 
     //AQUI COMIENZA LA SECCION DE LAS SEGUNDAS 4 IMAGENES
 .image-section-services2{
-  height: 33.33vh;
   width: 100%;
 
   .first-image-wrapper-services2{
@@ -374,23 +357,24 @@
     border: none;
     margin: 0;
     width: 25%;
-    height: 100%;
     float: left;
-    padding: 47px 0;
+    padding: 100px 0;
+    text-align: center;
+
+    @include small{
+      width: 50%;
+    }
 
     .first-services-title2{
-      padding: 50px 0;
       position: relative;
       color: $white;
       font-family: Raleway-Regular;
       line-height: 19px;
       float: center;
-      font-size: 1.6em;
+      font-size: 2.0em;
       display: inline-block;
       transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 40%;      
+      margin: auto;     
     }  
   }
 
@@ -399,22 +383,7 @@
     background-image: url("../assets/images/Camion-volteo.jpg");
 
     .second-services-title2{
-      padding: 50px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 33.33%;
-
-      @include small{
-        left: 4%;
-      }
+      @extend .first-services-title2;
     }  
   }
 
@@ -423,23 +392,7 @@
     background-image: url("../assets/images/Compactadoras.jpg");
 
     .third-services-title2{
-      padding: 50px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 33.33%;
-
-      @include small{
-        left: 2px;
-        font-size: 1.5em;
-      }
+      @extend .first-services-title2;
     }  
   }
 
@@ -448,44 +401,27 @@
     background-image: url("../assets/images/Cargador-frontal.jpg");
 
     .fourth-services-title2{
-      padding: 50px 0;
-      position: relative;
-      color: $white;
-      font-family: Raleway-Regular;
-      line-height: 19px;
-      float: center;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
-      margin: auto;
-      top: 50%;
-      left: 33.33%;
-
-      @include small{
-        left: 20px;
-      }
+      @extend .first-services-title2;
     }  
   }
 }
 
     //AQUI COMIENZA LA SECCION DE TRASLADO DE MAQUINARÍA
 .translate-services{
-  height: 65vh;
   width: 100%;
   background-color: $blueText;
 
   .translate-p-wrapper{
     width: 100%;
-    height: 10vh;
 
     .translate-p{
       color: $white;
       text-align: center;
-      line-height: 18px;
-      font-size: 1.5em;
+      line-height: 40px;
+      font-size: 2.5em;
       font-family: Raleway-Semibold;
       margin: auto;
-      padding: 24px 0;
+      padding: 50px 0;
     }
   }
 
@@ -497,8 +433,8 @@
     border: none;
     margin: auto;
     width: 25%;
-    height: 34vh;
-    padding: 47px 0; 
+    padding: 100px 0;
+    text-align: center; 
 
     @include small{
       width: 100%;
@@ -507,16 +443,11 @@
     }
 
     .translate-title{
-      position: relative;
       color: $white;
       font-family: Raleway-Regular;
       line-height: 19px;
-      font-size: 1.6em;
-      display: inline-block;
-      transform: translateY(-0%);
+      font-size: 2.0em;      
       margin: auto;
-      top: 33%;
-      left: 38.33%;
 
       @include small{
         font-size: 2.5em;
@@ -545,9 +476,16 @@
       padding: 5px;
       margin-top: 12px;
 
+      @include medium{
+        font-size: 2.0em;
+        width: 100%;
+        min-width: 120%;
+        font-family: Raleway-Semibold;
+      }
+
       @include small{
         width: 100%;
-      }
+      }      
 
       &:hover{
         background-color: $white;
@@ -561,13 +499,12 @@
 
 //AQUI COMIENZA LA SECCION DE ATENCION DE CALIDAD
 .atenttion-section{
-  height: 50vh;
   width: 100%;
   background-color: $white;
 
-  .attention-title-wrapper{
-    height: 100%;
+  .attention-title-wrapper{;
     width: 100%;
+    padding: 50px 0;
 
     @include small{
       width: 100%;
@@ -600,10 +537,16 @@
       margin: auto;
       font-weight: 500px;
 
+      @include medium{
+        font-size: 2.0em;
+        width: 50%;
+        text-align: center;
+      }
+
       @include small{
         width: 100%;
         text-align: center;
-      }
+      }      
     }
     
     .attention-list{
@@ -615,10 +558,17 @@
       padding: 0 0 0 100px;
       width: 38%;
 
+      @include medium{
+        padding: 0 0 0 50px;
+        font-size: 2.0em;
+        width: 50%;
+      }
+
       @include small{
         width: 100%;
         padding: 0 0 0 50px;
-      }
+      }      
+
       .attention-dot{
         color: $blueText;        
         list-style-type: disc;

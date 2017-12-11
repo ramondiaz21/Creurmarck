@@ -11,7 +11,6 @@
     background-size: cover;
     background-image: url("../assets/images/Blog.jpg");
     padding: 120px 0;
-    height: 50vh;
     
     @include small{
       background: url("../assets/images/Blog.jpg") bottom/cover no-repeat;
@@ -30,15 +29,26 @@
       }
     }
   }
-
-  .show-more-button{
-  height: 38px;
-  width: 100%;
-  background-color: $whitePearl;
-  @include center(true,false);
   
     .more-button{
+      padding: 0.5em;
+      margin: 2.0em;
+      width: 180px;
       border-radius: 100px;
+      border: 2px solid $blueText;
+      background-color: transparent;
+      color: $blueText;
+      text-align: center;
+      font-size: 13px;
+      line-height: 16px;
+      
+      &:hover {
+        background-color: $blueText;
+        color: white;
+        cursor: pointer;
+      }
+    }
+     /* border-radius: 100px;
       border: 2px solid $blueText;
       background-color: $whitePearl;
       color: $blueText;
@@ -59,8 +69,7 @@
       @include small{
         width: 50%;
       }
-    }
-  }
+    }*/
 }
 
 .blog-posts {
@@ -72,6 +81,7 @@
   width: 100%;
 
   .post-item {
+    height: 60vh;
     box-sizing: border-box;
     color: $blueText;
     cursor: pointer;
@@ -99,6 +109,9 @@
       color: $blueText;
       font-weight: bold;
       margin: 10px 0;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
     }
 
     .post-excerpt {
@@ -106,8 +119,12 @@
       color: $grayTitles;
       font-size: 1.4em;
       margin: 0;
-      max-height: 4.5em;
+      max-height: 8.5em;
       overflow: hidden;
+
+      @include small{
+        max-height: 14.5em;
+      }
     }
 
     .post-date {

@@ -3,8 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-height: 364px;
-  height: 50%;	
+  max-height: 364px;	
   text-align: center;
   background-image: url("../assets/images/Nosotros.jpg");
   width: 100%;
@@ -28,7 +27,6 @@
 
 //--------------------------AQUI COMIENZA LA SECCION DEL TITULO CENTRADO EN FONDO AZUL
 .us-centered-text{
-  height: 50%;
   text-align: center;
   background-color: $blueText;
   padding: 100px 15px;
@@ -36,9 +34,13 @@
   border: none;
   margin: 0;
 
-  @include small{
+  @include medium{
     width: 100%;
   }
+
+  @include small{
+    width: 100%;
+  }  
 
   .hero-text{
     width: 34.77%;
@@ -51,11 +53,17 @@
     transform: translateY(-10%);
     margin: 0 32.73%;
 
+    @include medium{
+      font-size: 3.5em;
+      margin: auto;
+      width: 100%;
+    }
+
     @include small{
       width: 100%;
       padding: 0;
       margin: auto;
-    }
+    }    
   }
 }
 //------------------------AQUI COMIENZA SECCION DE IMAGEN A LA IZQUIERDA Y UNORDERED LIST A LA DERECHA
@@ -75,12 +83,17 @@
   position: relative;
   width: 50%;
 
+  @include medium{
+    margin: auto;
+    padding: 0;
+  }
+
   @include small{
     margin: auto;
     padding: 0;
     font-size: smaller;
     background-color: $white;    
-  }
+  }  
 
   .divided-image2{
     @include center(false,true);
@@ -92,12 +105,17 @@
     padding-top: 75%;
     width: 80%;
 
+    @include medium{
+      height: 100%;
+      width: 100%;
+    }
+    
     @include small{
       width: 100%;
       margin: auto;
       padding: 0;
       height: 100%
-    }
+    }    
   }
 
   .divided-image-trust{
@@ -175,7 +193,7 @@
   margin: 0;
 
   @include small{
-    height: 106vw;
+    height: 228vw;
     width: 100%;
     margin: auto;
     padding: 0;
@@ -192,6 +210,14 @@
     display: block;
     width: 20%;     
 
+    @include medium{
+      width: 100%;
+      margin: auto;
+      position: inherit;
+      padding: 50px 0;
+      text-align: center;
+    }
+
     @include small{
       width: 100%;
       margin: auto;
@@ -199,13 +225,18 @@
       color: $blueText;
       position: static;
       text-align: center;
-    }
+    }    
 
     .image-h1{
       font-size: 3.6em;
       line-height: 35px;
       width: 100%;
       margin-bottom: auto;
+
+
+      @include medium{
+        font-size: 3.0em;
+      }
 
       @include small{
         width: 100%;
@@ -218,10 +249,14 @@
       font-style: italic;
       line-height: 18px;
       margin-top: auto;
-
+      
+      @include medium{
+        font-size: 2.0em;
+      }
+      
       @include small{
         width: 100%;
-      }
+      }      
     }
   }
   .first-image-wrapper{
@@ -257,7 +292,7 @@
     float: left;
 
     @include small{
-      width: 16.666666666666666666666666666667%;
+      width: 50%;
       padding: 0;
     }
   }
@@ -287,7 +322,7 @@
   .side-left2 {
     float: left;
     font-family: Raleway-Regular;
-    height: 50vh;
+    height: 50%;
   }
 }
 
@@ -296,7 +331,8 @@
   background-color: $blueText;
 
   @include small {
-    width: 100%     
+    width: 100%;
+    height: 200vw;     
   }
 
   .side-left2, .side-right2 {   
@@ -307,7 +343,7 @@
       width: 100%; 
       background-color: $blueText;
       padding: 0;
-      height: 100%;
+      height: 50%;
     }    
 
     .side-right-wrapper2 {
@@ -316,6 +352,7 @@
 
       @include small{
         width: 100%;
+        height: 100%;
         margin: auto;
         padding: 10px;
       }
@@ -343,7 +380,8 @@
 
       @include small{
         width: 100%;
-        padding: 16px 0;
+        height: 100px;
+        padding: 50px 0;
       }
 
       .side-left-title2 {
@@ -362,7 +400,8 @@
   }
   .side-right2{
     @include small {
-      width: 100%;      
+      width: 100%;
+      height: 50%;      
     } 
   }
 }    
@@ -373,7 +412,7 @@
   background-color: $blueText;
 
   @include small {
-    height: 90vw;      
+    height: 200vw;      
   }
 
   .side-left4{
@@ -382,16 +421,27 @@
     position: relative;
     width: 50%; 
     height: 30vw; 
+
+    @include small{
+      width: 100%;
+      height: 50%;
+    }
   }
 
-  .side-left-wrapper4{
-       
+  .side-left-wrapper4{       
       color: $blueText;
       width: 68%;
       left: 50%;
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      @include small{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+      }
 
       .side-left-title4{
         font-size: 3.6em;
@@ -402,6 +452,12 @@
         width: 60%;
         font-weight: bold;  
         margin-bottom: 10px;  
+
+        @include small{
+          margin: auto;
+          text-align: center;
+          width: 70%;
+        }
       }
 
       .divided-paragraph4{
@@ -411,7 +467,12 @@
       line-height: 18px;
       font-weight: 500;
       margin: 0;
-      width: 75%
+      width: 75%;
+
+      @include small{
+      margin: auto;
+      font-size: 2.0em;
+        }
       }
 
       .contact-new-button{
@@ -427,6 +488,11 @@
         font-family: Raleway-Regular;
         font-weight: 500;
         margin-top: 20px;
+
+        @include small{
+          min-width: 50%;
+          font-size: 2.0em;
+        }
 
         &:hover{
           background-color: $white;
@@ -447,7 +513,7 @@
 
     @include small {
       width: 100%;
-      height: 40vw;  
+      height: 50%;  
     }
   }
 
@@ -459,17 +525,32 @@
     background-position: center;
     background-size: cover;
 
+    @include small{
+      height: 100%;
+      padding: 50px 0;
+    }
+
     .contact-form{
       height: 100%;      
       padding: 100px 0;
+
+      @include small{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
 
       .contact-field{
         background-color: $white;
         font-family: Raleway-Semibold;
         border-radius: 20px;
-        width: 79.92%;
         border: none;
         margin: auto;
+
+        @include small{
+          width: 100%;
+          height: 100%;
+        }
 
         .contact-h4{
           color: $blueText;
@@ -502,6 +583,12 @@
           width: 100%;
           display: inline-block;
 
+          @include small{
+            width: 100%;
+            height: 0;
+            float: left;
+          }
+
           .contact-phone{
             border: 1px solid $grayTitles;
             border-radius: 100px;
@@ -514,6 +601,11 @@
             margin: 5px;
             width: 50%;
             margin-bottom: 38px;
+
+            @include small{
+              width: 56%;
+              margin: 5px 0 0 5px;
+            }
           }
 
           .contact-button{
@@ -528,6 +620,11 @@
             width: 42%;
             padding: 10px;
             margin: auto auto auto 26px;
+
+            @include small{
+              width: 40%;
+              margin: auto;
+            }
 
             &:hover{
               background-color: $blueText;

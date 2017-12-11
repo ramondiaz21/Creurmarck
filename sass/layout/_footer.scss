@@ -66,10 +66,18 @@
     float: right;
     padding: 40px 20px;
     text-align: right;
+    font-size: 1.5em;
+
+    @include small {
+      margin-right: 15px;
+      width: 38%;
+    }
+
   }
 
   .footer-item {
     display: inline-block;
+    font-size: 1.3em;
     margin: 0 3vw;
     text-align: left;
     vertical-align: top;
