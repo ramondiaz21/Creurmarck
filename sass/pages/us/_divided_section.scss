@@ -170,7 +170,7 @@
       .divided-paragraph{
         color: $grayTitles;
         font-size: 1.5em;
-        font-family: Raleway-Semibold;
+        font-family: Raleway-Regular;
         line-height: 18px;
         font-weight: 500px;
         margin: 0;
@@ -194,7 +194,7 @@
       .divided-paragraph-solution{
         color: $grayTitles;
         font-size: 1.5em;
-        font-family: Raleway-Semibold;
+        font-family: Raleway-Regular;
         line-height: 18px;
         font-weight: 500px;
         margin: 0;
@@ -218,7 +218,7 @@
         margin-top: 1.5em;
         line-height: 18px;      
         margin: auto;
-        font-family: Raleway-Semibold;
+        font-family: Raleway-Regular;
         padding: 0 0 0 1em;
 
         @include small{
