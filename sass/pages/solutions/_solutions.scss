@@ -532,7 +532,7 @@
     }
 
     .attention-text-wrapper{
-      padding: 0 50px;
+      width: 100%;
 
       .attention-paragraph{
         color: $grayTitles;
@@ -551,7 +551,7 @@
         }
 
         @include small{
-          width: 100%;
+          width: 80%;
           text-align: center;
         }      
       }
@@ -563,18 +563,18 @@
         margin-top: 1.5em;
         text-align: left;
         font-family: Raleway-Semibold;
-        padding: 0 0 0 100px;
-        width: 38%;
+        padding: 0 0 0 15px;
+        width: 26%;
 
         @include medium{
-          padding: 0 0 0 50px;
+          padding: 0 0 0 25px;
           font-size: 2.0em;
           width: 50%;
         }
 
         @include small{
-          width: 100%;
-          padding: 0 0 0 33px;
+          width: 80%;
+          padding: 0 0 0 25px;
         }      
 
         .attention-dot{

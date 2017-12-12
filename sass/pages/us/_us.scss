@@ -22,6 +22,10 @@
     letter-spacing: 1px;
     min-width: 21.09%;
     transform: translateY(-0%);
+
+    @include small{
+      
+    }
   }
 }
 
