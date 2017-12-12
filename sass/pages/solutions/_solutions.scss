@@ -23,6 +23,10 @@
     letter-spacing: 1px;
     min-width: 21.09%;
     transform: translateY(-0%);
+
+    @include small{
+      font-size: 4.0em;
+    }
   }
 }
 
@@ -206,6 +210,7 @@
   @include small{
     text-align: center;
     width: 100%;
+    height: 150px;
   }
 
   .solution-button-wrapper{
@@ -217,6 +222,8 @@
 
     @include medium{
       font-size: 1.2em;
+      width: 40%;
+      padding: 61px 0;
     }
 
     .solution-button{
@@ -282,6 +289,11 @@
     //AQUI COMIENZA LA SECCION DE LAS PRIMERAS 4 IMAGENES
 .image-section-services{
   width: 100%;
+  height: 250px;
+
+  @include small{
+    height: 500px;
+  }
 
   .first-image-wrapper-services{
     background-image: url("../assets/images/Excavadora.jpg");
@@ -289,6 +301,7 @@
     background-position: center;
     background-size: cover;
     border: none;
+    height: 100%;
     margin: 0;
     width: 25%;
     float: left;
@@ -297,6 +310,7 @@
 
     @include small{
       width: 50%;
+      height: 50%;
     }
 
     .first-services-title{
@@ -347,6 +361,11 @@
     //AQUI COMIENZA LA SECCION DE LAS SEGUNDAS 4 IMAGENES
 .image-section-services2{
   width: 100%;
+  height: 250px;
+
+  @include small{
+    height: 500px;
+  }
 
   .first-image-wrapper-services2{
     background-image: url("../assets/images/Trailer.jpg");
@@ -354,6 +373,7 @@
     background-position: center;
     background-size: cover;
     border: none;
+    height: 100%;
     margin: 0;
     width: 25%;
     float: left;
@@ -362,6 +382,7 @@
 
     @include small{
       width: 50%;
+      height: 50%;
     }
 
     .first-services-title2{
@@ -501,9 +522,10 @@
   width: 100%;
   background-color: $white;
 
-  .attention-title-wrapper{;
+  .attention-title-wrapper{
     width: 100%;
     padding: 50px 0;
+    text-align: center;
 
     @include small{
       width: 100%;
@@ -520,62 +542,67 @@
       padding: 30px 0;
 
       @include small{
-        font-size: 2.0em;
-        width: 80%;
+        font-size: 2.5em;
+        width: 100%;
         padding: 10px;
       }
     }
 
-    .attention-paragraph{
-      color: $grayTitles;
-      width: 26%;
-      font-size: 1.5em;
-      font-family: Raleway-Semibold;
-      line-height: 18px;
-      text-align: left;
-      margin: auto;
-      font-weight: 500px;
+    .attention-text-wrapper{
+      width: 100%;
 
-      @include medium{
-        font-size: 2.0em;
-        width: 50%;
-        text-align: center;
-      }
-
-      @include small{
-        width: 100%;
-        text-align: center;
-      }      
-    }
-    
-    .attention-list{
-      display: table;
-      margin: 0 auto;
-      font-size: 1.5em;
-      margin-top: 1.5em;
-      font-family: Raleway-Semibold;
-      padding: 0 0 0 100px;
-      width: 38%;
-
-      @include medium{
-        padding: 0 0 0 50px;
-        font-size: 2.0em;
-        width: 50%;
-      }
-
-      @include small{
-        width: 100%;
-        padding: 0 0 0 50px;
-      }      
-
-      .attention-dot{
-        color: $blueText;        
-        list-style-type: disc;
-      }
-
-      .attention-text{
+      .attention-paragraph{
         color: $grayTitles;
+        width: 26%;
+        font-size: 1.5em;
         font-family: Raleway-Semibold;
+        line-height: 18px;
+        text-align: left;
+        margin: auto;
+        font-weight: 500px;
+
+        @include medium{
+          font-size: 2.0em;
+          width: 50%;
+          text-align: center;
+        }
+
+        @include small{
+          width: 80%;
+          text-align: center;
+        }      
+      }
+    
+      .attention-list{
+        display: table;
+        margin: 0 auto;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+        text-align: left;
+        font-family: Raleway-Semibold;
+        padding: 0 0 0 15px;
+        width: 26%;
+
+        @include medium{
+          padding: 0 0 0 25px;
+          font-size: 2.0em;
+          width: 50%;
+        }
+
+        @include small{
+          width: 80%;
+          padding: 0 0 0 25px;
+        }      
+
+        .attention-dot{
+          color: $blueText;        
+          list-style-type: disc;
+        }
+
+        .attention-text{
+          color: $grayTitles;
+          font-family: Raleway-Semibold;
+        }
       }
     }
   }
