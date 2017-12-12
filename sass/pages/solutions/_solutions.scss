@@ -23,6 +23,10 @@
     letter-spacing: 1px;
     min-width: 21.09%;
     transform: translateY(-0%);
+
+    @include small{
+      font-size: 4.0em;
+    }
   }
 }
 
@@ -206,6 +210,7 @@
   @include small{
     text-align: center;
     width: 100%;
+    height: 150px;
   }
 
   .solution-button-wrapper{
@@ -217,6 +222,8 @@
 
     @include medium{
       font-size: 1.2em;
+      width: 40%;
+      padding: 61px 0;
     }
 
     .solution-button{
@@ -284,6 +291,10 @@
   width: 100%;
   height: 250px;
 
+  @include small{
+    height: 500px;
+  }
+
   .first-image-wrapper-services{
     background-image: url("../assets/images/Excavadora.jpg");
     background-repeat: no-repeat;
@@ -299,6 +310,7 @@
 
     @include small{
       width: 50%;
+      height: 50%;
     }
 
     .first-services-title{
@@ -351,6 +363,10 @@
   width: 100%;
   height: 250px;
 
+  @include small{
+    height: 500px;
+  }
+
   .first-image-wrapper-services2{
     background-image: url("../assets/images/Trailer.jpg");
     background-repeat: no-repeat;
@@ -366,6 +382,7 @@
 
     @include small{
       width: 50%;
+      height: 50%;
     }
 
     .first-services-title2{
