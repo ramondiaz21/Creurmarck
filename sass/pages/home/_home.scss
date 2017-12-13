@@ -50,10 +50,14 @@
       }
 
       .wrapper-bottom-right{
-        bottom: 15%;
+        bottom: 50px;
         position: absolute;
-        right: 10%;
+        right: 3%;
         z-index: 2;
+        
+        @include medium{
+          bottom: 20%;
+        }
 
           .logo-bottom-right{
             background-image:url(../assets/homeImages/Logo.png);
