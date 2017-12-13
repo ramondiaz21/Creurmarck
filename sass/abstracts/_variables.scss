@@ -1,5 +1,12 @@
 $small-width: 480px;
 $medium-width: 768px;
+$extra-small-width: 320px;
+
+@mixin extra-small{
+	@media (max-width: #{$extra-small-width}){
+    @content;
+  }
+}
 
 @mixin small {
   @media (max-width: #{$small-width}){
@@ -12,3 +19,5 @@ $medium-width: 768px;
     @content;
   }
 }
+
+

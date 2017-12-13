@@ -33,7 +33,7 @@
 .us-centered-text{
   text-align: center;
   background-color: $blueText;
-  padding: 100px 15px;
+  padding: 50px 15px;
   width: 100%;
   border: none;
   margin: 0;
@@ -54,8 +54,7 @@
     font-family: Raleway-Light;
     font-weight: 500px;
     line-height: 24px;
-    transform: translateY(-10%);
-    margin: 0 32.73%;
+    margin: auto;
 
     @include medium{
       font-size: 3.5em;
@@ -98,9 +97,16 @@
   @include small{
     margin: auto;
     padding: 0;
+    height: 50%;
+    width: 100%;
     font-size: smaller;
     background-color: $white;    
   }  
+
+  @include extra-small{
+    height: 50%;
+    width: 100%;
+  }
 
   .divided-image2{
     @include center(false,true);
@@ -146,9 +152,16 @@
   @include small{
     margin: auto;
     padding: 0;
+    height: 50%;
+    width: 100%;
     font-size: smaller;
     background-color: $white;    
-  }  
+  }
+
+  @include extra-small{
+    height: 50%;
+    width: 100%;
+  }
 
   .divided-wrapper2{
     @include center(false,true);
@@ -159,6 +172,10 @@
       padding: 10px;
       font-size: 1.0em;
       width: 100%;
+    }
+
+    @include extra-small{
+      height: 100%;
     }
 
     .divided-title2{
@@ -225,6 +242,7 @@
   width: 100%;
   border: none;
   margin: 0;
+  position: relative;
 
   @include small{
     height: 228vw;
@@ -239,10 +257,11 @@
     color: $white;
     font-family: Raleway-Semibold;
     margin-left: 20px;
-    margin-top: 180px;
+    bottom: 0;
+    left: 0;
     position: absolute;
     display: block;
-    width: 20%;     
+    width: 21%;     
 
     @include medium{
       width: 100%;
