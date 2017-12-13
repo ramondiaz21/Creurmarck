@@ -22,6 +22,10 @@
       }
   }
   
+  &.home-alt-plant{
+    height: 170vh;
+  }
+  
 }
 
 .divided-side-home {
@@ -42,7 +46,20 @@
       height: 63vh;
     }
   }
-
+  
+  &.divided-side-our-plant{ 
+     @include large{
+      height: 40vh;
+    }
+    @include medium{
+      height: 60vh;
+    }
+    
+     @include small{
+      height: 76vh;
+    }
+  }
+  
   .divided-image-home {
   	@include center(false,true);
     background-size: cover;
