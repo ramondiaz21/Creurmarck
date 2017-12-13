@@ -12,6 +12,18 @@
     display: block;
     height: 200vh;
     padding: 0px 0px;
+    
+    
+  }
+  
+  &.divided-small-home{
+      @include small{
+        height: 130vh;
+      }
+  }
+  
+  &.home-alt-plant{
+    height: 170vh;
   }
   
 }
@@ -28,7 +40,26 @@
     width: 100%;
     height: 80vh;
   }
-
+  
+  &.divided-side-home-alt{
+    @include small{
+      height: 63vh;
+    }
+  }
+  
+  &.divided-side-our-plant{ 
+     @include large{
+      height: 40vh;
+    }
+    @include medium{
+      height: 60vh;
+    }
+    
+     @include small{
+      height: 76vh;
+    }
+  }
+  
   .divided-image-home {
   	@include center(false,true);
     background-size: cover;
