@@ -100,15 +100,26 @@
       top: 50%;
       transform: translate(-50%, -50%);
 
+      @include medium{
+        height: 100%;
+        width: 100%;
+        padding: 10px 20px;
+      }
+
       @include small{
-        width: 90%;
-        margin: auto; 
+        width: 100%;
+        margin: auto;
+        padding: 21px 25px;
+      }
+
+      @include galaxy-small{
+        padding: 8px 14px;
       }
 
       @include extra-small{
         width: 100%;
         height: 100%;
-        padding: 17px;
+        padding: 12px;
       }
 
       .side-left-title6 {
@@ -121,10 +132,16 @@
         font-weight: bold;    
         margin-bottom: 15px;
 
+        @include medium{
+          margin: auto;
+          text-align: center;
+        }
+
         @include small{
           margin: auto;
           width: 100%;
           text-align: center;
+          font-size: 3.0em;
         }
       }
 
@@ -137,17 +154,23 @@
         line-height: 26px;
         width: 80%;
 
+        @include medium{
+          width: 100%;
+          text-align: left;
+          font-size: 3.0em;
+        }
+
         @include small{
           width: 100%;
           margin: auto;
           text-align: center;
         }
 
-        @include medium{
-          width: 100%;
-          text-align: left;
-          font-size: 3.0em;
+        @include nexus{
+          text-align: center;
         }
+
+        
       }
 
       .divided-paragraph-solution{
@@ -159,18 +182,27 @@
         margin: 0;
         width: 85%;
 
-        @include small{
-          width: 90%;
-          margin: auto;
-          text-align: center;
-        }
-
         @include medium{
           font-size: 1.5em;
           text-align: left;
           font-family: Raleway-Regular;
           width: 100%;
         }
+
+        @include small{
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          font-size: 2.0em;
+          margin-top: 10px;
+        }
+
+        @include nexus{
+          margin-top: 10px;
+          font-size: 2.0em;
+        }
+
+        
       }
 
 
@@ -185,10 +217,17 @@
         width: 80%;
         margin-bottom: 15px;
 
+        @include medium{
+          margin: 10px auto;
+          text-align: center;
+          width: 83%;
+          font-size: 1.3em;
+        }
+
         @include small{
           width: 100%;
-          margin: auto;
-          text-align: left;
+          margin-top: 10px;
+          text-align: center;
         }
       }
       
@@ -200,7 +239,13 @@
       font-family: Raleway-Light;
       padding: 0 0 0 1em;
 
+      @include medium{
+        width: 83%;
+      }
+
       @include small{
+        width: 100%;
+        font-size: 1.3em;
       }
 
       .divided-dot6{
@@ -214,7 +259,7 @@
     }
     .soluttions-button-wrapper{
       margin: auto;
-      text-align: center;
+      text-align: left;
       margin-top: 10px;
 
       .solutions-button-aplicattions{          
@@ -234,6 +279,10 @@
           color: $blueText;
           cursor: pointer;
           font-family: Raleway-Semibold;
+        }
+
+        @include medium{
+          width: 60%;
         }
 
         @include small{

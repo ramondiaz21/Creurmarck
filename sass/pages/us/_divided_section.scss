@@ -178,7 +178,7 @@
           width: 100%;
           margin: auto;
           text-align: center;
-          font-size: 1.0em;
+          font-size: 2.0em;
         }
 
         @include nexus{
@@ -226,6 +226,7 @@
           font-size: 1.0em;
           margin: auto;
           width: 100%;
+          margin-top: 10px;
         }
 
         @include nexus{
@@ -265,9 +266,10 @@
         }
 
         @include small{
-          width: 90%;
+          width: 100%;
           margin: auto;
           text-align: center;
+          font-size: 2.0em;
         }        
       }
 
