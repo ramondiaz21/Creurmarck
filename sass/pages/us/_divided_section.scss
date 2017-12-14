@@ -138,6 +138,14 @@
         padding: 30px 10px;
       }
 
+      @include nexus{
+        padding: 50px 20px;
+      }
+
+      @include galaxy-small{
+        padding: 15px 10px;
+      }
+
       @include extra-small{
         padding: 10px;
         height: 100%;
@@ -167,6 +175,10 @@
           margin: auto;
           text-align: center;
           font-size: 1.0em;
+        }
+
+        @include nexus{
+          font-size: 1.5em;
         }
       }
 
@@ -206,6 +218,14 @@
           font-size: 1.0em;
           margin: auto;
           width: 100%;
+        }
+
+        @include nexus{
+          margin-top: 10px;
+        }
+
+        @include galaxy-small{
+          text-align: center;
         }
 
         @include extra-small{
@@ -255,6 +275,10 @@
           font-size: 1.0em;
           margin: auto;
           width: 100%;
+        }
+
+        @include galaxy-small{
+          margin-top: 10px;
         }
 
         @include extra-small{

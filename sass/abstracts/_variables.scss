@@ -1,8 +1,15 @@
-$small-width: 480px;
-$medium-width: 768px;
-$extra-small-width: 320px;
-$galaxy-small-width: 360px;
 $extra-large-width: 1080px;
+$medium-width: 768px;
+$small-width: 480px;
+$nexus-width: 412px;
+$galaxy-small-width: 360px;
+$extra-small-width: 320px;
+
+@mixin nexus{
+	@media (max-width: #{$nexus-width}){
+    @content;
+  }
+}
 
 @mixin extra-large{
 	@media (max-width: #{$extra-large-width}){
