@@ -40,6 +40,10 @@
 .divided-two-left-us, .divided-two-right-us {
   height: 30vw;
   background-color: $white;
+
+  @include medium{
+    height: 50vw;
+  }
  
   @include small {
     height: 200vw;      
@@ -50,6 +54,10 @@
     position: relative;
     width: 50%; 
     height: 30vw;   
+
+    @include medium{
+      height: 100%;
+    }
       
     @include small {
       width: 100%;
@@ -114,7 +122,13 @@
       left: 50%;
       position: absolute;
       top: 50%;
-      transform: translate(-50%, -50%); 
+      transform: translate(-50%, -50%);
+
+      @include medium{
+        width: 100%;
+        height: 100%;
+        padding: 25px 20px;
+      } 
 
       @include small{
         margin: auto;
@@ -122,6 +136,23 @@
         font-size: 2.0em;
         height: 100%;
         padding: 30px 10px;
+      }
+
+      @include nexus{
+        padding: 50px 20px;
+      }
+
+      @include ip6{
+        padding: 25px 10px;
+      }
+
+      @include galaxy-small{
+        padding: 15px 10px;
+      }
+
+      @include extra-small{
+        padding: 9px;
+        height: 100%;
       }
 
       &.side-left-wrapper-us{
@@ -147,7 +178,15 @@
           width: 100%;
           margin: auto;
           text-align: center;
-          font-size: 1.0em;
+          font-size: 2.0em;
+        }
+
+        @include nexus{
+          font-size: 1.5em;
+        }
+
+        @include extra-small{
+          font-size: 1.3em;
         }
       }
 
@@ -187,6 +226,20 @@
           font-size: 1.0em;
           margin: auto;
           width: 100%;
+          margin-top: 10px;
+        }
+
+        @include nexus{
+          margin-top: 10px;
+        }
+
+        @include galaxy-small{
+          text-align: center;
+        }
+
+        @include extra-small{
+          font-size: .7em;
+          text-align: center;
         }
 
         &.divided-paragraph-us{
@@ -213,9 +266,10 @@
         }
 
         @include small{
-          width: 90%;
+          width: 100%;
           margin: auto;
           text-align: center;
+          font-size: 2.0em;
         }        
       }
 
@@ -231,6 +285,14 @@
           font-size: 1.0em;
           margin: auto;
           width: 100%;
+        }
+
+        @include galaxy-small{
+          margin-top: 10px;
+        }
+
+        @include extra-small{
+          font-size: .7em;
         }
 
         &.divided-text-us{
@@ -279,6 +341,11 @@
     position: relative;
     width: 50%; 
     height: 30vw;   
+
+    @include medium{
+      height: 100%;
+      width: 50%;
+    }
       
     @include small {
       width: 100%;
@@ -345,12 +412,25 @@
       top: 50%;
       transform: translate(-50%, -50%); 
 
+      @include medium{
+        height: 100%;
+        width: 100%;
+        padding: 86px 50px;
+      }
+
       @include small{
         margin: auto;
         width: 100%;
         font-size: 2.5em;
+        text-align: center;
         height: 100%;
         padding: 100px 10px;
+      }
+
+      @include extra-small{
+        height: 100%;
+        padding: 77px 10px;
+        text-align: center;
       }
 
       &.side-left-wrapper-us{
@@ -377,6 +457,10 @@
           margin: auto;
           text-align: center;
           font-size: 1.0em;
+        }
+
+        @include extra-small{
+          font-size: 1.3em;
         }
       }
 
@@ -412,10 +496,19 @@
         margin-bottom: 10px;
         width: 100%;
 
+        @include medium{
+          font-size: 2.0em;
+        }
+
         @include small{
           font-size: 1.0em;
           margin: auto;
           width: 100%;
+        }
+
+        @include extra-small{
+          font-size: 1.0em;
+          font-family: Raleway-Regular;
         }
 
         &.divided-paragraph-us{

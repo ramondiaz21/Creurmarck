@@ -10,6 +10,10 @@
   border: none;
   margin: 0;
   padding: 100px 15px;
+
+  @include extra-large{
+    padding: 50px;
+  }
   
   
   .us-first-title{
@@ -33,18 +37,39 @@
 .us-centered-text{
   text-align: center;
   background-color: $blueText;
-  padding: 100px 15px;
+  padding: 50px 15px;
   width: 100%;
   border: none;
   margin: 0;
 
+  @include extra-large{
+    width: 100%;
+    padding: 0;
+    height: 25vw;
+  }
+
   @include medium{
     width: 100%;
+    padding: 54px 50px;
+    height: 35vh;
   }
 
   @include small{
     width: 100%;
+    padding: 50px 10px;
+  }
+
+  @include nexus{
+    padding: 25px 10px;
+  }
+
+  @include galaxy-small{
+    padding: 15px;
   }  
+
+  @include extra-small{
+    height: 45vh;
+  }
 
   .hero-text{
     width: 34.77%;
@@ -54,14 +79,20 @@
     font-family: Raleway-Light;
     font-weight: 500px;
     line-height: 24px;
-    transform: translateY(-10%);
-    margin: 0 32.73%;
+    margin: auto;
+
+    @include extra-large{
+      width: 100%;
+      height: 100%;
+    }
 
     @include medium{
-      font-size: 3.5em;
+      font-size: 2.8em;
       line-height: 35px;
       margin: auto;
       width: 100%;
+      height: 100%;
+      text-align: center;
     }
 
     @include small{
@@ -90,17 +121,32 @@
   position: relative;
   width: 50%;
 
+  @include extra-large{
+    height: 50%;
+    width: 100%;
+    padding: 0;
+  }
+
   @include medium{
     margin: auto;
     padding: 0;
+    height: 50%;
+    width: 100%;
   }
 
   @include small{
     margin: auto;
     padding: 0;
+    height: 50%;
+    width: 100%;
     font-size: smaller;
     background-color: $white;    
   }  
+
+  @include extra-small{
+    height: 50%;
+    width: 100%;
+  }
 
   .divided-image2{
     @include center(false,true);
@@ -138,27 +184,57 @@
     position: relative;
     width: 50%;
 
+    @include extra-large{
+      width: 100%;
+      height: 50%;      
+    }
+
   @include medium{
     margin: auto;
     padding: 0;
+    height: 50%;
+    width: 100%;
   }
 
   @include small{
     margin: auto;
     padding: 0;
+    height: 50%;
+    width: 100%;
     font-size: smaller;
     background-color: $white;    
-  }  
+  }
+
+  @include extra-small{
+    height: 50%;
+    width: 100%;
+  }
 
   .divided-wrapper2{
     @include center(false,true);
     color: $grayTitles;
     width: 70%;
 
+    @include medium{
+      width: 100%;
+      height: 100%;
+      padding: 60px 50px;
+    }
+
     @include small{
-      padding: 10px;
+      padding: 15px;
       font-size: 1.0em;
       width: 100%;
+    }
+
+    @include nexus{
+      padding: 15px 25px;
+    }
+
+    @include extra-small{
+      height: 100%;
+      width: 100%;
+      padding: 8px 10px;
     }
 
     .divided-title2{
@@ -166,9 +242,29 @@
       font-size: 3.6em;
       max-width: 300px;
 
+      @include medium{
+        text-align: center;
+        margin: auto;
+        font-size: 4.0em;
+      }
+
       @include small{
         padding: 0 10px;
         margin: auto;
+        text-align: center;
+      }
+
+      @include nexus{
+        font-size: 3.0em;
+      }
+
+      @include galaxy-small{
+        font-size: 3.0em;
+      }
+
+      @include extra-small{
+        font-size: 3.0em;
+        margin-bottom: 5px;
       }
     }
 
@@ -178,10 +274,31 @@
       line-height: 25px;
       font-family: Raleway-Regular;
 
+      @include medium{
+        font-size: 3.0em;
+      }
+
       @include small{
         line-height: 20px;
+        margin: auto;
         padding: 0 10px;
+        font-size: 2.5em;
       }
+
+      @include nexus{
+        font-size: 2.0em;
+        margin-top: 10px;
+      }
+
+      @include galaxy-small{
+        font-size: 1.7em;
+        margin-top: 15px;
+      }
+
+      @include extra-small{
+        font-size: 1.6em;
+        margin-top: 0;
+      }      
 
       .divided-dot2{
         color: $blueText;
@@ -197,6 +314,15 @@
     .button-centered2{
       text-align: center;
 
+      @include galaxy-small{
+        margin: auto;
+        width: 60%;
+      }
+
+      @include extra-small{
+        padding: 5px;
+      }
+
       .divided-button2{
         background-color: $white;
         border: 2px solid;
@@ -207,6 +333,21 @@
         margin-top: 2em;
         padding: 0.7em 3.6em;
         text-transform: uppercase;
+
+        @include medium{
+          font-size: 2.0em;
+          margin: auto;
+          margin-top: 20px;
+        }
+
+        @include galaxy-small{
+          padding: 1px;
+          width: 100%;
+        }
+
+        @include extra-small{
+          margin-top: 5px;
+        }
 
         &:hover {
           background-color: $blueText;
@@ -225,6 +366,11 @@
   width: 100%;
   border: none;
   margin: 0;
+  position: relative;
+
+  @include medium{
+    height: 700px;
+  }
 
   @include small{
     height: 228vw;
@@ -232,6 +378,14 @@
     margin: auto;
     padding: 0;
     background-color: $white;
+  }  
+
+  @include galaxy-small{
+    height: 240vw;
+  }
+
+  @include extra-small{
+    height: 247vw;
   }
 
   .text-section{
@@ -239,10 +393,11 @@
     color: $white;
     font-family: Raleway-Semibold;
     margin-left: 20px;
-    margin-top: 180px;
+    bottom: 10px;
+    left: 0;
     position: absolute;
     display: block;
-    width: 20%;     
+    width: 21%;     
 
     @include medium{
       width: 100%;
@@ -250,6 +405,8 @@
       position: inherit;
       padding: 50px 0;
       text-align: center;
+      background-color: $white;
+      color: $blueText;
     }
 
     @include small{
@@ -260,6 +417,11 @@
       position: static;
       text-align: center;
     }    
+
+    @include galaxy-small{
+      padding: 20px;
+      width: 100%;
+    }
 
     .image-h1{
       font-size: 3.6em;
@@ -309,7 +471,23 @@
     @include small{
       width: 50%;
       padding: 0;
+      height: 41%;
     }
+
+    @include nexus{
+      width: 50%;
+      height: 41%;
+    }
+
+    @include galaxy-small{
+      width: 50%;
+      height: 44%;
+    }
+
+    @include extra-small{
+      height: 41%;
+    }
+
     }
 
   .second-image-wrapper{
@@ -328,6 +506,21 @@
     @include small{
       width: 50%;
       padding: 0;
+      height: 41%;
+    }
+
+    @include nexus{
+      width: 50%;
+      height: 41%;
+    }
+
+    @include galaxy-small{
+      width: 50%;
+      height: 44%;
+    }
+
+    @include extra-small{
+      height: 41%;
     }
   }
 
@@ -371,6 +564,11 @@
     padding: 50px 0;
     display: inline-block;
     vertical-align: middle;
+
+    @include medium{
+      padding: 100px 0;
+      font-size: .8em;
+    }
       
     @include small {
       width: 100%; 
@@ -383,12 +581,28 @@
       width: 70%;
       margin: auto;
 
+      @include medium{
+        width: 90%;
+      }
+
       @include small{
         width: 100%;
         height: 100%;
         margin: auto;
         padding: 25px;
       }
+
+      @include galaxy-small{
+        height: 100%;
+        padding: 25px;
+      }
+
+      @include extra-small{
+        height: 100%;
+        width: 100%;
+        padding: 20px 25px;
+      }
+      
 
       .side-right-text2{
         color: $whitePearl;
@@ -403,6 +617,10 @@
           font-size: large;
           text-align: center;
           }
+
+        @include extra-small{
+          font-size: 1.2em;
+        }
       }
     }
 
@@ -412,12 +630,42 @@
       position: relative;
       margin: 0 auto;
 
+      @include medium{
+        height: 100%;
+        width: 100%;
+      }
+
       @include small{
         width: 100%;
-        height: 100px;
-        padding: 100px 0;
+        height: 100%;
+        font-size: 1.2em;
+        padding: 100px 10px;
         text-align: center;
       }
+
+      @include nexus{
+        height: 100%;
+        width: 100%;
+        padding: 100px 15px;
+      }
+
+      @include ip6{
+        padding: 80px 15px;
+      }
+
+      @include galaxy-small{
+        height: 100%;
+        padding: 56px 25px;
+        font-size: 1.4em;
+      }
+
+      @include extra-small{
+        height: 100%;
+        padding: 34px 22px;
+        font-size: 1.0em;
+      }
+
+      
 
       .side-left-title2 {
         font-size: 3.6em;
@@ -427,26 +675,54 @@
         line-height: 42px;   
         margin: 0; 
 
+        @include medium{
+          text-align: center;
+        }
+
         @include small{
+          font-size: 5.0em;
           margin: 0 auto;
           text-align: center;
+        }
+
+        @include nexus{
+          font-size: 5.0em;
+        }
+
+        @include ip6{
+          font-size: 4.0em;
+        }
+
+        @include galaxy-small{
+          font-size: 3.6em;
+        }
+
+        @include extra-small{
+          font-size: 4.5em;
         }
       }
     }
   }
   .side-right2{
     margin-left: -5px;
+
+    @include medium{
+      font-size: 1.5em;
+    }
     
     @include small {
       width: 100%;
       height: 50%;      
     } 
+
+    @include extra-small{
+      height: 50%;
+    }
   }
 }    
 
 //-----------------AQUI COMIENZA LA SECCION DE CONTACTO.
 .divided-contact{
-  height: 30vw;
   background-color: $blueText;
 
   @include small {
@@ -454,11 +730,18 @@
   }
 
   .side-left4{
-    float: right;
     font-family: Raleway-Regular;
     position: relative;
     width: 50%; 
-    height: 30vw; 
+    height: 100%; 
+    vertical-align: middle;
+    margin-left: -5px;
+    display: inline-block;
+
+    @include medium{
+      width: 50%;
+      height: 100%;
+    }
 
     @include small{
       width: 100%;
@@ -469,16 +752,38 @@
   .side-left-wrapper4{       
       color: $blueText;
       width: 68%;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
+      height: 100%;
+      margin: auto;
+
+      @include medium{
+        height: 100%;
+        text-align: center;
+        width: 90%;
+      }
 
       @include small{
         height: 100%;
         width: 100%;
         text-align: center;
-        padding: 50px 0;
+        padding: 75px 10px;
+      }
+
+      @include nexus{
+        padding: 75px 15px;
+      }
+
+      @include ip6{
+        padding: 55px 15px;
+      }
+
+      @include galaxy-small{
+        padding: 50px 15px;
+      }
+
+      @include extra-small{
+        height: 100%;
+        padding: 25px;
       }
 
       .side-left-title4{
@@ -489,12 +794,30 @@
         line-height: 35px;
         width: 60%;
         font-weight: bold;  
-        margin-bottom: 10px;  
+        margin-bottom: 10px;
+
+        @include medium{
+          margin: auto;
+          width: 100%;
+          text-align: center;
+        }  
 
         @include small{
           margin: auto;
           text-align: center;
           width: 70%;
+        }
+
+        @include ip6{
+          width: 73%;
+        }
+
+        @include galaxy-small{
+          width: 80%;
+        }
+
+        @include extra-small{
+          font-size: 3.0em;
         }
       }
 
@@ -507,10 +830,23 @@
       margin: 0;
       width: 75%;
 
+      @include medium{
+        text-align: center;
+        width: 100%;
+        font-size: 2.0em;
+        margin: auto;
+        margin-top: 10px;
+      }
+
       @include small{
       margin: auto;
+      margin-top: 10px;
       font-size: 2.0em;
         }
+
+      @include extra-small{
+        font-size: 1.5em;
+      }
       }
 
       .contact-new-button{
@@ -527,9 +863,20 @@
         font-weight: 500;
         margin-top: 20px;
 
+        @include medium{
+          font-size: 2.0em;
+          width: 80%;
+        }
+
         @include small{
           min-width: 50%;
           font-size: 2.0em;
+        }
+
+        @include extra-small{
+          width: 70%;
+          font-size: 1.5em;
+          padding: 10px;
         }
 
         &:hover{
@@ -542,12 +889,13 @@
       }
     }
 
-  .side-right2 {
-    float: left;
+  .side-right3 {
     font-family: Raleway-Regular;
     position: relative;
     width: 50%; 
-    height: 30vw;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 
     @include small {
       width: 100%;
@@ -568,6 +916,11 @@
       padding: 50px 0;
     }
 
+    @include extra-small{
+      height: 100%;
+      padding: 45px 0;
+    }
+
     .contact-form{
       height: 100%;      
       padding: 100px 0;
@@ -585,7 +938,6 @@
         border: none;
         width: 80%;
         margin: auto;
-        width: 80%;
 
         @include small{
           width: 100%;
@@ -604,6 +956,10 @@
           display: block;
           padding: 12px;
           margin-top: 10px;
+
+          @include extra-small{
+            margin: auto;
+          }
         }
 
         .contact-input{
@@ -639,8 +995,13 @@
             line-height: 32px;
             padding: 5px;
             margin: 5px;
-            width: 50%;
+            width: 54%;
             margin-bottom: 38px;
+
+            @include medium{
+              width: 53%;
+              margin-bottom: 22px;
+            }
 
             @include small{
               width: 56%;
@@ -659,7 +1020,7 @@
             line-height: 15px;
             width: 42%;
             padding: 10px;
-            margin: auto auto auto 26px;
+            margin: auto;
 
             @include small{
               width: 40%;
