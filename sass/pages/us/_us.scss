@@ -56,6 +56,11 @@
 
   @include small{
     width: 100%;
+    padding: 50px 10px;
+  }
+
+  @include galaxy-small{
+    padding: 10px;
   }  
 
   .hero-text{
@@ -256,6 +261,7 @@
         line-height: 20px;
         margin: auto;
         padding: 0 10px;
+        font-size: 2.5em;
       }
 
       @include extra-small{
@@ -290,6 +296,7 @@
         @include medium{
           font-size: 2.0em;
           margin: auto;
+          margin-top: 20px;
         }
 
         &:hover {
