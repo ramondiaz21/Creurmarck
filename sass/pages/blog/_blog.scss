@@ -48,28 +48,6 @@
         cursor: pointer;
       }
     }
-     /* border-radius: 100px;
-      border: 2px solid $blueText;
-      background-color: $whitePearl;
-      color: $blueText;
-      text-align: center;
-      padding: 10px;
-      font-family: Raleway-Semibold;
-      font-size: 13px;
-      line-height: 16px;
-      margin-bottom: 20px;
-      width: 12%;
-      
-      &:hover {
-      background-color: $blueText;
-      color: $whitePearl;
-      cursor: pointer;
-      }    
-
-      @include small{
-        width: 50%;
-      }
-    }*/
 }
 
 .blog-posts {
@@ -117,13 +95,10 @@
       font-family: Raleway-Semibold;
       color: $grayTitles;
       font-size: 1.4em;
+      line-height: 1.3em;
+      max-height: 6.3em;
       margin: 0;
-      max-height: 8.0em;
       overflow: hidden;
-
-      @include small{
-        max-height: 14.5em;
-      }
     }
 
     .post-date {
