@@ -1,9 +1,23 @@
 $small-width: 480px;
 $medium-width: 768px;
 $extra-small-width: 320px;
+$galaxy-small-width: 360px;
+$extra-large-width: 1080px;
+
+@mixin extra-large{
+	@media (max-width: #{$extra-large-width}){
+    @content;
+  }
+}
 
 @mixin extra-small{
 	@media (max-width: #{$extra-small-width}){
+    @content;
+  }
+}
+
+@mixin galaxy-small{
+	@media (max-width: #{$galaxy-small-width}){
     @content;
   }
 }
