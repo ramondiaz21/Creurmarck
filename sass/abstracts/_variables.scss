@@ -1,4 +1,5 @@
 $extra-large-width: 1080px;
+$large-width: 1024px;
 $medium-width: 768px;
 $small-width: 480px;
 $nexus-width: 412px;
@@ -37,6 +38,7 @@ $extra-small-width: 320px;
   }
 }
 
+
 @mixin small {
   @media (max-width: #{$small-width}){
     @content;
@@ -49,4 +51,9 @@ $extra-small-width: 320px;
   }
 }
 
+@mixin large {
+  @media (max-width: #{$large-width}){
+    @content;
+  }
+}
 

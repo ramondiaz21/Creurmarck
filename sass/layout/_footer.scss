@@ -3,12 +3,13 @@
 }
 
 .footer {
+  align-items: center;
   border-top: solid 1px $whitePearl;
   background-color: $grayH2;
+  display: flex;
   position: absolute;
   font-family: Raleway-Light;
   width: 100%;
-
   .footer-info {
     float: left;
     padding: 40px 40px;
@@ -45,7 +46,7 @@
       margin: 0 0.3em;
       background-size: contain;
       background-repeat: no-repeat;
-      width: 22px;
+      width: 26px;
     }
     .footer-facebook{
       background-image: url("../assets/homeImages/Facebook.svg");
@@ -54,22 +55,22 @@
       background-image: url("../assets/homeImages/Youtube.svg");
       width: 2.4em;
     }
-    .footer-vimeo{
-      background-image: url("../assets/homeImages/Vimeo.svg");
-    }
     .footer-twitter{
       background-image: url("../assets/homeImages/Twitter.svg");
     }
   }
 
   .footer-navigation {
-    float: right;
-    padding: 40px 20px;
-    text-align: right;
+    float: right;    
     font-size: 1.5em;
+    position: absolute;
+    padding: 40px 20px;
+    right: 0;
+    text-align: right;
 
     @include small {
       margin-right: 15px;
+      padding: 0;
       width: 38%;
     }
 
@@ -80,7 +81,11 @@
     font-size: 1.3em;
     margin: 0 3vw;
     text-align: left;
-    vertical-align: top;
+    vertical-align: bottom;
+    
+    @include medium{
+      margin: 0 1vw;
+    }
 
     .footer-header {
       color: $whitePearl;
@@ -89,7 +94,7 @@
       font-weight: 800;
       max-width: 130px;
       text-align: right;
-      text-transform: uppercase;
+      text-transform: uppercase;  
     }
 
     .footer-link {

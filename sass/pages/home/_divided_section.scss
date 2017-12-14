@@ -26,8 +26,19 @@
   @include small {
     height: 120vh;
   }
-
-
+  
+  &.divided-left-right-small{
+    @include small{
+      height: 100vh;
+    }
+  }
+  
+  &.divided-left-right-smaller{
+    @include small{
+      height: 80vh;
+    }
+  }
+  
   .side-left, .side-right {
     font-family: Muli-Light;
     position: relative;
