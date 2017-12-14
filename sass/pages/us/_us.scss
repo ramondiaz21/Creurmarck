@@ -67,6 +67,10 @@
     padding: 15px;
   }  
 
+  @include extra-small{
+    height: 45vh;
+  }
+
   .hero-text{
     width: 34.77%;
     text-align: center;
@@ -204,7 +208,6 @@
   @include extra-small{
     height: 50%;
     width: 100%;
-    padding: 10px;
   }
 
   .divided-wrapper2{
@@ -219,7 +222,7 @@
     }
 
     @include small{
-      padding: 10px;
+      padding: 15px;
       font-size: 1.0em;
       width: 100%;
     }
@@ -230,6 +233,8 @@
 
     @include extra-small{
       height: 100%;
+      width: 100%;
+      padding: 8px 10px;
     }
 
     .divided-title2{
@@ -258,7 +263,7 @@
       }
 
       @include extra-small{
-        font-size: 2.5em;
+        font-size: 3.0em;
         margin-bottom: 5px;
       }
     }
@@ -292,6 +297,7 @@
 
       @include extra-small{
         font-size: 1.6em;
+        margin-top: 0;
       }      
 
       .divided-dot2{
@@ -311,6 +317,10 @@
       @include galaxy-small{
         margin: auto;
         width: 60%;
+      }
+
+      @include extra-small{
+        padding: 5px;
       }
 
       .divided-button2{
@@ -333,6 +343,10 @@
         @include galaxy-small{
           padding: 1px;
           width: 100%;
+        }
+
+        @include extra-small{
+          margin-top: 5px;
         }
 
         &:hover {
@@ -457,6 +471,7 @@
     @include small{
       width: 50%;
       padding: 0;
+      height: 41%;
     }
 
     @include nexus{
@@ -467,6 +482,10 @@
     @include galaxy-small{
       width: 50%;
       height: 44%;
+    }
+
+    @include extra-small{
+      height: 41%;
     }
 
     }
@@ -487,6 +506,7 @@
     @include small{
       width: 50%;
       padding: 0;
+      height: 41%;
     }
 
     @include nexus{
@@ -497,6 +517,10 @@
     @include galaxy-small{
       width: 50%;
       height: 44%;
+    }
+
+    @include extra-small{
+      height: 41%;
     }
   }
 
@@ -557,6 +581,10 @@
       width: 70%;
       margin: auto;
 
+      @include medium{
+        width: 90%;
+      }
+
       @include small{
         width: 100%;
         height: 100%;
@@ -572,7 +600,7 @@
       @include extra-small{
         height: 100%;
         width: 100%;
-        font-size: 1.7em;
+        padding: 20px 25px;
       }
       
 
@@ -591,7 +619,7 @@
           }
 
         @include extra-small{
-          font-size: 1.0em;
+          font-size: 1.2em;
         }
       }
     }
@@ -602,11 +630,16 @@
       position: relative;
       margin: 0 auto;
 
+      @include medium{
+        height: 100%;
+        width: 100%;
+      }
+
       @include small{
         width: 100%;
         height: 100%;
         font-size: 1.2em;
-        padding: 64px 20px;
+        padding: 100px 10px;
         text-align: center;
       }
 
@@ -614,6 +647,10 @@
         height: 100%;
         width: 100%;
         padding: 100px 15px;
+      }
+
+      @include ip6{
+        padding: 80px 15px;
       }
 
       @include galaxy-small{
@@ -638,7 +675,12 @@
         line-height: 42px;   
         margin: 0; 
 
+        @include medium{
+          text-align: center;
+        }
+
         @include small{
+          font-size: 5.0em;
           margin: 0 auto;
           text-align: center;
         }
@@ -647,8 +689,16 @@
           font-size: 5.0em;
         }
 
+        @include ip6{
+          font-size: 4.0em;
+        }
+
         @include galaxy-small{
           font-size: 3.6em;
+        }
+
+        @include extra-small{
+          font-size: 4.5em;
         }
       }
     }
@@ -709,17 +759,22 @@
       @include medium{
         height: 100%;
         text-align: center;
+        width: 90%;
       }
 
       @include small{
         height: 100%;
         width: 100%;
         text-align: center;
-        padding: 50px 0;
+        padding: 75px 10px;
       }
 
       @include nexus{
         padding: 75px 15px;
+      }
+
+      @include ip6{
+        padding: 55px 15px;
       }
 
       @include galaxy-small{
@@ -753,12 +808,16 @@
           width: 70%;
         }
 
+        @include ip6{
+          width: 73%;
+        }
+
         @include galaxy-small{
           width: 80%;
         }
 
         @include extra-small{
-          font-size: 2.0em;
+          font-size: 3.0em;
         }
       }
 
@@ -940,7 +999,8 @@
             margin-bottom: 38px;
 
             @include medium{
-              width: 54%;
+              width: 53%;
+              margin-bottom: 22px;
             }
 
             @include small{

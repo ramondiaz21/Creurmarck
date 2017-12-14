@@ -2,8 +2,16 @@ $extra-large-width: 1080px;
 $medium-width: 768px;
 $small-width: 480px;
 $nexus-width: 412px;
+$ip6-width: 375px;
 $galaxy-small-width: 360px;
 $extra-small-width: 320px;
+
+
+@mixin ip6{
+	@media (max-width: #{$ip6-width}){
+    @content;
+  }
+}
 
 @mixin nexus{
 	@media (max-width: #{$nexus-width}){
