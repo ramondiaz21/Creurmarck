@@ -8,18 +8,19 @@
     padding: 100px 0;
     width: 50%;
 
+    @include small{
+      width: 100%;
+
+    }
+
     .divided-prueba-wrapper{
       padding: 50px;
-      position: relative;
+      position: relative;      
+      padding: 250px;
       background-image: url("../assets/images/Nuestra-oferta.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 250px;
-
-      .divided-prueba-image{
-      	
-      }
     }
   }
 
@@ -30,6 +31,10 @@
     margin-left: -5px;
     vertical-align: middle;
     height: 100%;
+
+    @include small{
+      width: 100%;
+    }
     
     .divided-prueba-wrapper-text{
     	position: relative;
