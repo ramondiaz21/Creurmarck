@@ -1,0 +1,165 @@
+.divided-left-trust, .divided-right-trust{
+  height: 100vh;
+
+  @include small{
+    width: 100%;
+  }
+}
+
+.divided-side-trust{
+  float: left;
+  font-family: Raleway-Regular;
+  height: 100vh;
+  padding: 5% 0;
+  position: relative;
+  width: 50%;  
+
+  @include extra-large{
+    padding: 0;
+    height: 50%;
+    width: 100%;
+  }
+
+  @include medium{
+    padding: 0;
+    height: 50%;
+    margin: 0;
+    width: 100%;
+  }
+
+  @include small{
+    height: 50%;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .divided-image-trust{
+    @include center(false,true);
+    background-image: url("../assets/images/Confianza.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 100vh;
+    padding-top: 75%;
+    width: 100%;
+
+    @include extra-large{
+      height: 100%;
+      padding: inherit;
+    }
+
+    @include medium{
+      height: 100%;
+      margin: 0;
+    }
+
+    @include small{
+      height: 100%;
+    }
+  }
+}
+
+  .divided-side-text-trust{
+    float: left;
+    font-family: Raleway-Regular;
+    height: 100vh;
+    padding: 5%;
+    position: relative;
+    width: 50%;
+
+    @include extra-large{
+      padding: 0;
+      height: 50%;
+      width: 100%;;
+    }    
+
+    @include medium{
+      height: 50%;
+      padding: 0;
+      width: 100%;
+    }
+
+    @include small{
+      height: 50%;
+      width: 100%;
+      padding: 0;
+    }
+
+  .divided-wrapper-trust{
+    @include center(false,true);
+    color: $grayTitles;
+    width: 70%;    
+
+    @include extra-large{
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      text-align: justify;
+      padding: 82px;
+    }
+
+    @include medium{
+      height: 100%;
+      width: 100%;
+      padding: 100px;
+    }
+
+    @include small{
+      width: 100%;
+      height: 100%;
+      padding: 40px 20px;
+    }
+
+    @include galaxy-small{
+      padding: 20px;
+      text-align: justify;
+    }
+
+    @include extra-small{
+      padding: 17px;
+    }
+
+    .divided-title-trust{
+      color: $blueText;
+      font-size: 3.6em;
+      max-width: 300px;
+
+      @include extra-large{
+        font-size: 5.0em;
+        margin: auto;
+        text-align: center;
+      }
+
+      @include medium{
+        margin: auto;
+        text-align: center;
+        font-size: 4.0em;
+      }
+
+      @include small{
+        text-align: center;
+        margin: auto;
+       }
+      }
+
+    .divided-text-trust{
+      font-size: 1.8em;
+      margin-top: 1.5em;
+      line-height: 25px;
+      font-family: Raleway-Regular;   
+
+      @include extra-large{
+        font-size: 3.5em;
+        line-height: 1.5em;
+      }
+
+      @include medium{
+        font-size: 3.0em;
+      }   
+
+      @include small{
+        font-size: 1.8em;
+      }
+    }    
+  }
+}
