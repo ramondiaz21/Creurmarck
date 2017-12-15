@@ -13,15 +13,15 @@
   'layouts/navbar';
 
 @import
+  'layout/navbar',
+  'layout/footer',
   'pages/solutions/solutions',
   'pages/solutions/divided_carousel',
   'pages/solutions/divided_section_in_blue',
   'pages/us/us',
   'pages/us/divided_section',
   'pages/us/divided',
-  'pages/blog/blog',
-  'layout/navbar',
-  'layout/footer';
+  'pages/blog/blog';
 
 @import
   'pages/home/home',
