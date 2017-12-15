@@ -1,6 +1,43 @@
-$small-width: 480px;
-$medium-width: 768px;
+$extra-large-width: 1080px;
 $large-width: 1024px;
+$medium-width: 768px;
+$small-width: 480px;
+$nexus-width: 412px;
+$ip6-width: 375px;
+$galaxy-small-width: 360px;
+$extra-small-width: 320px;
+
+
+@mixin ip6{
+	@media (max-width: #{$ip6-width}){
+    @content;
+  }
+}
+
+@mixin nexus{
+	@media (max-width: #{$nexus-width}){
+    @content;
+  }
+}
+
+@mixin extra-large{
+	@media (max-width: #{$extra-large-width}){
+    @content;
+  }
+}
+
+@mixin extra-small{
+	@media (max-width: #{$extra-small-width}){
+    @content;
+  }
+}
+
+@mixin galaxy-small{
+	@media (max-width: #{$galaxy-small-width}){
+    @content;
+  }
+}
+
 
 @mixin small {
   @media (max-width: #{$small-width}){
