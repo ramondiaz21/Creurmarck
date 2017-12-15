@@ -6,8 +6,12 @@
       display: inline-block;
       min-height: 31px;
       min-width: 31px;
-      margin-left: 2%;
+      margin-left: 30px;
       width: 3%;
+
+      @include medium {
+        margin-left: 3%;
+      }
     }
 
     .navbar {
@@ -19,7 +23,7 @@
       position: fixed !important;
       width: 100%;
       z-index: 10;
-      
+
       &.navbar-alt {
         background-color: $white;
       }
@@ -32,11 +36,11 @@
             display: block;
             position: fixed;
             top: 15px;
-            right: 10%;
+            right: 4%;
             z-index: 6;
             -webkit-user-select: none;
             user-select: none;
-            
+
            .burger {
              display: block;
              width: 40px;
@@ -124,7 +128,7 @@
     .gray-navbar-wrapper{
       display: inline-block;
       float: right;
-      margin-top: 0;
+      margin: 15px 0;
       position: fixed;
       z-index: 10;
       right: 0;

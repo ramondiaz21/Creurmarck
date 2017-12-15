@@ -41,6 +41,14 @@
 
   @include small{
     width: 100%;
+    padding: 70px 10px;
+    font-size: .7em;
+  }
+
+  @include extra-small{
+    width: 100%;
+    padding: 58px 10px;
+    font-size: 0.7em;
   }
 
   .solutions-hero-text{
@@ -62,9 +70,11 @@
     }
 
     @include small{
-      width: 100%;
       padding: 0;
-      margin: auto;
+    }
+
+    @include extra-small{
+      height: 100%;
     }    
   }
 }
@@ -456,6 +466,11 @@
     padding: 100px 0;
     text-align: center; 
 
+    @include medium{
+      width: 50%;  
+    }
+    
+
     @include small{
       width: 100%;
       padding: 0;
@@ -468,6 +483,10 @@
       line-height: 19px;
       font-size: 2.0em;      
       margin: auto;
+
+      @include medium{
+        font-size: 2.5em;
+      }
 
       @include small{
         font-size: 2.5em;
@@ -483,6 +502,31 @@
     text-align: center;
     margin: auto;
 
+    @include medium{
+      padding: 50px 0;
+      text-align: center;
+      width: 100%;
+      margin: auto;
+    }
+
+    @include small{
+      padding: 35px;
+      width: 60%;
+    }
+
+    @include nexus{
+      padding: 50px;
+      text-align: center;
+      width: 70%;
+    }
+
+    @include extra-small{
+      padding: 25px;
+      width: 60%;
+      text-align: center;
+      margin: auto;
+    }
+
     .translate-button{
       width: 40%;
       background-color: $blueText;
@@ -497,15 +541,22 @@
       margin-top: 12px;
 
       @include medium{
-        font-size: 2.0em;
-        width: 100%;
-        min-width: 120%;
+        font-size: 2.3em;
+        width: 40%;
+        min-width: 40%;
+        padding: 8px;
         font-family: Raleway-Semibold;
       }
 
       @include small{
         width: 100%;
+        margin: auto;
       }      
+
+      @include extra-small{
+        font-size: 1.5em;
+        width: 100%;
+      }
 
       &:hover{
         background-color: $white;
