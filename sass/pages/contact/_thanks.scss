@@ -1,0 +1,13 @@
+.thanks-wrapper{
+  background-color: $blueText;
+  height: 100%;
+    
+    .thanks-paragraph{
+      @include center(true,true);
+      
+      font-size: 10em;
+      color: white;
+      font-family: Raleway-SemiBold;
+    }
+    
+}

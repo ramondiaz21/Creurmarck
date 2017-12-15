@@ -47,7 +47,6 @@
       <div class="title-text">Contáctanos</div>
     </div>
   </section>
-
   <section class="section-contact">
     <div class="map">
       <iframe src="https://www.google.com/maps/d/embed?mid=1iGkBhB6Gj_6svrlrdFnH8xN6FVD760lc" class="frame-map"></iframe>
@@ -74,18 +73,18 @@
           </div>
         </div>
         <div class="contact">
-          <form class="contact-form">
+          <form class="contact-form" action="send.php" method="post">
             <p class="title-form">Contacto</p>
-            <input type=text class="input-full" placeholder="Nombre">
-            <input type=text class="input-full" placeholder="e-mail">
-             <input type=text class="input-half" placeholder="Teléfono">
-             <input class="button-gray"type="submit" value="Enviar">
+            <input type="text" name="name" class="input-full" placeholder="Nombre" required>
+            <input type="email" name="mail" class="input-full" placeholder="e-mail" required>
+             <input type="number" name="phone" class="input-half" placeholder="Teléfono" required>
+             <input class="button-gray" type="submit" value="Enviar" id="button">
           </form>
         </div>
       </div>
     </div>
   </section>
-
+  
   <footer class="footer">
     <div class="footer-info">
       <a href="#"><img src="assets/homeImages/LogoCreurmackFooter.png" class="footer-logo"></a>
