@@ -1,0 +1,70 @@
+.divided-us-prueba{
+  background-color: $white;
+  width: 100%;
+
+  .divided-prueba-side{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 100px 0;
+    width: 50%;
+
+    .divided-prueba-wrapper{
+      padding: 50px;
+      position: relative;
+      background-image: url("../assets/images/Nuestra-oferta.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 250px;
+
+      .divided-prueba-image{
+      	
+      }
+    }
+  }
+
+  .divided-prueba-side-text{
+    display: inline-block;
+    padding: 50px;
+    width: 50%;
+    margin-left: -5px;
+    vertical-align: middle;
+    height: 100%;
+    
+    .divided-prueba-wrapper-text{
+    	position: relative;
+    	width: 100%;
+    	height: 100%;
+        position: relative;
+        font-family: Raleway-Regular;
+        padding: 100px 50px;
+
+        .divided-title-prueba{
+          color: $blueText;
+          font-size: 3.6em;
+          line-height: 1.5em;
+          width: 80%;
+          margin: 0;
+        }
+
+        .divided-text-prueba{
+          font-size: 1.8em;
+          margin: 0;
+          margin-right: 0;
+          padding: 16px;
+          width: 80%;
+          line-height: 22px;
+  
+          .divided-dot-prueba{
+            color: $blueText;
+            list-style-type: disc;
+
+            .divided-span-prueba{  
+              color: $grayTitles;
+              font-family: Raleway-Regular;
+            }
+          }  
+       }
+     }
+   }
+ }
