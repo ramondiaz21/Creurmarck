@@ -20,6 +20,14 @@
       padding: 40px 15px;
     }
 
+    @include galaxy-small{
+      padding: 50px 15px;
+    }
+
+    @include extra-small{
+      padding: 60px 15px;
+    }
+
     .footer-item {
       margin: 40px 0 0;
     }
@@ -53,10 +61,18 @@
     }
     .footer-youtube{
       background-image: url("../assets/homeImages/Youtube.svg");
-      width: 2.4em;
+      width: 3.4em;
+
+      @include small{
+        width: 4.3em;
+      }
     }
     .footer-twitter{
       background-image: url("../assets/homeImages/Twitter.svg");
+
+      @include small{
+        margin: 0;
+      }
     }
   }
 
@@ -99,6 +115,7 @@
       font-family: Raleway-SemiBold;
       font-size: 14px;
       font-weight: 800;
+      margin: 10px 0;
       max-width: 130px;
       text-align: right;
       text-transform: uppercase;  
@@ -111,6 +128,7 @@
         
         @include small{
           font-size: 8px;
+          text-align: right;
         }
       }
       

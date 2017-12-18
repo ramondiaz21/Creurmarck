@@ -118,3 +118,131 @@
   </section>
 
   Somos una empresa en crecimiento, joven y muy comprometida, que se inspira y motiva ante nuevos retos; que es conocedora del sector en el que trabaja y de las necesidades de quienes requieren de productos y de un buen servicio competente y comprometido.
+
+
+
+  .footer-margin{
+  margin-top: 100px;
+}
+
+.footer {
+  align-items: center;
+  border-top: solid 1px $whitePearl;
+  background-color: $grayH2;
+  display: flex;
+  position: absolute;
+  font-family: Raleway-Light;
+  width: 100%;
+  .footer-info {
+    float: left;
+    padding: 40px 40px;
+    width: 250px;
+
+    @include small{
+      width: 200px;
+      padding: 40px 15px;
+    }
+
+    .footer-item {
+      margin: 40px 0 0;
+    }
+
+    .footer-logo {
+      height: 100%;
+      max-width: 64px;
+      max-height: 66px;
+      width: 100%;
+    }
+
+    .footer-social {
+      margin: 2em 0 0;
+      text-align: left;
+    }
+
+    .padding-footer{
+      padding-left: 7px;
+    }
+
+    .footer-network {
+      display: inline-block;
+      height: 22px;
+      margin: 0 0.3em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 26px;
+    }
+    .footer-facebook{
+      background-image: url("../assets/homeImages/Facebook.svg");
+    }
+    .footer-youtube{
+      background-image: url("../assets/homeImages/Youtube.svg");
+      width: 2.4em;
+    }
+    .footer-twitter{
+      background-image: url("../assets/homeImages/Twitter.svg");
+    }
+  }
+
+  .footer-navigation {
+    float: right;    
+    font-size: 1.5em;
+    position: absolute;
+    padding: 40px 20px;
+    right: 0;
+    text-align: right;
+
+    @include small {
+      font-size: 2px;
+      margin-right: 15px;
+      padding: 0;
+      width: 38%;
+    }
+
+  }
+
+  .footer-item {
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 0 3vw;
+    text-align: left;
+    vertical-align: bottom;
+    
+    .footer-item-alt{
+      @include small{
+        font-size: 2px
+      }
+    }
+  
+    @include medium{
+      margin: 0 1vw;
+    }
+
+    .footer-header {
+      color: $whitePearl;
+      font-family: Raleway-SemiBold;
+      font-size: 14px;
+      font-weight: 800;
+      max-width: 130px;
+      text-align: right;
+      text-transform: uppercase;  
+      
+      &.footer-header-alt{
+        display: inline;
+        font-family: Raleway-SemiBold;
+        font-size: 16px;
+        text-transform: none;
+        
+        @include small{
+          font-size: 8px;
+        }
+      }
+      
+    }
+
+    .footer-link {
+      color: $whitePearl;
+      display: block;
+      margin: 0.6em 0;
+    }
+  }
+}
