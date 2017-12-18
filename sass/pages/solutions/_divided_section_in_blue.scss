@@ -168,9 +168,7 @@
 
         @include nexus{
           text-align: center;
-        }
-
-        
+        }        
       }
 
       .divided-paragraph-solution{
@@ -200,12 +198,8 @@
         @include nexus{
           margin-top: 10px;
           font-size: 2.0em;
-        }
-
-        
+        }        
       }
-
-
 
       .divided-paragraph6{
         color: $white;
@@ -262,11 +256,19 @@
       text-align: left;
       margin-top: 10px;
 
+      @include medium{
+        text-align: center;
+      }
+
+      @include small{
+        text-align: center;
+      }
+
       .solutions-button-aplicattions{          
         background-color: $blueText;
         color: $white;
         border-radius: 100px;
-       border: 2px solid $white;
+        border: 2px solid $white;
         font-family: Raleway-Light;
         font-size: 1.3em;
         text-align: center;
@@ -283,10 +285,11 @@
 
         @include medium{
           width: 60%;
+          margin: auto;
         }
 
         @include small{
-          margin: 10px 85px;
+          margin: auto;
         }
 
         @include extra-small{

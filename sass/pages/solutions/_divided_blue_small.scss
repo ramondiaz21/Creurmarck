@@ -1,0 +1,173 @@
+.divided-two-left-small {
+
+  .side-right-small {
+    float: left;
+  }
+  .side-left-small {
+    float: right;
+
+    @include extra-small{
+
+    }
+
+  }
+}
+
+.divided-two-right-small {
+  .side-right-small {
+    float: right;
+  }
+
+  .side-left-small {
+    float: left;
+  }
+}
+
+.divided-two-left-small, .divided-two-right-small {
+  height: 30vw;
+  background-color: $blueText;
+
+  @include small {
+    height: 120vw;      
+  }
+
+  @include extra-small{
+    height: 140vw;
+  }
+
+  .side-left-small, .side-right-small {
+    font-family: Raleway-Regular;
+    position: relative;
+    width: 50%; 
+    height: 30vw;   
+      
+    @include small {
+      width: 100%;
+      height: 50%;  
+    }    
+
+    @include extra-small{
+      width: 100%;
+      height: 50%;
+    }
+
+    .side-right-wrapper-small {
+      height: 100%;
+      width: 100%;  
+    
+      .one-image-small{
+        width: 100%; 
+        background: url("../assets/images/Concreto-bombeado.jpg") bottom/cover no-repeat;
+        height: 100%; 
+        float: left;
+        display: block;
+      }        
+      
+      .two-image-small{
+        width: 100%;
+        float: left;
+        background: url("../assets/images/Concreto-directo.jpg") bottom/cover no-repeat;
+        height: 100%; 
+      }  
+      
+    }
+
+    .side-left-wrapper-small {      
+      color: $white;
+      width: 68%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include medium{
+        height: 100%;
+        width: 100%;
+        padding: 50px 20px;
+      }
+
+      @include small{
+        width: 100%;
+        margin: auto;
+        padding: 60px 20px;
+      }
+
+      @include ip6{
+        padding: 50px 20px;
+      }
+
+      @include galaxy-small{
+        padding: 50px 20px;
+      }
+
+      @include extra-small{
+        width: 100%;
+        height: 100%;
+        padding: 50px 20px;
+      }
+
+      .side-left-title-small {
+        font-size: 2.0em;
+        text-align: left;
+        font-family: Raleway-Semibold;
+        color: $white;    
+        line-height: 24px;
+        width: 50%;
+        font-weight: bold;    
+        margin-bottom: 15px;
+
+        @include medium{
+          margin: auto;
+          text-align: center;
+        }
+
+        @include small{
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          font-size: 3.0em;
+        }
+      }
+
+      .divided-paragraph-small{
+        color: $white;
+        font-size: 1.5em;
+        font-family: Raleway-Light;
+        line-height: 18px;
+        font-weight: 500px;
+        margin: 0;
+        width: 80%;
+        margin-bottom: 15px;
+
+        @include medium{
+          margin: 10px auto;
+          text-align: center;
+          width: 83%;
+          font-size: 1.3em;
+        }
+
+        @include small{
+          width: 100%;
+          margin-top: 10px;
+          text-align: center;
+          font-size: 2.0em;
+        }
+
+        @include extra-small{
+          font-size: 1.5em;
+        }
+      }
+  }
+}
+  
+  .side-right-small{
+    @include small {
+      height: 50%;      
+    }
+
+    @include extra-small{
+      width: 100%;
+      height: 50%;
+    } 
+  }
+}
