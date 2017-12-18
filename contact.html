@@ -47,6 +47,7 @@
       <div class="title-text">Contáctanos</div>
     </div>
   </section>
+  <div id="form-messages"></div>
   <section class="section-contact">
     <div class="map">
       <iframe src="https://www.google.com/maps/d/embed?mid=1iGkBhB6Gj_6svrlrdFnH8xN6FVD760lc" class="frame-map"></iframe>
@@ -73,7 +74,7 @@
           </div>
         </div>
         <div class="contact">
-          <form class="contact-form" action="send.php" method="post">
+          <form class="contact-form" id="ajax-contact" method="post" action="mailer.php">
             <p class="title-form">Contacto</p>
             <input type="text" name="name" class="input-full" placeholder="Nombre" required>
             <input type="email" name="mail" class="input-full" placeholder="e-mail" required>
@@ -125,6 +126,4 @@
       </div>
     </div>
   </footer>
-
-
   </body>
