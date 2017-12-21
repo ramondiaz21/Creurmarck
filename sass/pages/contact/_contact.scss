@@ -1,8 +1,9 @@
 .section-contact{
   height: 100vh;
+  padding: 40px;
   
   @include small{
-    height: 150vh;
+    height: 180vh;
     padding: 10%;
   }
 
@@ -62,6 +63,10 @@
             font-size: 1.4em;
             font-weight: 500;
             line-height: 20px;
+            
+            @include small{
+              display: inline;
+            }
 
               .address-subtitle{
                 font-family: Raleway-SemiBold;
