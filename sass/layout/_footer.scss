@@ -17,15 +17,15 @@
 
     @include small{
       width: 200px;
-      padding: 40px 15px;
+      padding: 55px 15px;
     }
 
     @include galaxy-small{
-      padding: 50px 15px;
+      padding: 55px 15px;
     }
 
     @include extra-small{
-      padding: 60px 15px;
+      padding: 75px 15px;
     }
 
     .footer-item {
@@ -89,6 +89,7 @@
       margin-right: 15px;
       padding: 0;
       width: 38%;
+      height: 100%;
     }
 
   }
